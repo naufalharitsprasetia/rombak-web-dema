@@ -17,7 +17,7 @@
             this.isDropAbout = false;
         }
     }
-}" class="lg:sticky inset-x-0 top-0 z-50 relative" id="myNavbar">
+}" class="sticky inset-x-0 top-0 z-[999]" id="myNavbar">
     {{-- sebenernya ada add remove bg-white/80 di .js nya --}}
     <div class="bg-white/80 backdrop-blur dark:bg-zinc-900/80 hidden"></div>
     <nav class="flex items-center justify-between p-6 lg:px-8 mx-auto max-w-7xl" aria-label="Global">

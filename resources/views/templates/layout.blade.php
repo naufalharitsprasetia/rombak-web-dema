@@ -61,8 +61,8 @@
     {{-- <script src="../path/to/flowbite/dist/flowbite.min.js"></script> --}}
     @include('sweetalert2::index')
 
-    <script src="{{ asset('js/scrollnavbar.js') }}"></script>
     <script src="{{ asset('js/preload.js') }}"></script>
+    <script src="{{ asset('js/scrollnavbar.js') }}"></script>
 </body>
 
 </html>

@@ -242,9 +242,10 @@
             </div>
             <x-home.faq />
         </div>
+        <x-efek.glowbawah />
     </section>
     {{-- sec last --}}
-    <section class="cta-container relative isolate mb-36 px-4 sm:px-6 lg:px-16">
+    <section class="cta-container relative isolate pb-36 px-4 sm:px-6 lg:px-16">
         <div class="max-w-4xl mx-auto flex items-center justify-between" data-aos="fade-up" data-aos-duration="2000">
             <div class="flex-1 dark:text-white">
                 <h2 class="text-md md:text-4xl font-bold mb-4">Punya Gagasan untuk Kampus yang Lebih Baik?</h2>
@@ -263,7 +264,6 @@
                 </a>
             </div>
         </div>
-        <x-efek.glowbawah />
     </section>
     @vite('resources/js/home.js')
     @vite('resources/js/countUp.js')
