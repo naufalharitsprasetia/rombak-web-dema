@@ -62,7 +62,7 @@
             @endcan
 
             <li>
-                <a href="{{ route('user.leaderboard') }}"
+                <a href=""
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"><span
                         class="flex-1 ms-3 whitespace-nowrap"><i class="fa-solid fa-trophy mr-3"></i>
                         Leaderboard</span>

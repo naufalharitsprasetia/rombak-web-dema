@@ -42,40 +42,11 @@
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
             <a href="{{ route('home.index') }}"
-                class="text-sm/6 font-medium {{ $active == 'beranda' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">Beranda
-                🏠</a>
-            {{-- dropdwon main --}}
-            <div class="relative" @click="isDropMain = !isDropMain">
-                <div>
-                    <button type="button"
-                        class="relative text-sm/6 font-medium text-gray-700 dark:text-gray-200 cursor-pointer"
-                        aria-expanded="false" aria-haspopup="true">
-                        <span class="sr-only">Open navbar dropdown menu</span>
-                        Fitur Utama 🔻
-                    </button>
-                </div>
-                <div x-show="isDropMain" x-transition:enter="transition ease-out duration-100 transform"
-                    x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-75 transform"
-                    x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
-                    class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
-                    role="menu" aria-orientation="vertical">
-                    <a href="/quizzes" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">🌏 Eco-Quiz
-
-                    </a>
-                    <a href="{{ route('post.index') }}"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">♻️ Edu-Zone </a>
-                    <a href="{{ route('challenges.index') }}"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">🏆 Tantangan Hijau
-                    </a>
-                    <a href="{{ route('event.index') }}"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">📆 Green Events </a>
-                </div>
-            </div>
-            {{-- Hijau AI --}}
-            <a href="{{ route('hijau-ai.index') }}"
-                class="text-sm/6 font-medium {{ $active == 'hijau-ai' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">Hijau
-                AI ✨</a>
+                class="text-sm/6 font-medium {{ $active == 'beranda' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">Beranda</a>
+            <a href=""
+                class="text-sm/6 font-medium {{ $active == 'berita' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">Berita</a>
+            <a href=""
+                class="text-sm/6 font-medium {{ $active == 'ukm' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">UKM</a>
             {{-- dropdown Tentang --}}
             <div class="relative" @click="isDropAbout = !isDropAbout">
                 <div>
@@ -90,23 +61,23 @@
                     x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
                     x-transition:leave="transition ease-in duration-75 transform"
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
-                    class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
+                    class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white dark:bg-gray-800 py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
                     role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                     <!-- Active: "bg-gray-100 outline-none", Not Active: "" -->
                     <a href="{{ route('home.tentang') }}"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem" tabindex="-1"
-                        id="user-menu-item-0">Tentang Aplikasi</a>
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 hover:bg-gray-700"
+                        role="menuitem" tabindex="-1" id="user-menu-item-0">Tentang DEMA</a>
+                    <a href=""
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 hover:bg-gray-700 hover:outline-none"
+                        role="menuitem" tabindex="-1" id="user-menu-item-1">Departemen</a>
                     <a href="{{ route('home.kontak') }}"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:outline-none"
-                        role="menuitem" tabindex="-1" id="user-menu-item-1">Kontak Kami</a>
-                    <a href="{{ route('home.team') }}"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:outline-none"
-                        role="menuitem" tabindex="-1" id="user-menu-item-2">Tim Kami</a>
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 hover:bg-gray-700 hover:outline-none"
+                        role="menuitem" tabindex="-1" id="user-menu-item-2">Kontak Kami</a>
+                    <a href=""
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 hover:bg-gray-700 hover:outline-none"
+                        role="menuitem" tabindex="-1" id="user-menu-item-3">Salurkan Aspirasi</a>
                 </div>
             </div>
-            {{-- old --}}
-            {{-- <a href="{{ route('home.kontak') }}"
-                class="text-sm/6 font-medium text-gray-700 dark:text-gray-200">Tentang</a> --}}
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center">
             @guest
@@ -135,10 +106,6 @@
                     class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white dark:bg-zinc-900 dark:border-2 dark:border-zinc-700 py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
                     role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                     <!-- Active: "bg-gray-100 outline-none", Not Active: "" -->
-                    <p class="block text-center px-4 py-2 text-sm text-dematua dark:text-demamuda" role="menuitem"
-                        tabindex="-1" id="user-menu-item-0"><i class="fa-solid fa-star me-2"></i> {{
-                        auth()->user()->green_points }} Green
-                        Points</p>
                     <a href="{{ route('user.dashboard') }}"
                         class="block text-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-zinc-700"
                         role="menuitem" tabindex="-1" id="user-menu-item-1">Dashboard</a>
@@ -186,31 +153,24 @@
                     <div class="space-y-2 py-4">
                         <a href="{{ route('home.index') }}"
                             class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Beranda</a>
-                        <a href="/quizzes"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Eco-Quiz
-                            🌏</a>
                         <a href="{{ route('post.index') }}"
                             class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">
-                            Edu-Zone ♻️</a>
-                        <a href="{{ route('challenges.index') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Tantangan
-                            Hijau
-                            🏆</a>
-                        <a href="{{ route('event.index') }}"
+                            Berita</a>
+                        <a href=""
                             class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Green
-                            Events 📆</a>
-                        <a href="{{ route('hijau-ai.index') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Hijau
-                            AI ✨</a>
+                            UKM</a>
                         <a href="{{ route('home.tentang') }}"
                             class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Tentang
-                            Aplikasi
+                            DEMA
                         </a>
                         <a href="{{ route('home.kontak') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Kontak</a>
-                        <a href="{{ route('home.team') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Tim
-                            Kami
+                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Kontak
+                            Kami</a>
+                        <a href=""
+                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Salurkan
+                            Aspirasi</a>
+                        <a href=""
+                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Departemen
                         </a>
                     </div>
                     <div class="pt-2 pb-6">

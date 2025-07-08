@@ -45,7 +45,7 @@
             <div class="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div
                     class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 dark:text-gray-300 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-gray-100/10 dark:hover:ring-gray-100/20">
-                    Punya Kritik, Saran atau Masukkan ? <a href="{{ route('quizzes.index') }}"
+                    Punya Kritik, Saran atau Masukkan ? <a href=""
                         class="font-semibold text-dematua dark:text-demamuda hover:opacity-85"><span
                             class="absolute inset-0" aria-hidden="true"></span> Sampaikan Aspirasimu <span
                             aria-hidden="true">&rarr;</span></a>
@@ -190,8 +190,8 @@
             <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                 <p data-aos="fade-up" data-aos-duration="2000"
                     class="mx-auto mt-2 max-w-2xl text-center text-4xl font-semibold text-balance text-dematua dark:text-demamuda sm:text-5xl">
-                    <span class="text-zinc-900 dark:text-gray-100">Bagaimana</span><br>
-                    LangkahHijau Berdampak ?
+                    <span class="text-zinc-900 dark:text-gray-100">Bersama Dewan Mahasiswa</span><br>
+                    Melangkah maju bersama!
                 </p>
                 <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2" data-aos="fade-up"
                     data-aos-duration="2000">

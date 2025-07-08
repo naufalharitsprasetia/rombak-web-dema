@@ -17,243 +17,64 @@ class PostSeeder extends Seeder
         // 1
         Post::create([
             'id' => Str::uuid(),
-            'title' => '5 Cara Mudah Memulai Gaya Hidup Zero Waste',
-            'category' => '🌱 Zero Waste',
+            'title' => 'FEMGET SELURUH UKM UNIDA',
+            'category' => 'DEMA A',
             'body' => '
-            <h2>Memulai Gaya Hidup Zero Waste</h2>
-            <p>Zero waste bukan tentang menjadi sempurna tanpa sampah, melainkan tentang kesadaran untuk mengurangi sampah sebanyak mungkin dalam kehidupan sehari-hari. Dengan meningkatnya krisis iklim dan tumpukan sampah di TPA, gaya hidup ini menjadi semakin relevan.</p>
-
-            <h3>Kenapa Zero Waste Penting?</h3>
-            <p>Sampah plastik membutuhkan ratusan tahun untuk terurai dan banyak yang akhirnya mencemari laut dan membahayakan ekosistem. Dengan mengubah kebiasaan kecil, kita bisa membuat perbedaan besar.</p>
-
-            <h3>5 Langkah Mudah Memulainya:</h3>
-            <ol>
-            <li><strong>Bawa Tas Belanja Sendiri</strong><br>Hindari kantong plastik dengan selalu membawa tas kain yang bisa digunakan berulang kali. Letakkan di tas harian atau kendaraan agar tidak lupa.</li>
-            <li><strong>Gunakan Botol & Tempat Makan Reusable</strong><br>Botol minum stainless dan kotak makan dari kaca atau logam tahan lama dan ramah lingkungan.</li>
-            <li><strong>Hindari Produk Sekali Pakai</strong><br>Ganti tissue dengan sapu tangan kain, sedotan plastik dengan sedotan bambu atau stainless, dan popok sekali pakai dengan versi kain.</li>
-            <li><strong>Pilih Produk Minim Kemasan</strong><br>Belanja di toko curah dengan wadah sendiri, hindari produk berlapis plastik, dan pilih barang dengan kemasan mudah didaur ulang.</li>
-            <li><strong>Kompos & Daur Ulang</strong><br>Komposkan sisa makanan dan gunakan sebagai pupuk tanaman. Pisahkan sampah organik dan anorganik untuk mempermudah proses daur ulang.</li>
-            </ol>
-
-            <h3>Tips Praktis untuk Pemula</h3>
-            <p>Jangan langsung ubah segalanya dalam sehari. Mulai dari satu kebiasaan kecil dan tambahkan perlahan. Zero waste adalah perjalanan, bukan tujuan akhir.</p>
-
-            <blockquote>
-            <em>"Konsistensi lebih penting daripada kesempurnaan. Lebih baik satu orang melakukan zero waste dengan tidak sempurna, daripada tidak melakukannya sama sekali."</em>
-            </blockquote>
+                <p class="text-lg font-medium indent-8 mt-5"></p><p><strong>Family Gathering UKM UNIDA : Merawat Semangat, Mengokohkan Tujuan</strong><br><br><strong>Siman, 27 Juni 2025</strong> – Malam Jumat yang penuh kekeluargaan dan makna tersaji dalam kegiatan bertajuk <strong>"Family Gathering Unit Kegiatan Mahasiswa (UKM) Universitas Darussalam Gontor"</strong>, yang diselenggarakan oleh <strong>Dewan Mahasiswa (DEMA)</strong> bekerjasama dengan <strong>Direktorat Kepesantrenan</strong>. Kegiatan ini dilaksanakan di <strong>Lobby Gedung Terpadu</strong> pada <strong>Jumat malam (27/6)</strong> pukul <strong>20.00–22.00 WIB</strong>, dihadiri oleh para pengurus dan anggota UKM aktif, serta dosen-dosen pembimbing UKM.<br><br>Family Gathering ini menjadi momentum penting dalam merawat semangat kebersamaan antar UKM dan mengevaluasi langkah gerakan mahasiswa selama satu tahun terakhir. Dengan mengusung tujuan <i>meluruskan niat kembali agar aktif kembali di kegiatan UKM</i>, acara ini tidak hanya menghadirkan suasana hangat dan penuh apresiasi, tetapi juga menjadi panggung penting peneguhan identitas pergerakan mahasiswa UNIDA.<br><br>Acara dibuka dengan <strong>tilawah Al-Qur’an</strong>, dilanjutkan sambutan dari <strong>Ketua DEMA Fajar Satriyawan</strong>, yang menyampaikan refleksi mendalam atas capaian dan tantangan UKM sepanjang tahun ini. Dalam pidatonya, Fajar menyebut bahwa UKM adalah wadah strategis untuk menumbuhkan nilai-nilai integritas, kolaborasi, dan ekspresi kreatif mahasiswa.<br><br>"<i>Seorang pemimpin harus menghadirkan nilai-nilai integritas, di mana apa yang diucapkan selaras dengan apa yang dilakukan,”</i> tegasnya.<br>Ia juga menyampaikan bahwa meskipun 19 UKM saat ini aktif, masih banyak potensi mahasiswa yang belum tergali secara optimal—terutama dari data partisipasi dan jumlah mahasiswa yang belum tergabung dalam UKM.<br><br>Materi utama malam itu disampaikan oleh <strong>Ustadz Khasib Amrullah, M.Ud</strong>, selaku Kepala Direktorat Kepesantrenan. Beliau menekankan bahwa UKM adalah media transformasi keilmuan, keimanan, dan pengamalan bagi mahasiswa UNIDA, sesuai dengan tiga pilar pendidikan pondok: <i>ilmu, iman, dan amal.</i><br><br><i>“Universitas ini bukan hanya tempat kuliah, tapi tempat kalian menemukan jati diri. Kalau satu UKM tidak cocok, pindahlah ke yang lain sampai kalian menemukan tempat yang membuat kalian menjadi tokoh di bidang itu,”</i> ujarnya menyemangati para hadirin.<br><br>Sesi ditutup dengan <strong>pesan arah strategis dari Wakil Rektor, Al-Ustadz Assoc. Prof. Dr. Khoirul Umam, M.Ec.</strong>, yang memberikan semangat dan visi besar untuk gerakan mahasiswa UNIDA ke depan. Ia menyoroti pentingnya <strong>membangun ketokohan melalui keberanian melangkah, meski belum ada jaminan finansial atau dukungan penuh.</strong><br><br><i>“Tokoh itu bukan dilahirkan karena kemudahan, tapi karena keberanian melangkah. Di Gontor, kita tidak mencetak tokoh karena warisan, tapi karena perjuangan,”</i> tegas beliau.<br><br>Beliau juga mengingatkan agar mahasiswa jangan terkekang dengan alasan “<strong>tidak ada dana</strong>” sebelum berjuang. “<strong>Langit itu dekat di UNIDA. Tugas antum adalah bergerak, tugas kami adalah mendukung</strong>,” tambahnya.<br><br>Acara kemudian ditutup dengan pembagian <strong>penghargaan kepada UKM dan individu berprestasi</strong>, doa bersama, dan dokumentasi. Malam itu bukan hanya tentang apresiasi, tetapi menjadi penyalaan kembali bara semangat perjuangan di jalan keilmuan, kreativitas, dan pengabdian.<br><br>Kegiatan ini diharapkan menjadi awal baru bagi setiap UKM untuk lebih aktif, inovatif, dan menyatu dalam cita besar kampus: <strong>melahirkan tokoh peradaban Islam dunia</strong>.</p><p></p>
+                <br>
+                <p class="text-sm">Dema Kampus Siman</p>
+                <hr class="border my-1 border-primary">
+                <p class="text-sm">Link Dokumentasi : <a href="https://drive.google.com/drive/folders/1lodL5S0YXqoYZp5EpnDnz-OnMJojg8x7?usp=sharing" target="_blank" class="underline">Klik Disini</a></p>
             ',
-            'image' => 'zerowaste.png',
+            'image' => 'femgetukm.jpg',
             'created_at' => now(),
             'is_demo' => true
         ]);
         // 2
         Post::create([
             'id' => Str::uuid(),
-            'title' => 'Mengapa Konsumsi Daging Berlebihan Berdampak Buruk untuk Bumi?',
-            'category' => '🛍️ Konsumsi Berkelanjutan',
+            'title' => 'Peringatan 1 Muharram',
+            'category' => 'DEMA A',
             'body' => '
-            <h2>Dampak Konsumsi Daging terhadap Lingkungan</h2>
-            <p>Industri peternakan, khususnya sapi dan kambing, menyumbang emisi gas rumah kaca dalam jumlah besar, terutama metana (CH<sub>4</sub>) yang jauh lebih kuat dibanding CO<sub>2</sub>. Selain itu, dibutuhkan lahan luas dan air dalam jumlah besar untuk menghasilkan daging.</p>
-
-            <h3>Fakta Penting:</h3>
-            <ul>
-            <li>1 kg daging sapi = ±15.000 liter air</li>
-            <li>Industri peternakan menyumbang >14% emisi global</li>
-            <li>Hutan tropis banyak dibabat untuk padang penggembalaan</li>
-            </ul>
-
-            <h3>Kenapa Harus Mengurangi Konsumsi Daging?</h3>
-            <p>
-            Mengurangi konsumsi daging, terutama daging merah, adalah langkah efektif untuk menurunkan jejak karbon individu. Selain itu, pola makan berbasis nabati terbukti lebih sehat dan mendukung keberlanjutan pangan dunia.
-            </p>
-
-            <h3>Manfaat Langsung:</h3>
-            <ol>
-            <li><strong>Menurunkan emisi karbon pribadi</strong></li>
-            <li><strong>Menurunkan risiko penyakit jantung & kanker</strong></li>
-            <li><strong>Mendorong sistem pangan yang lebih adil dan efisien</strong></li>
-            </ol>
-
-            <h3>Aksi Kecil yang Berdampak Besar</h3>
-            <p>Coba mulai dengan <strong>“Meatless Monday”</strong>, yaitu tidak makan daging setiap hari Senin. Satu hari tanpa daging bisa mengurangi sekitar 2–3 kg emisi CO₂ per orang. Bayangkan jika dilakukan rutin oleh jutaan orang.</p>
-
-            <blockquote>
-            <em>"Bumi tidak butuh 1000 orang sempurna, tapi jutaan orang yang melakukan perubahan kecil secara konsisten."</em>
-            </blockquote>
+                <p class="text-lg font-medium indent-8 mt-5"></p><p><strong>Refleksi Awal Tahun Hijriyah: Ribuan Mahasiswa UNIDA Hadiri Peringatan 1 Muharram 1447 H</strong><br><br><strong>Siman, 26 Juni 2025</strong> – Malam penuh makna menyelimuti Masjid Universitas Darussalam Gontor (UNIDA) pada Kamis (26/6), dalam rangka memperingati <strong>1 Muharram 1447 H</strong> sekaligus menyambut <strong>Tahun Baru Hijriyah</strong>. Kegiatan yang diinisiasi oleh <strong>Direktorat Kepesantrenan UNIDA</strong> ini dihadiri oleh lebih dari <strong>1.800 mahasiswa</strong>, menjadikannya salah satu agenda sangat penting dalam kalender akademik kampus.<br>&nbsp;</p><p>Dengan mengangkat tema <i>“Tahun Baru Hijriyah, Momen untuk Memperbarui Niat”</i>, acara ini menjadi momentum refleksi spiritual bersama bagi seluruh sivitas akademika, khususnya mahasiswa, untuk menapaki lembaran baru kehidupan dengan tekad dan semangat hijrah yang lebih baik.<br>&nbsp;</p><p>Kegiatan dimulai selepas shalat Isya, tepat pukul <strong>19.45 WIB</strong>, dengan susunan acara: <strong>pembukaan, pembacaan ayat suci Al-Qur’an, sambutan, ceramah, doa penutup</strong>, dan ditutup pada pukul <strong>21.30 WIB</strong>. Sambutan pembuka disampaikan langsung oleh <strong>Ustadz Khasib Amrullah, M.Ud</strong>, selaku <strong>Kepala Direktorat Kepesantrenan</strong>, yang menekankan pentingnya menjaga semangat keislaman dan nilai perjuangan Rasulullah dalam setiap langkah kehidupan mahasiswa.<br>&nbsp;</p><p>Puncak acara diisi oleh <strong>Ustadz Dr. H. Jarman Arroisi, M.A.</strong>, yang menyampaikan ceramah penuh hikmah mengenai sejarah penetapan awal tahun Hijriyah. Dalam pemaparannya, beliau menjelaskan bahwa keputusan para sahabat menjadikan peristiwa <strong>Hijrah Nabi Muhammad SAW ke Madinah</strong> sebagai awal penanggalan Islam bukanlah hal yang sembarangan.<br><br><i>“Ketika para sahabat menentukan tahun Hijriyah dimulai dari peristiwa hijrah Rasulullah, itu bukan hanya keputusan administratif, tetapi penuh makna strategis dan spiritual. Hijrah adalah titik balik perjuangan umat Islam dari tekanan menuju kejayaan,”</i> ungkap beliau.<br><br>Beliau juga mengajak para mahasiswa untuk meneladani semangat hijrah Rasulullah, yang rela meninggalkan harta, keluarga, dan tanah kelahiran demi tegaknya dakwah Islam. Kini, kata beliau, tantangannya bukan lagi meninggalkan kota, tetapi <strong>berani meninggalkan kebiasaan buruk menuju pribadi yang lebih baik.</strong><br><br>Acara ini ditutup dengan doa bersama yang dipimpin oleh beliau, seraya memohon keberkahan dan kekuatan untuk mengawali tahun baru dengan niat yang bersih dan semangat yang baru.<br><br>Melalui kegiatan ini, mahasiswa UNIDA diharapkan tidak hanya menjadi insan akademik, tetapi juga insan spiritual yang memiliki kesadaran sejarah, nilai perjuangan, dan semangat perubahan diri yang berkesinambungan. Peringatan 1 Muharram di UNIDA tahun ini bukan hanya acara seremonial, tetapi juga menjadi wahana penyadaran dan penguatan identitas mahasiswa sebagai pejuang peradaban Islam.</p><p></p>
+                <br>
+                <p class="text-sm">Dema Kampus Siman</p>
+                <hr class="border my-1 border-primary">
+                <p class="text-sm">Link Dokumentasi : <a href="https://drive.google.com/drive/folders/1XECpjooKlFrhiTVV4o9LrBTBHIuW7opY?usp=sharing" target="_blank" class="underline">Klik Disini</a></p>
             ',
-            'image' => 'daging.png',
+            'image' => 'malammuharram.jpg',
             'created_at' => now(),
             'is_demo' => true
         ]);
         // 3
         Post::create([
             'id' => Str::uuid(),
-            'title' => 'Transportasi Ramah Lingkungan, Pilihan Sehat dan Cerdas',
-            'category' => '🚶 Transportasi Hijau',
+            'title' => 'Pembukaan Muharram Cup',
+            'category' => 'UNIDA GONTOR',
             'body' => '
-            <h2>Mengurangi Emisi dari Aktivitas Harian</h2>
-            <p>Transportasi menyumbang lebih dari 20% emisi karbon global, terutama di kota besar dengan banyak kendaraan pribadi. Padahal, banyak alternatif ramah lingkungan yang bisa kita pilih setiap hari.</p>
-
-            <h3>Pilihan Transportasi Ramah Lingkungan:</h3>
-            <ul>
-            <li><strong>Berjalan kaki:</strong> Efektif untuk jarak pendek, tidak menghasilkan emisi, sekaligus menyehatkan jantung.</li>
-            <li><strong>Bersepeda:</strong> Bebas polusi, hemat biaya, dan baik untuk kesehatan mental.</li>
-            <li><strong>Transportasi umum:</strong> Mengurangi kemacetan dan emisi, terutama jika sistemnya terintegrasi dengan baik.</li>
-            </ul>
-
-            <h3>Manfaat Lainnya:</h3>
-            <p>
-            Transportasi ramah lingkungan tidak hanya baik untuk bumi, tetapi juga dompet dan tubuh kita. Bersepeda 30 menit bisa membakar hingga 300 kalori. Sementara berjalan kaki 30 menit setara dengan 150 kalori terbakar.
-            </p>
-
-            <h3>Tips Memulai:</h3>
-            <ol>
-            <li>Rencanakan rute berjalan atau bersepeda ke tempat kerja/sekolah.</li>
-            <li>Gunakan transportasi publik di jam sibuk untuk menghindari stres berkendara.</li>
-            <li>Gabungkan moda transportasi, seperti naik angkutan umum lalu lanjut jalan kaki atau sepeda.</li>
-            </ol>
-
-            <blockquote>
-            <em>"Jangan remehkan kekuatan langkah kecilmu — setiap langkah yang kamu pilih tanpa kendaraan, adalah langkah menuju udara yang lebih bersih."</em>
-            </blockquote>
+                <p class="text-lg font-medium indent-8 mt-5"></p><p><strong>Semangat Muharram Cup 2025 Dimulai : Brilla con fuerza, levántate con propósito</strong><br><br><strong>Siman, 27 Juni 2025</strong> – Suasana pagi di Lapangan Universitas Darussalam Gontor terasa berbeda dari biasanya. Ratusan mahasiswa berkumpul untuk mengikuti <strong>Upacara Pembukaan Muharram Cup 2025</strong>, sebuah rangkaian kegiatan kompetisi olahraga dan seni antar mahasiswa UNIDA yang digelar dalam rangka menyambut Tahun Baru Islam 1447 Hijriyah.<br>&nbsp;</p><p>Kegiatan yang dilaksanakan pada <strong>Jum’at, 27 Juni 2025</strong> ini dimulai sejak pukul <strong>06.00 WIB</strong> dengan diawali oleh kegiatan <strong>senam pagi bersama</strong>, dilanjutkan dengan <strong>upacara seremonial pembukaan</strong>, <strong>pengibaran bendera Muharram Cup</strong>, serta sambutan dan doa pembuka sebagai simbol dimulainya kompetisi resmi. Acara ini diselenggarakan oleh <strong>Panitia Mahasiswa Semester 3</strong> dan diikuti oleh seluruh mahasiswa UNIDA Siman sebagai peserta dan penonton aktif.<br>&nbsp;</p><p>Dengan mengusung tema : <strong>"Brilla con fuerza, levántate con propósito" </strong>(<i>Bersinarlah dengan kekuatan, bangkitlah dengan tujuan</i>) acara pembukaan ini bukan hanya menjadi seremoni simbolis, tetapi juga penyemangat untuk mengawali seluruh rangkaian pertandingan dengan sportivitas dan semangat ukhuwah Islamiyah.<br>&nbsp;</p><p>Dalam sambutannya, <strong>Al-Ustadz Assoc. Prof. Dr. Khoirul Umam, M.Ec.</strong>, menyampaikan pesan penuh makna yang tidak hanya memotivasi peserta, tetapi juga menggambarkan visi besar UNIDA dalam mencetak para tokoh masa depan. Beliau menekankan bahwa <strong>ketokohan di Gontor bukanlah sesuatu yang diwariskan, tetapi dibentuk melalui proses, pengorbanan, dan keikhlasan.&nbsp;</strong><br><br><i>“Tokoh sejati adalah orang yang selalu memberi manfaat, meski tak dikenal orang banyak. Di Gontor, kita mencetak pemimpin bukan karena keturunan, tapi karena proses yang ditempuh dengan sungguh-sungguh,”</i> ujar beliau.<br><br>Beliau juga menyoroti bahwa Muharram Cup bukan hanya ajang lomba, tetapi <strong>media pendidikan kepemimpinan</strong>:&nbsp;<br><br><i>“Menjadi anggota yang baik hari ini adalah fondasi untuk menjadi pemimpin yang bijak di masa depan. Jangan hanya ingin jadi ketua, tapi belajarlah memimpin dengan memberi, bukan mengambil.”</i><br><br>Lebih lanjut, beliau mengajak seluruh peserta untuk mengambil hikmah dari penetapan hijrah Nabi sebagai awal kalender Islam:<br><br><i>“Sahabat tidak memilih kelahiran Nabi atau masa kenabian, tapi memilih hijrah. Karena hijrah adalah titik perubahan, titik perjuangan. Maka jadikanlah kesempatan ini sebagai hijrah menuju diri yang lebih kuat dan bermanfaat.”</i><br><br>Acara pembukaan juga dimeriahkan dengan <strong>penampilan mahasiswa</strong>, menambah semarak dan kekhidmatan momen pagi hari tersebut. Para peserta tampak antusias menyambut dimulainya ajang tahunan ini, yang tidak hanya mempererat kebersamaan, tetapi juga menjadi wadah menyalurkan bakat, minat, dan potensi mahasiswa UNIDA.<br><br>Kegiatan ditutup dengan doa bersama agar seluruh pertandingan selama Muharram Cup berjalan lancar, penuh keberkahan, dan menjunjung nilai-nilai Islami. Pembukaan ini sekaligus menandai awal semangat hijrah yang tidak hanya spiritual, tetapi juga dalam pengembangan diri dan potensi keolahragaan serta kebudayaan mahasiswa.</p><p>Dengan dimulainya Muharram Cup 2025, UNIDA Gontor kembali menegaskan komitmennya dalam mencetak generasi sehat, cerdas, dan berakhlak, sesuai nilai-nilai pesantren dan semangat kebersamaan yang telah lama ditanamkan dalam jiwa mahasiswa.</p><p></p>
+                <br>
+                <p class="text-sm">Dema Kampus Siman</p>
+                <hr class="border my-1 border-primary">
+                <p class="text-sm">Link Dokumentasi : <a href="https://drive.google.com/drive/folders/1BNZkzZjii9QvCa3X5nk_JOC_Ehxysh9y" target="_blank" class="underline">Klik Disini</a></p>
             ',
-            'image' => 'transportasi.png',
+            'image' => 'muharramcup.jpg',
             'created_at' => now(),
             'is_demo' => true
         ]);
         // 4
         Post::create([
             'id' => Str::uuid(),
-            'title' => 'Apa Itu Fast Fashion dan Mengapa Kita Harus Peduli?',
-            'category' => '🛍️ Konsumsi Berkelanjutan',
+            'title' => 'Lari Pagi Bersama',
+            'category' => 'UNIDA GONTOR',
             'body' => '
-            <h2>Memahami Fast Fashion</h2>
-            <p>Fast fashion merujuk pada industri pakaian yang memproduksi barang dengan cepat, murah, dan dalam jumlah besar untuk mengikuti tren. Meski terlihat menguntungkan konsumen, dampaknya sangat besar bagi lingkungan dan kemanusiaan.</p>
-
-            <h3>Dampak Lingkungan:</h3>
-            <ul>
-            <li>Limbah tekstil meningkat drastis – rata-rata seseorang membuang 30 kg pakaian per tahun.</li>
-            <li>Pakaian murah sering dibuat dari bahan sintetis yang sulit terurai dan melepaskan mikroplastik ke laut.</li>
-            <li>Produksi tekstil memerlukan air dan energi dalam jumlah besar.</li>
-            </ul>
-
-            <h3>Dampak Sosial:</h3>
-            <ul>
-            <li>Upah buruh rendah, kadang tidak manusiawi.</li>
-            <li>Jam kerja berlebihan dan kondisi kerja tidak layak.</li>
-            </ul>
-
-            <h3>Solusi Konsumen:</h3>
-            <ol>
-            <li><strong>Thrifting:</strong> Belanja di toko barang bekas adalah cara hemat dan ramah lingkungan.</li>
-            <li><strong>Tukar pakaian:</strong> Ajak teman atau komunitas untuk saling bertukar pakaian layak pakai.</li>
-            <li><strong>Beli dari brand berkelanjutan:</strong> Dukung merek lokal yang menggunakan bahan ramah lingkungan dan transparan soal produksi.</li>
-            </ol>
-
-            <blockquote>
-            <em>"Pakaian terbaik bukan yang paling baru, tapi yang paling sering dipakai dan bertahan lama."</em>
-            </blockquote>
+                <p class="text-lg font-medium indent-8 mt-5"></p><p><strong>Lari Pagi Bersama: Mahasiswa UNIDA Siman Wujudkan Gaya Hidup Sehat dan Kompak</strong></p><p><br><strong>Siman, Jumat 23 Mei 2025</strong><span style="color:rgb(4,54,74);"> — </span>Dalam rangka mendorong gaya hidup sehat dan mempererat kebersamaan antar mahasiswa, <strong>Dewan Mahasiswa Universitas Darussalam (UNIDA) Siman</strong> menggelar kegiatan <strong>Lari Pagi Bersama</strong> pada Jumat pagi, 23 Mei 2025. Acara yang dimulai pada pukul <strong>06.00 WIB</strong> ini diikuti oleh ratusan mahasiswa dari seluruh fakultas dan program studi yang ada di UNIDA. Tidak hanya diikuti oleh mahasiswa aktif, beberapa dosen dan staf juga turut hadir meramaikan kegiatan ini.</p><p>&nbsp;</p><p>Rute lari pagi yang ditempuh berjarak sekitar <strong>tiga kilometer</strong>, melintasi jalanan di sekitar kawasan kampus dan lingkungan Desa Brahu. Dengan suasana pagi yang sejuk dan penuh semangat, para peserta tampak antusias mengikuti kegiatan ini hingga selesai pada pukul <strong>07.30 WIB</strong>. Acara ini juga mendapat <strong>dukungan penuh dari pihak kepolisian</strong>, yang turut hadir membantu mengatur lalu lintas dan memastikan keselamatan para peserta saat menyebrangi jalan. Kehadiran petugas kepolisian sangat membantu kelancaran jalannya kegiatan, khususnya di area-area rawan kendaraan.</p><p>&nbsp;</p><p>Ketua DEMA, <strong>Fajar Satriyawan</strong>, menyampaikan apresiasi atas antusiasme peserta dan seluruh pihak yang terlibat dalam kesuksesan kegiatan ini. “Antusiasme peserta sangat luar biasa. Ini menjadi bukti bahwa mahasiswa UNIDA peduli terhadap kesehatan dan kekompakan. Sesuai dengan pepatah Latin <i>mens sana in corpore sano</i>, dalam tubuh yang sehat terdapat jiwa yang kuat. Kami berharap semangat ini terus hidup di kalangan mahasiswa,” ujarnya.</p><p>&nbsp;</p><p>Kegiatan lari pagi ini tidak hanya berfokus pada aspek fisik, tetapi juga menjadi ajang mempererat tali persaudaraan antar mahasiswa lintas jurusan. Banyak peserta yang saling berkenalan dan bercengkerama sepanjang rute, menjadikan kegiatan ini sebagai momentum membangun ikatan sosial yang positif.&nbsp;</p><p>&nbsp;</p><p>Dengan terselenggaranya kegiatan ini, Dewan Mahasiswa berharap dapat menumbuhkan kesadaran akan pentingnya menjaga kesehatan jasmani di tengah padatnya aktivitas akademik. Rencananya, kegiatan serupa akan diagendakan secara rutin agar menjadi budaya baru yang positif di lingkungan UNIDA Siman.</p><p></p>
+                <br>
+                <p class="text-sm">Dema Kampus Siman</p>
+                <hr class="border my-1 border-primary">
+                <p class="text-sm">Link Dokumentasi : <a href="https://drive.google.com/drive/folders/1OV4AsnU3cyndGDemXzuAbGCJbTJbu9hC?usp=sharing" target="_blank" class="underline">Klik Disini</a></p>
             ',
-            'image' => 'fashion.png',
-            'created_at' => now(),
-            'is_demo' => true
-        ]);
-        // 5. Supermarket
-        Post::create([
-            'id' => Str::uuid(),
-            'title' => 'Tips Belanja Ramah Lingkungan di Supermarket',
-            'category' => '🛍️ Konsumsi Berkelanjutan',
-            'body' => '
-            <h2>Belanja Bijak = Bumi Sehat</h2>
-            <p>Supermarket seringkali penuh dengan produk berkemasan plastik, produk impor, dan makanan dalam jumlah berlebih. Tapi dengan strategi yang tepat, kamu bisa belanja lebih hijau dan hemat!</p>
-
-            <h3>Tips Praktis:</h3>
-            <ol>
-            <li><strong>Bawa tas belanja sendiri:</strong> Gunakan tas kain atau keranjang belanja untuk menghindari kantong plastik.</li>
-            <li><strong>Hindari produk dengan banyak plastik:</strong> Pilih produk dengan kemasan minimal atau bisa didaur ulang.</li>
-            <li><strong>Beli produk lokal dan musiman:</strong> Lebih segar, lebih murah, dan jejak karbonnya lebih kecil karena tidak perlu pengiriman jauh.</li>
-            <li><strong>Beli seperlunya:</strong> Hindari pemborosan makanan dengan hanya membeli sesuai kebutuhan dan kemampuan konsumsi.</li>
-            </ol>
-
-            <h3>Tips Tambahan:</h3>
-            <ul>
-            <li>Buat daftar belanja sebelum berangkat.</li>
-            <li>Periksa isi kulkas/pantry agar tidak membeli barang yang sudah ada.</li>
-            <li>Hindari belanja saat lapar agar tidak impulsif.</li>
-            </ul>
-
-            <blockquote>
-            <em>"Belanja bukan hanya soal harga — tapi juga dampaknya terhadap lingkungan dan masa depan kita."</em>
-            </blockquote>
-            ',
-            'image' => 'supermarket.png',
-            'created_at' => now(),
-            'is_demo' => true
-        ]);
-        // 6 kompos
-        Post::create([
-            'id' => Str::uuid(),
-            'title' => 'Kompos di Rumah, Cara Sederhana Kurangi Sampah Organik',
-            'category' => '🌱 Zero Waste',
-            'body' => '
-            <h2>Manfaat Kompos untuk Lingkungan dan Rumah Tangga</h2>
-            <p>Sampah organik seperti sisa makanan, kulit buah, dan daun kering bisa dijadikan kompos. Jika dibuang ke TPA, sampah ini menghasilkan gas metana — gas rumah kaca yang sangat kuat. Dengan kompos, kita mengubah limbah menjadi sumber daya.</p>
-
-            <h3>Cara Membuat Kompos di Rumah:</h3>
-            <ol>
-            <li><strong>Gunakan ember atau tong kompos:</strong> Sebaiknya tertutup agar tidak bau dan tahan hama.</li>
-            <li><strong>Campur bahan hijau dan coklat:</strong> Bahan hijau (kulit buah, sisa sayur) dan bahan coklat (daun kering, kertas robek) perlu seimbang.</li>
-            <li><strong>Aduk rutin:</strong> Setiap 3–5 hari agar oksigen menyebar dan proses berjalan cepat.</li>
-            <li><strong>Panen setelah 3–4 minggu:</strong> Kompos siap digunakan jika berwarna gelap, tidak bau, dan menggumpal seperti tanah subur.</li>
-            </ol>
-
-            <h3>Manfaat Langsung:</h3>
-            <ul>
-            <li>Mengurangi volume sampah rumah tangga hingga 40%</li>
-            <li>Menghasilkan pupuk gratis untuk tanaman</li>
-            <li>Mengurangi emisi gas rumah kaca dari TPA</li>
-            </ul>
-
-            <blockquote>
-            <em>"Dengan kompos, kamu bukan membuang sampah, tapi memberi kembali ke bumi."</em>
-            </blockquote>
-            ',
-            'image' => 'kompos.png',
-            'created_at' => now(),
-            'is_demo' => true
-        ]);
-        // 7 air
-        Post::create([
-            'id' => Str::uuid(),
-            'title' => 'Air Lebih Berharga dari yang Kamu Kira – Hemat Air Mulai Hari Ini',
-            'category' => '🔌 Energi dan Elektronik',
-            'body' => '
-            <h2>Krisis Air Bersih: Ancaman Nyata</h2>
-            <p>Banyak daerah di Indonesia dan dunia sudah mengalami krisis air bersih. Namun, kita sering tidak menyadarinya karena air masih mengalir dari keran. Setiap tetes air yang terbuang adalah sumber daya yang semakin langka.</p>
-
-            <h3>Fakta Penggunaan Air:</h3>
-            <ul>
-            <li>Mandi 10 menit = ±100 liter air</li>
-            <li>Sikat gigi dengan keran menyala = 6 liter air/hari</li>
-            <li>1 kg daging = hingga 15.000 liter air untuk produksinya</li>
-            </ul>
-
-            <h3>Langkah Menghemat Air:</h3>
-            <ol>
-            <li>Gunakan shower hemat air dan batasi waktu mandi</li>
-            <li>Matikan keran saat menyikat gigi atau mencuci tangan</li>
-            <li>Kumpulkan air cucian beras atau sayur untuk menyiram tanaman</li>
-            <li>Periksa kebocoran keran dan perbaiki secepatnya</li>
-            </ol>
-
-            <h3>Air untuk Masa Depan</h3>
-            <p>Dengan perubahan kecil dari kita semua, kita bisa menjamin ketersediaan air bersih untuk generasi mendatang.</p>
-
-            <blockquote>
-            <em>"Jangan tunggu kekeringan datang baru menghargai air. Mulailah hemat dari sekarang."</em>
-            </blockquote>
-            ',
-            'image' => 'water.png',
+            'image' => 'laripagi.jpg',
             'created_at' => now(),
             'is_demo' => true
         ]);

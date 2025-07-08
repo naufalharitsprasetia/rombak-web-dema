@@ -239,7 +239,7 @@
 
                 <div class="grid md:grid-cols-3 gap-8">
                     <!-- Tantangan Hijau -->
-                    <a href="{{ route('challenges.index') }}">
+                    <a href="">
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">
@@ -254,7 +254,7 @@
                     </a>
 
                     <!-- Eco-Quiz -->
-                    <a href="{{ route('quizzes.index') }}">
+                    <a href="">
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">
@@ -269,7 +269,7 @@
                     </a>
 
                     <!-- cyan Points & Badge -->
-                    <a href="{{ route('user.leaderboard') }}">
+                    <a href="">
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">
@@ -314,7 +314,7 @@
                     </a>
 
                     <!-- Leaderboard & Tier -->
-                    <a href="{{ route('user.leaderboard') }}">
+                    <a href="">
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">

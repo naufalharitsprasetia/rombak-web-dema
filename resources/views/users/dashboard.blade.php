@@ -1,15 +1,3 @@
-@php
-$nextTier = auth()->user()->tier->max_points ?? 0;
-$now = auth()->user()->green_points;
-$kurang = max(0, $nextTier - $now);
-
-if ($nextTier > 0) {
-$persen = ($now / $nextTier) * 100;
-$persen = min(100, $persen);
-} else {
-$persen = 100;
-}
-@endphp
 <x-sidebar.layout :title="$title" :active="$active">
     <h1 class="text-lg font-semibold text-gray-900 dark:text-white">Dashboard User</h1>
     <div class="flex flex-col w-full">
@@ -90,8 +78,7 @@ $persen = 100;
                         </div>
                         <div class="bg-gray-200 dark:bg-zinc-700 px-5 py-3">
                             <div class="text-sm">
-                                <a href="{{ route('user.leaderboard') }}"
-                                    class="font-medium text-green-600 hover:text-demamuda">Lihat
+                                <a href="" class="font-medium text-green-600 hover:text-demamuda">Lihat
                                     detail</a>
                             </div>
                         </div>
@@ -147,8 +134,7 @@ $persen = 100;
                         </div>
                         <div class="bg-gray-200 dark:bg-zinc-700 px-5 py-3">
                             <div class="text-sm">
-                                <a href="{{ route('user.tierInfo') }}"
-                                    class="font-medium text-green-600 hover:text-demamuda">Lihat detail</a>
+                                <a href="" class="font-medium text-green-600 hover:text-demamuda">Lihat detail</a>
                             </div>
                         </div>
                     </div>
@@ -243,66 +229,6 @@ $persen = 100;
                     @endif
                 </div>
 
-                <h2 class="text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-3" id="quizHistory">Riwayat
-                    Pengerjaan Quiz</h2>
-                @if ($quizAttempts->isEmpty())
-                <p class="text-gray-600 dark:text-gray-400">Anda belum mengerjakan quiz apa pun.</p>
-                @else
-                <div class="overflow-x-auto shadow-sm rounded-lg border dark:border-zinc-600">
-                    <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                        <thead class="bg-gray-50 dark:bg-zinc-800">
-                            <tr>
-                                <th scope="col"
-                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                                    No.
-                                </th>
-                                <th scope="col"
-                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                                    Nama Quiz
-                                </th>
-                                <th scope="col"
-                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                                    Skor
-                                </th>
-                                <th scope="col"
-                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                                    Waktu Pengerjaan
-                                </th>
-                                <th scope="col" class="relative px-6 py-3">
-                                    <span class="sr-only">Detail</span>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="bg-white dark:bg-zinc-900 divide-y divide-gray-200 dark:divide-gray-700">
-                            @foreach ($quizAttempts as $index => $attempt)
-                            <tr>
-                                <td
-                                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">
-                                    {{ $index + 1 }}
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white">
-                                    {{ $attempt->quiz->title ?? 'Quiz Tidak Ditemukan' }}
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white">
-                                    {{ $attempt->score }}
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                                    {{ $attempt->created_at->format('d M Y H:i') }}
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                    {{-- Anda bisa menambahkan link untuk melihat detail hasil quiz ini jika diperlukan
-                                    --}}
-                                    {{-- Misalnya, route('quizzes.results', $attempt->quiz->id) --}}
-                                    <a href="{{ route('quizzes.results', $attempt->quiz->id) }}"
-                                        class="text-dematua hover:text-demamuda dark:text-demamuda dark:hover:text-dematua">Lihat
-                                        Hasil</a>
-                                </td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-                @endif
             </div>
         </main>
         <x-mitra />

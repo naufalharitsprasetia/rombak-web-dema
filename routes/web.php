@@ -35,13 +35,6 @@ Route::get('/tentang', [HomeController::class, 'tentang'])->name('home.tentang')
 Route::get('/team', [HomeController::class, 'team'])->name('home.team');
 Route::get('/kontak', [HomeController::class, 'kontak'])->name('home.kontak');
 
-// Quiz
-Route::get('/quizzes', [QuizController::class, 'index'])->name('quizzes.index');
-Route::get('/quizzes/{quiz}/start', [QuizController::class, 'start'])->name('quizzes.start')->middleware('auth');
-Route::post('/quizzes/{quiz}/submit', [QuizController::class, 'submitAnswer'])->name('quizzes.submit')->middleware('auth');
-Route::get('/quizzes/{quiz}/results', [QuizController::class, 'results'])->name('quizzes.results')->middleware('auth');
-Route::get('/quizzes/{quiz}/results-detail', [QuizController::class, 'resultsDetail'])->name('quizzes.resultsDetail')->middleware('auth');
-
 // Auth for guest
 Route::middleware('guest')->group(function () {
     // auth
@@ -57,13 +50,8 @@ Route::middleware('auth')->group(function () {
     // logout
     Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
     // users
-    Route::get('/leaderboard', [UserController::class, 'leaderboard'])->name('user.leaderboard');
     Route::get('/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
-    Route::get('/tier-info', [UserController::class, 'tierInfo'])->name('user.tierInfo');
     Route::get('/profile/{user:username}', [UserController::class, 'profile'])->name('user.profile');
-    // hijau AI
-    Route::get('/hijau-ai', [HijauAIController::class, 'index'])->name('hijau-ai.index');
-    Route::post('/hijau-ai', [HijauAIController::class, 'ask'])->name('hijau-ai.ask');
     // event
     Route::get('/event-ajukan', [EventController::class, 'ajukan'])->name('event.ajukan');
     Route::post('/event-ajukan', [EventController::class, 'simpanAjuan'])->name('event.simpanAjuan');
@@ -96,12 +84,3 @@ Route::middleware([IsAdmin::class])->group(function () {
     Route::put('/event-edit/{event}', [EventController::class, 'update'])->name('event.update');
     Route::delete('/event-delete/{event}', [EventController::class, 'destroy'])->name('event.destroy');
 });
-
-// challenge
-Route::middleware('auth')->group(function () {
-    Route::post('/challenges/{challenge}/participate', [ChallengeController::class, 'participate'])->name('challenges.participate');
-    Route::get('/challenges-progress/{challenge_participation}', [ChallengeController::class, 'progress'])->name('challenges.progress');
-    Route::post('/daily-actions/{challenge_participation}', [ChallengeController::class, 'checklist'])->name('challenges.checklist');
-});
-Route::get('/challenges', [ChallengeController::class, 'index'])->name('challenges.index');
-Route::get('/challenges/{challenge}', [ChallengeController::class, 'show'])->name('challenges.show');

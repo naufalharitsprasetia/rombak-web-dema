@@ -8,7 +8,7 @@ $kurang = max(0, $nextTier - $user->green_points);
         <main class="w-full">
             <div class="mx-auto py-6 sm:px-6 lg:px-8">
                 <!-- Isi Halaman -->
-                <a href="{{ route('user.leaderboard') }}"
+                <a href=""
                     class="block mb-2 p-2 text-sm text-dematua hover:text-demamuda">
                     <- Kembali</a>
                         <h2 class="text-2xl font-semibold text-zinc-900 dark:text-white">🙂 Profile</h2>
