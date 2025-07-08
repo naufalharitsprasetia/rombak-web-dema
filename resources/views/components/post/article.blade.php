@@ -5,10 +5,10 @@
     <div class="mt-4 mb-16 mx-auto text-center" data-aos="fade-up" data-aos-duration="2000">
         <p
             class="mb-3 text-3xl text-center font-bold text-pretty text-gray-900 dark:text-gray-100 sm:text-5xl lg:text-balance">
-            Edu-Zone
+            Berita Terbaru
         </p>
-        <p class="text-dematua dark:text-demamuda text-sm md:text-lg font-normal">Temukan inspirasi
-            gaya hidup sehat dan ramah lingkungan di sini – mulai langkah hijau Anda sekarang!</p>
+        <p class="text-dematua dark:text-demamuda text-sm md:text-lg font-normal">"Temukan berita terbaru tentang
+            inisiatif dan acara inspiratif yang diselenggarakan oleh Dewan Mahasiswa Universitas Darussalam Gontor."</p>
     </div>
     {{-- <h2 class="text-center text-lg/8 font-semibold text-zinc-900 dark:text-gray-200 my-12">Edu-Zone</h2> --}}
     <!-- Featured Article Section -->

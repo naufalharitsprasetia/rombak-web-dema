@@ -54,8 +54,8 @@
             <div class="text-center">
                 <h1
                     class="text-3xl font-semibold tracking-tight text-balance text-gray-900 dark:text-gray-100 sm:text-5xl md:text-6xl lg:text-7xl">
-                    <span class="text-dematua dark:text-demamuda">Dewan</span>
-                    Mahasiswa <span class="text-dematua dark:text-demamuda">Unida</span> Gontor.
+                    <span class="text-dematua dark:text-demamuda">Dewan </span>
+                    Mahasiswa <br> <span class="text-dematua dark:text-demamuda">Unida</span> Gontor.
                 </h1>
                 <p class="mt-8 text-lg font-medium text-pretty text-gray-500 dark:text-gray-300 sm:text-xl/8">Melangkah
                     dan berinovasi, ciptakan generasi muda yang unggul!
@@ -98,10 +98,10 @@
                     <h2 class="text-base/7 font-semibold text-dematua dark:text-demamuda">Visi & Misi</h2>
                     <p
                         class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-gray-100 sm:text-5xl lg:text-balance">
-                        Visi dan Misi Dewan Mahasiswa Unida Gontor</p>
-                    <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Sit obcaecati cumque molestias delectus Sit obcaecati cumque molestias
-                        delectus fugiat. </p>
+                        Visi & Misi Student Council of UNIDA Gontor</p>
+                    <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">Dewan Mahasiswa berfungsi sebagai wadah
+                        yang dinamis untuk pengembangan, kepemimpinan, dan kolaborasi mahasiswa, yang berakar pada
+                        nilai-nilai Islam. </p>
                 </div>
                 <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl" data-aos="zoom-in-up"
                     data-aos-duration="1000">
@@ -115,10 +115,9 @@
                                 Visi
                             </dt>
                             <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-400 ">
-                                Menjadikan Dewan Mahasiswa Universitas Darussalam Gontor sebagai wadah inklusif yang
-                                berperan inspiratif, inklusif, dan inovatif dalam membangun karakter, kompetensi, dan
-                                kontribusi mahasiswa, guna menciptakan generasi pemimpin yang berintegritas, berwawasan
-                                luas, dan berkomitmen pada nilai-nilai Islami.</dd>
+                                Menjadikan Dewan Mahasiswa UNIDA Gontor sebagai wadah yang inklusif dan inovatif dalam
+                                mengembangkan kepemimpinan, integritas, dan kontribusi mahasiswa yang dipandu oleh
+                                prinsip-prinsip Islam.</dd>
                         </div>
                         <div class="relative pl-16">
                             <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
@@ -129,16 +128,13 @@
                                 Misi 1
                             </dt>
                             <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-400 ">
-                                Mengajak pengguna untuk
-                                memulai perubahan dari
-                                hal kecil—seperti mengurangi sampah plastik, hemat energi, hingga memilih transportasi
-                                ramah lingkungan.Membangun lingkungan yang kondusif bagi seluruh mahasiswa untuk
-                                mengembangkan potensi secara optimal, baik dalam aspek intelektual, spiritual, maupun
-                                sosial, sehingga dapat menjadi pemimpin yang inspiratif dan membawa perubahan positif
-                                bagi lingkungan.
+                                Mendorong perubahan kecil namun berdampak besar-seperti mengurangi penggunaan plastik,
+                                menghemat energi, dan memilih transportasi yang ramah lingkungan-sekaligus menciptakan
+                                lingkungan yang mendukung para siswa untuk berkembang secara intelektual, spiritual, dan
+                                sosial.
                             </dd>
                         </div>
-                        <div class="relative pl-16">
+                        <div class="relative pl-16 lg:col-start-2">
                             <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
                                 <div
                                     class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-dematua">
@@ -147,28 +143,12 @@
                                 Misi 2
                             </dt>
                             <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-400 ">
-                                Membangun mahasiswa Universitas Darussalam Gontor sebagai individu yang unggul dan
-                                berdaya saing melalui pengembangan jejaring antar kampus, baik di tingkat nasional
-                                maupun internasional, sebagai dukungan terhadap misi internasionalisasi kampus pada
-                                tingkat (world-class university) dan memperluas eksistensi mahasiswa di berbagai kancah
-                                global.
+                                Memberdayakan mahasiswa melalui jaringan nasional dan internasional, mendukung tujuan
+                                universitas untuk menjadi institusi kelas dunia dan meningkatkan keterlibatan mahasiswa
+                                secara global.
                             </dd>
                         </div>
-                        <div class="relative pl-16">
-                            <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
-                                <div
-                                    class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-dematua">
-                                    <i class="fa-solid fa-user-group" style="color:white"></i>
-                                </div>
-                                Misi 3
-                            </dt>
-                            <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-400">
-                                Membangun kesadaran kritis
-                                tentang dampak
-                                kebiasaan harian terhadap lingkungan dan kesehatan, agar pengguna tidak hanya beraksi,
-                                tapi juga lebih reflektif.
-                            </dd>
-                        </div>
+
                     </dl>
                 </div>
             </div>
@@ -177,19 +157,18 @@
         <div class="mx-auto text-center py-14 md:px-8 max-w-4xl mb-6" data-aos="fade-down" data-aos-easing="linear"
             data-aos-duration="1500">
             <p class="text-zinc-900  dark:text-gray-100 font-arabic font-semibold text-2xl/[3.5rem] md:text-3xl/[3.5rem] lg:text-4xl/[4rem]"
-                dir="rtl">وَلَا تُفْسِدُوْا
-                فِى الْاَرْضِ بَعْدَ اِصْلَاحِهَا وَادْعُوْهُ خَوْفًا وَّطَمَعًاۗ اِنَّ رَحْمَتَ اللّٰهِ قَرِيْبٌ مِّنَ
-                الْمُحْسِنِيْنَ</p>
-            <p class="terjemahannya text-dematua dark:text-demamuda text-sm mt-6">“Janganlah kamu berbuat kerusakan di
-                bumi
-                setelah diatur dengan baik. Berdoalah
-                kepada-Nya dengan rasa takut dan penuh harap. Sesungguhnya rahmat Allah sangat dekat dengan orang-orang
-                yang berbuat baik.” (Q.S. Al-A’raf Ayat 56)</p>
+                dir="rtl">وَلْتَكُنْ مِنْكُمْ أُمَّةٌ يَدْعُونَ إِلَى الْخَيْرِ وَيَأْمُرُونَ بِالْمَعْرُوفِ
+                وَيَنْهَوْنَ عَنِ الْمُنْكَرِ وَأُولَئِكَ هُمُ الْمُفْلِحُونَ</p>
+            <p class="terjemahannya text-dematua dark:text-demamuda text-sm md:text-lg mt-6">“Dan hendaklah ada di
+                antara kamu
+                segolongan umat yang menyeru kepada kebajikan, menyuruh kepada yang makruf dan mencegah dari yang
+                munkar; merekalah orang-orang yang beruntung.” (Q.S. Ali - Imron : 104)</p>
         </div>
         {{-- Mitra --}}
         <div class="py-6 sm:py-10 mb-20" id="mitra">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <h2 class="text-center text-lg/8 md:text-2xl/8 font-semibold text-zinc-900 dark:text-gray-100">Sponsor
+                <h2 class="text-center text-lg/8 md:text-2xl/8 font-semibold text-zinc-900 dark:text-gray-100">Supported
+                    By :
                 </h2>
                 <br>
                 <x-home.mitra />

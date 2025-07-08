@@ -14,20 +14,16 @@
         </div>
         <div x-ref="content" class="flex animate-marquee gap-[130px] sm:gap-0">
             <div x-ref="item" class="flex items-center justify-around flex-shrink-0 w-full py-2 space-x-2 text-white">
-                <img src="{{ asset('img/sponsor/gemini.svg') }}" alt="Gemini AI"
-                    class="w-auto translate-y-0.5 fill-current h-9" draggable="false">
-                <img src="{{ asset('img/sponsor/menteri-lingkungan-hidup.png') }}" alt="peduli lingkungan"
+                <img src="{{ asset('img/sponsor/100th.png') }}" alt="100TH"
                     class="w-auto translate-y-0.5 fill-current h-14" draggable="false">
-                <img src="{{ asset('img/sponsor/sgds3.jpg') }}" alt="SGDs 3"
+                <img src="{{ asset('img/sponsor/unigon.png') }}" alt="UNIDA"
                     class="w-auto translate-y-0.5 fill-current h-14" draggable="false">
-                <img src="{{ asset('img/sponsor/sgds11.png') }}" alt="SGDs 11"
+                <img src="{{ asset('img/sponsor/unggul.png') }}" alt="UNGGUL"
                     class="w-auto translate-y-0.5 fill-current h-14" draggable="false">
-                <img src="{{ asset('img/sponsor/sgds12.png') }}" alt="SGDs 12"
+                <img src="{{ asset('img/sponsor/dkp.png') }}" alt="DKP" class="w-auto translate-y-0.5 fill-current h-14"
+                    draggable="false">
+                <img src="{{ asset('img/sponsor/dema.png') }}" alt="DEMA"
                     class="w-auto translate-y-0.5 fill-current h-14" draggable="false">
-                <img src="{{ asset('img/sponsor/sgds13.png') }}" alt="SGDs 13"
-                    class="w-auto translate-y-0.5 fill-current h-14" draggable="false">
-                <img src="{{ asset('img/sponsor/zerowaste.svg') }}" alt="Zero Waste Indonesia"
-                    class="w-auto translate-y-0.5 fill-current h-9" draggable="false">
             </div>
         </div>
     </div>
