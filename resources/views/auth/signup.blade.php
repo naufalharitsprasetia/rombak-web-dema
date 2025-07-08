@@ -38,12 +38,12 @@
                 <!-- Logo Section -->
                 <div class="mb-6 items-center">
                     <div class="title flex  mb-2 items-center">
-                        <a class="flex items-center justify-center w-8 h-8 mr-4 bg-hijautua text-white rounded-full"
+                        <a class="flex items-center justify-center w-8 h-8 mr-4 bg-dematua text-white rounded-full"
                             href="{{ route('home.index') }}">
                             <i class="fas fa-chevron-left"></i>
                         </a>
                         <h1 class="text-xl lg:text-3xl font-semibold pr-3 text-black dark:text-white">Daftar ke
-                            Langkah<span class="text-hijautua dark:text-hijaumuda">Hijau</span>
+                            Langkah<span class="text-dematua dark:text-demamuda">Hijau</span>
                         </h1>
                     </div>
                     <p class="text-gray-500">Masuk ke LangkahHijau dan dapatkan fitur-fitur menarik di sini.</p>
@@ -61,9 +61,9 @@
                                 Lengkap</label>
                             <input type="text" name="name" value="{{ old('name') }}" required
                                 placeholder="Masukkan nama lengkap"
-                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('name') bgwhite dark:bg-red-300 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-hijautua transition-all duration-200 ease-in-out">
+                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('name') bgwhite dark:bg-red-300 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
                             @error('name')
-                            <p class="texhijautua dark:text-red-400 text-sm mt-2">Nama lengkap tidak valid.</p>
+                            <p class="texdematua dark:text-red-400 text-sm mt-2">Nama lengkap tidak valid.</p>
                             @enderror
                         </div>
 
@@ -73,9 +73,9 @@
                                 class="block text-sm lg:text-base font-medium text-gray-700 dark:text-gray-300 mb-2">Username</label>
                             <input type="text" name="username" value="{{ old('username') }}" required
                                 placeholder="Masukkan nama pengguna"
-                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('username') bgwhite dark:bg-red-300 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-hijautua transition-all duration-200 ease-in-out">
+                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('username') bgwhite dark:bg-red-300 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
                             @error('username')
-                            <p class="texhijautua dark:text-red-400 text-sm mt-2">error : {{ $message }}</p>
+                            <p class="texdematua dark:text-red-400 text-sm mt-2">error : {{ $message }}</p>
                             @enderror
                         </div>
                     </div>
@@ -86,9 +86,9 @@
                             class="block text-sm lg:text-base font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
                         <input type="email" name="email" value="{{ old('email') }}" required
                             placeholder="Masukkan email"
-                            class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('email') bgwhite dark:bg-red-300 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-hijautua transition-all duration-200 ease-in-out">
+                            class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('email') bgwhite dark:bg-red-300 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
                         @error('email')
-                        <p class="texhijautua dark:text-red-400 text-sm mt-2">error : {{ $message }}</p>
+                        <p class="texdematua dark:text-red-400 text-sm mt-2">error : {{ $message }}</p>
                         @enderror
                     </div>
 
@@ -101,9 +101,9 @@
                                 Sandi</label>
                             <input type="password" id="password" name="password" required
                                 placeholder="Masukkan kata sandi"
-                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('password')  input-wrong @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-hijautua transition-all duration-200 ease-in-out">
+                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('password')  input-wrong @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
                             @error('password')
-                            <p class="texhijautua dark:text-red-400 text-sm mt-2">error : {{ $message }}</p>
+                            <p class="texdematua dark:text-red-400 text-sm mt-2">error : {{ $message }}</p>
                             @enderror
                         </div>
 
@@ -114,9 +114,9 @@
                                 Kata Sandi</label>
                             <input type="password" id="password_confirmation" name="password_confirmation" required
                                 placeholder="Konfirmasi kata sandi"
-                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('password_confirmation')  input-wrong @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-hijautua transition-all duration-200 ease-in-out">
+                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('password_confirmation')  input-wrong @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
                             @error('password_confirmation')
-                            <p class="texhijautua dark:text-red-400 text-sm mt-2">error : {{ $message }}</p>
+                            <p class="texdematua dark:text-red-400 text-sm mt-2">error : {{ $message }}</p>
                             @enderror
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                     <!-- Already have an account -->
                     <div class="text-center mt-6">
                         <span class="text-black dark:text-gray-300">Sudah punya akun?</span>
-                        <a href="/login" class="ml-2 text-black dark:text-white font-bold hover:text-hijautua">
+                        <a href="/login" class="ml-2 text-black dark:text-white font-bold hover:text-dematua">
                             Masuk
                         </a>
                     </div>
@@ -140,7 +140,7 @@
                     <!-- Register Button -->
                     <div>
                         <button type="submit"
-                            class="w-full bg-hijautua text-white py-3 px-4 rounded-lg font-semibold hover:bg-hijautua/90 cursor-pointer">
+                            class="w-full bg-dematua text-white py-3 px-4 rounded-lg font-semibold hover:bg-dematua/90 cursor-pointer">
                             Daftar
                         </button>
                     </div>

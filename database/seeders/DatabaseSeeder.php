@@ -18,21 +18,10 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
         $this->call([
-            TierSeeder::class,
-            BadgeSeeder::class,
+
             UserSeeder::class,
             PostSeeder::class,
-            ChallengeSeeder::class,
-            ChallengeActionSeeder::class,
-            ChallengeParticipationSeeder::class,
-            ChallengeDailyActionSeeder::class,
-            QuizSeeder::class,
             EventSeeder::class,
-            UserBadgeSeeder::class,
         ]);
-        // $users = User::all();
-        // foreach ($users as $user) {
-        //     User::updateTier($user);
-        // }
     }
 }

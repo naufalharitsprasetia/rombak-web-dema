@@ -20,7 +20,7 @@
         <main class="w-full">
             <div class="mx-auto py-6 sm:px-6 lg:px-8">
                 <!-- Isi Halaman -->
-                <a href="{{ route('event.manage') }}" class="text-hijaumuda"><i class="fa-solid fa-arrow-left"></i>
+                <a href="{{ route('event.manage') }}" class="text-demamuda"><i class="fa-solid fa-arrow-left"></i>
                     Kembali</a>
                 <h2 class="text-2xl font-semibold text-zinc-900 dark:text-white">List Ajuan Events</h2>
                 <p class="text-sm text-zinc-900 dark:text-white">Total Ajuan : {{ count($ajuan_events) }}</p>
@@ -79,7 +79,7 @@
                                     <div class="flex">
                                         {{-- Masukkan data event, lalu hapus yg diajuan --}}
                                         <a href="{{ route('event.accAjuan', $event->id) }}"
-                                            class="inline-block p-2 m-2 font-medium text-hijautua dark:text-hijaumuda hover:underline">Setujui</a>
+                                            class="inline-block p-2 m-2 font-medium text-dematua dark:text-demamuda hover:underline">Setujui</a>
                                         <form action="{{ route('event.destroyAjuan', $event->id) }}" method="POST"
                                             class="deleteForm" id="formDelete-{{ $loop->iteration }}">
                                             @csrf

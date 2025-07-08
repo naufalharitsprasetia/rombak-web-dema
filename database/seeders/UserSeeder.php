@@ -14,75 +14,32 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        $tier1 = Tier::where('urutan', 1)->first();
-        $tier2 = Tier::where('urutan', 2)->first();
-        $tier3 = Tier::where('urutan', 3)->first();
-        $tier4 = Tier::where('urutan', 4)->first();
-
         User::create([
-            'name' => 'Super Admin',
-            'username' => 'superadmin',
-            'email' => 'admin123@gmail.com',
-            'password' => Hash::make('Bismillah@123'),
+            'name' => 'DEMA UNIDA Kelas A',
+            'username' => 'demasiman',
+            'email' => 'demasiman@gmail.com',
+            'password' => Hash::make('demasiman123#'),
             'is_admin' => true,
-            'green_points' => 0,
             'created_at' => now(),
-            'tier_id' => $tier1->id
+            'email_verified_at' => now(),
         ]);
         User::create([
-            'name' => 'Naufal Harits',
-            'username' => 'naufalharits',
+            'name' => 'DEMA UNIDA Kelas C',
+            'username' => 'demakelasc',
+            'email' => 'demaputri@gmail.com',
+            'is_admin' => true,
+            'password' => Hash::make('demaputri@123'),
+            'created_at' => now(),
+            'email_verified_at' => now(),
+        ]);
+        User::create([
+            'name' => 'Naufal Harits Prasetia',
+            'username' => 'naufalharis',
             'email' => 'naufal@gmail.com',
-            'password' => Hash::make('bismillah123'),
-            'green_points' => 400,
+            'is_admin' => true,
+            'password' => Hash::make('bismillah'),
             'created_at' => now(),
-            'tier_id' => $tier2->id
-        ]);
-
-        User::create([
-            'name' => 'Andi Budiman',
-            'username' => 'andibudiman',
-            'email' => 'andi@example.com',
-            'password' => Hash::make('password123'),
-            'green_points' => 305,
-            'created_at' => now(),
-            'tier_id' => $tier2->id
-        ]);
-
-        User::create([
-            'name' => 'Citra Lestari',
-            'username' => 'citralestari',
-            'email' => 'citra@example.com',
-            'password' => Hash::make('password123'),
-            'green_points' => 250,
-            'created_at' => now(),
-            'tier_id' => $tier3->id
-        ]);
-
-        User::create([
-            'name' => 'Bayu Perkasa',
-            'username' => 'bayuperkasa',
-            'email' => 'bayu@example.com',
-            'password' => Hash::make('password123'),
-            'green_points' => 100,
-            'created_at' => now(),
-            'tier_id' => $tier1->id
-        ]);
-        User::factory(15)->create([
-            'created_at' => now(),
-            'tier_id' => $tier1->id
-        ]);
-        User::factory(15)->create([
-            'created_at' => now(),
-            'tier_id' => $tier2->id
-        ]);
-        User::factory(15)->create([
-            'created_at' => now(),
-            'tier_id' => $tier3->id
-        ]);
-        User::factory(15)->create([
-            'created_at' => now(),
-            'tier_id' => $tier4->id
+            'email_verified_at' => now(),
         ]);
     }
 }

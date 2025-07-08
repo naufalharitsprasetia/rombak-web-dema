@@ -19,14 +19,14 @@
         @endif
         <div class="text-center mb-8 sm:mb-12">
             <h2
-                class="mx-auto mb-4 max-w-2xl text-center text-4xl font-bold text-balance text-hijautua dark:text-hijaumuda sm:text-5xl">
+                class="mx-auto mb-4 max-w-2xl text-center text-4xl font-bold text-balance text-dematua dark:text-demamuda sm:text-5xl">
                 Green Events
             </h2>
             <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
                 Jangan ketinggalan event-event yang akan datang.
             </p>
             <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                <a href="#ajukanEvents" class="text-hijautua hover:text-hijaumuda">Ajukan</a> event Anda dan dapatkan
+                <a href="#ajukanEvents" class="text-dematua hover:text-demamuda">Ajukan</a> event Anda dan dapatkan
                 green points!
             </p>
         </div>
@@ -61,7 +61,7 @@
                     </div>
 
                     <!-- Event Title -->
-                    <h3 class="text-xl sm:text-2xl font-bold text-hijautua dark:text-hijaumuda mb-2 leading-tight">
+                    <h3 class="text-xl sm:text-2xl font-bold text-dematua dark:text-demamuda mb-2 leading-tight">
                         {{ $eventUtama->title }}
                     </h3>
 
@@ -143,7 +143,7 @@
                     <p class="text-zinc-900 dark:text-white font-medium text-lg">Ingin Mengajukan Event anda sendiri ?
                     </p>
                     <a href="{{ route('event.ajukan') }}"
-                        class="font-semibold text-xl text-hijautua hover:text-hijaumuda">Ajukan Sekarang!</a>
+                        class="font-semibold text-xl text-dematua hover:text-demamuda">Ajukan Sekarang!</a>
                 </div>
             </div>
     </section>

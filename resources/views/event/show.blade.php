@@ -2,7 +2,7 @@
     <section class="max-w-7xl mx-auto sm:px-6 lg:px-16 pb-12">
         <!-- Event Details -->
         <div class="p-3 sm:p-6 md:p-8">
-            <a href="{{ route('event.index') }}" class="text-hijaumuda"><i class="fa-solid fa-arrow-left"></i>
+            <a href="{{ route('event.index') }}" class="text-demamuda"><i class="fa-solid fa-arrow-left"></i>
                 Kembali</a>
             <br>
             <br>
@@ -27,7 +27,7 @@
             </div>
 
             <!-- Event Title -->
-            <h3 class="text-xl sm:text-2xl font-bold text-hijautua dark:text-hijaumuda mb-2 leading-tight">
+            <h3 class="text-xl sm:text-2xl font-bold text-dematua dark:text-demamuda mb-2 leading-tight">
                 {{ $event->title }}
             </h3>
             <div class="flex items-center space-x-1 text-orange-600 dark:text-orange-400 font-medium mb-1.5">

@@ -145,7 +145,7 @@
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-16">
                     <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 bg-hijautua rounded-full flex items-center justify-center">
+                        <div class="w-10 h-10 bg-dematua rounded-full flex items-center justify-center">
                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
@@ -183,7 +183,7 @@
                         x-text="`${Object.keys(answers).length}/${questions.length}`"></span>
                 </div>
                 <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                    <div class="bg-hijautua h-2 rounded-full transition-all duration-300"
+                    <div class="bg-dematua h-2 rounded-full transition-all duration-300"
                         :style="`width: ${(Object.keys(answers).length / questions.length) * 100}%`"></div>
                 </div>
             </div>
@@ -198,7 +198,7 @@
                         :class="{
                             'question-dimmed-answered': answers[question.id],
                             'question-active': !answers[question.id],
-                            'ring-2 ring-hijautua dark:ring-hijaumuda': !answers[question.id],
+                            'ring-2 ring-dematua dark:ring-demamuda': !answers[question.id],
                             'bg-green-50 dark:bg-green-900/10 border-green-200 dark:border-green-800': answers[question
                                 .id]
                         }" :id="`question-${question.id}`" x-transition.opacity.duration.300>
@@ -206,7 +206,7 @@
                         <div class="flex items-start space-x-4 mb-6">
                             <div class="question-number-circle" :class="{
                                     'bg-green-500 text-white': answers[question.id],
-                                    'bg-hijautua text-white': !answers[question.id],
+                                    'bg-dematua text-white': !answers[question.id],
                                 }">
                                 <span x-show="!answers[question.id]" x-text="index + 1"></span>
                                 <svg x-show="answers[question.id]" class="w-4 h-4" fill="currentColor"
@@ -227,7 +227,7 @@
                                 <label
                                     class="cursor-pointer scale-option flex items-center p-3 rounded-lg border dark:border-gray-700 transition-all duration-200"
                                     :class="{
-                                    'bg-primary-50 dark:bg-gray-900 border-hijautua dark:border-hijaumuda': answers[
+                                    'bg-primary-50 dark:bg-gray-900 border-dematua dark:border-demamuda': answers[
                                         question
                                         .id] == option.id,
                                     'bg-white dark:bg-gray-800 border-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700': answers[
@@ -240,7 +240,7 @@
                                         :disabled="isSubmitting">
                                     <div class="w-5 h-5 rounded-full border-2 flex items-center justify-center mr-3 transition-colors duration-200"
                                         :class="{
-                                        'border-hijautua bg-hijautua': answers[question.id] == option.id,
+                                        'border-dematua bg-dematua': answers[question.id] == option.id,
                                         'border-gray-400 dark:border-gray-600 bg-white dark:bg-gray-800': answers[
                                             question.id] != option.id
                                     }">
@@ -263,9 +263,9 @@
                     <button type="submit" x-show="Object.keys(answers).length === questions.length"
                         :disabled="Object.keys(answers).length !== questions.length || isSubmitting" :class="{
                             'opacity-50 cursor-not-allowed': Object.keys(answers).length !== questions.length || isSubmitting,
-                            'hover:bg-hijaumuda': !isSubmitting
+                            'hover:bg-demamuda': !isSubmitting
                         }"
-                        class="cursor-pointer px-8 py-4 bg-hijautua text-white rounded-xl shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hijautua transition-all duration-300 text-xl font-bold flex items-center justify-center">
+                        class="cursor-pointer px-8 py-4 bg-dematua text-white rounded-xl shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dematua transition-all duration-300 text-xl font-bold flex items-center justify-center">
                         <span x-show="isSubmitting" class="spinner"></span>
                         <span x-show="!isSubmitting">Selesai Quiz</span>
                         <span x-show="isSubmitting">Mengirim...</span>

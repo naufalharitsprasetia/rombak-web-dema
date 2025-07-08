@@ -8,8 +8,8 @@
                 </div>
                 <div id="content" class="text-center mb-8">
                     {{-- <div
-                        class="w-16 h-16 bg-hijautua rounded-full pt-4 overflow-hidden mx-auto mb-4 flex items-center justify-center">
-                        <svg class="w-10 h-10 text-hijautua dark:text-hijaumuda fill-current" viewBox="0 0 24 24"
+                        class="w-16 h-16 bg-dematua rounded-full pt-4 overflow-hidden mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-dematua dark:text-demamuda fill-current" viewBox="0 0 24 24"
                             aria-hidden="true">
                             <path
                                 d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8.59 10 17z">
@@ -24,7 +24,7 @@
                 <div class="flex-grow">
                     <div
                         class="quiz-result-card bg-white dark:bg-zinc-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 p-6 opacity-80">
-                        <h1 class="text-3xl font-bold mb-6 text-center text-hijautua dark:text-hijaumuda">Rangkuman
+                        <h1 class="text-3xl font-bold mb-6 text-center text-dematua dark:text-demamuda">Rangkuman
                             Hasil
                         </h1>
 
@@ -32,7 +32,7 @@
                         <div class="mb-6 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg text-center">
                             <p class="text-lg text-gray-700 dark:text-gray-300">Skor yang Kamu Dapatkan:
                             </p>
-                            <p class="text-4xl font-extrabold text-hijautua dark:text-hijaumuda">{{ $totalScore }}<sub
+                            <p class="text-4xl font-extrabold text-dematua dark:text-demamuda">{{ $totalScore }}<sub
                                     class="text-sm">/{{$maxPossibleScore }}</sub></p>
                             <p class="text-md text-gray-600 dark:text-gray-400 mt-2">Kamu menjawab
                                 {{ $userAnswers->count() }} dari {{ $totalQuestions }} soal.
@@ -56,7 +56,7 @@
                                         <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 mb-6 dark:bg-blue-900/20 dark:border-blue-700 dark:text-blue-300"
                                             role="alert">
                                             <span
-                                                class="inline-flex items-center mb-2 gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-hijaumuda/20 text-hijaumuda dark:bg-hijaumuda/30 dark:text-hijaumuda">Generated
+                                                class="inline-flex items-center mb-2 gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-demamuda/20 text-demamuda dark:bg-demamuda/30 dark:text-demamuda">Generated
                                                 by Hijau AI ✨</span>
                                             <p class="font-bold text-lg mb-2 flex items-center">
                                                 Rekomendasi Tindakan Untukmu:
@@ -85,13 +85,13 @@
                                         {{-- Akhir Rekomendasi AI --}}
 
                                         <a href="{{ route('quizzes.resultsDetail', $quiz->id) }}"
-                                            class="cursor-pointer text-center mx-auto font-medium mb-4 text-hijaumuda hover:text-hijautua hover:underline">Klik
+                                            class="cursor-pointer text-center mx-auto font-medium mb-4 text-demamuda hover:text-dematua hover:underline">Klik
                                             untuk Detail
                                             Jawabanmu</a>
 
                                         <div class="mt-8 text-center">
                                             <a href="{{ route('quizzes.index') }}"
-                                                class="rounded-md bg-hijautua px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-hijaumuda focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hijautua transition-colors duration-300">
+                                                class="rounded-md bg-dematua px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-demamuda focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dematua transition-colors duration-300">
                                                 Kembali ke Daftar Tes
                                             </a>
                                         </div>

@@ -23,11 +23,11 @@
 
 @theme {
     --font-arabic: "arabic-lpmq";
-    --font-sans: InterVariable, sans-serif, "Instrument Sans", ui-sans-serif,
-        system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-        "Segoe UI Symbol", "Noto Color Emoji";
-    --color-hijaumuda: #1bc539;
-    --color-hijautua: #1cac35;
+    --font-sans: "Plus Jakarta Sans", sans-serif, "Instrument Sans",
+        ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --color-demamuda: #16aebc;
+    --color-dematua: #13a1ae;
     --color-primary-50: #eff6ff;
     --color-primary-100: #dbeafe;
     --color-primary-200: #bfdbfe;
@@ -66,8 +66,8 @@ body {
     width: 70px;
     height: 70px;
     border-style: solid;
-    border-top-color: #5dbb63;
-    border-right-color: #5dbb63;
+    border-top-color: #16aebc;
+    border-right-color: #16aebc;
     border-left-color: transparent;
     border-bottom-color: transparent;
     border-radius: 50%;
@@ -118,7 +118,7 @@ body {
     font-size: 20px;
     border: none;
     outline: none;
-    @apply bg-hijautua dark:bg-hijaumuda;
+    @apply bg-dematua dark:bg-demamuda;
     color: white;
     cursor: pointer;
     height: 50px;

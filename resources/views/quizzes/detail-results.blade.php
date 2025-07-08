@@ -11,7 +11,7 @@
                 <div class="flex-grow">
                     <div
                         class="quiz-result-card bg-white dark:bg-zinc-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 p-6 opacity-80">
-                        <h1 class="text-3xl font-bold mb-6 text-center text-hijautua dark:text-hijaumuda">
+                        <h1 class="text-3xl font-bold mb-6 text-center text-dematua dark:text-demamuda">
                             Jawaban
                             Quiz Anda :
                         </h1>
@@ -19,7 +19,7 @@
                         {{-- Total Skor --}}
                         {{-- <div class="mb-6 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg text-center">
                             <p class="text-lg text-gray-700 dark:text-gray-300">Total Poin yang Kamu Dapatkan:</p>
-                            <p class="text-4xl font-extrabold text-hijautua dark:text-hijaumuda">{{ $totalScore }}</p>
+                            <p class="text-4xl font-extrabold text-dematua dark:text-demamuda">{{ $totalScore }}</p>
                             <p class="text-md text-gray-600 dark:text-gray-400">Kamu menjawab
                                 {{ $userAnswers->count() }} dari {{ $totalQuestions }} soal.
                             </p>
@@ -43,7 +43,7 @@
                                 <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400">
                                     @foreach ($userAnswer->question->options->sortByDesc('points') as $option)
                                     <li
-                                        class="{{ $userAnswer->selectedOption && $userAnswer->selectedOption->id === $option->id ? 'font-bold text-hijautua dark:text-hijaumuda' : '' }}">
+                                        class="{{ $userAnswer->selectedOption && $userAnswer->selectedOption->id === $option->id ? 'font-bold text-dematua dark:text-demamuda' : '' }}">
                                         {{ $option->option_text }} ({{ $option->points }} poin)
                                     </li>
                                     @endforeach
@@ -54,7 +54,7 @@
 
                         <div class="mt-8 text-center">
                             <a href="{{ route('quizzes.results', $quiz->id) }}"
-                                class="rounded-md bg-hijautua px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-hijaumuda focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hijautua transition-colors duration-300">
+                                class="rounded-md bg-dematua px-6 py-3 text-lg font-semibold text-white shadow-sm hover:bg-demamuda focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dematua transition-colors duration-300">
                                 Kembali
                             </a>
                         </div>

@@ -1,6 +1,6 @@
 <x-layout :title="$title" :active="$active">
     <div class="relative isolate max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 pb-12 z-30 min-h-screen">
-        <a href="{{ route('post.index') }}" class="text-hijaumuda"><i class="fa-solid fa-arrow-left"></i> Kembali</a>
+        <a href="{{ route('post.index') }}" class="text-demamuda"><i class="fa-solid fa-arrow-left"></i> Kembali</a>
         <br><br>
         <!-- Article Image -->
         <div class="w-full xl:w-auto xl:flex-shrink-0">
@@ -18,8 +18,7 @@
         <div class="flex-1 w-full">
             <!-- Category and Date -->
             <div class="flex flex-col xs:flex-row xs:items-center gap-2 xs:gap-3 mb-4">
-                <span
-                    class="bg-hijaumuda dark:bg-hijautua text-white px-3 py-1 rounded-full text-sm font-medium w-fit">{{
+                <span class="bg-demamuda dark:bg-dematua text-white px-3 py-1 rounded-full text-sm font-medium w-fit">{{
                     $post->category }}</span>
                 <span class="text-gray-500 dark:text-gray-400 text-sm">{{ $post->created_at }}</span>
             </div>

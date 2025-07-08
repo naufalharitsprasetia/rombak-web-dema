@@ -22,7 +22,7 @@ $time = \Carbon\Carbon::parse($event->date_time)->format('H:i');
     @endif
     {{-- Konten --}}
     <div class="px-4 mx-auto max-w-4xl p-32">
-        <a href="{{ route('event.manage') }}" class="text-hijaumuda"><i class="fa-solid fa-arrow-left"></i>
+        <a href="{{ route('event.manage') }}" class="text-demamuda"><i class="fa-solid fa-arrow-left"></i>
             Kembali</a>
         <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Edit Event</h2>
         {{-- form --}}

@@ -12,15 +12,15 @@
             </div>
             <div class="flex flex-col space-y-4">
                 <a href="{{ route('home.index') }}"
-                    class="w-full flex justify-center py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-zinc-800 hover:bg-gray-50 dark:hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-hijaumuda">
+                    class="w-full flex justify-center py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-zinc-800 hover:bg-gray-50 dark:hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-demamuda">
                     Kembali ke Beranda
                 </a>
                 <a href="{{ route('auth.login') }}"
-                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-hijaumuda hover:bg-hijautua focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-hijaumuda">
+                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-demamuda hover:bg-dematua focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-demamuda">
                     Login Sekarang
                 </a>
                 <p class="text-gray-600 dark:text-gray-400 text-sm text-center mx-auto">Belum Memiliki Akun ? <a href=""
-                        class="cursor-pointer text-hijautua dark:text-hijaumuda hover:text-hijaumuda dark:hover:text-hijautua">Daftar
+                        class="cursor-pointer text-dematua dark:text-demamuda hover:text-demamuda dark:hover:text-dematua">Daftar
                         Sekarang</a></p>
             </div>
         </div>

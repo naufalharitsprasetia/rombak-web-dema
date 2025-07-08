@@ -39,12 +39,12 @@
                 <!-- Logo Section -->
                 <div class="mb-6 items-center">
                     <div class="title flex  mb-2 items-center">
-                        <a class="flex items-center justify-center w-8 h-8 mr-4 bg-hijautua text-white rounded-full"
+                        <a class="flex items-center justify-center w-8 h-8 mr-4 bg-dematua text-white rounded-full"
                             href="{{ route('home.index') }}">
                             <i class="fas fa-chevron-left"></i>
                         </a>
                         <h1 class="text-xl lg:text-3xl font-semibold pr-3 text-black dark:text-white">Masuk ke
-                            Langkah<span class="text-hijautua dark:text-hijaumuda">Hijau</span>
+                            Langkah<span class="text-dematua dark:text-demamuda">Hijau</span>
                         </h1>
                     </div>
                     <p class="text-gray-500">Masuk ke LangkahHijau dan dapatkan fitur-fitur menarik di sini.</p>
@@ -75,7 +75,7 @@
                             class="block text-sm lg:text-base font-medium text-gray-700 dark:text-gray-300 mb-2">Email/Username</label>
                         <input type="text" name="username_or_email" value="{{ old('username_or_email') }}" required
                             placeholder="Masukkan email atau username"
-                            class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 text-black dark:text-white @error('username_or_email') border-red-500 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-hijautua transition-all duration-200 ease-in-out">
+                            class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 text-black dark:text-white @error('username_or_email') border-red-500 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
                         @error('username_or_email')
                         <p class="text-red-500 dark:text-red-400 text-sm mt-2">{{ $message }}</p>
                         @enderror
@@ -87,7 +87,7 @@
                             class="block text-sm lg:text-base font-medium text-gray-700 dark:text-gray-300 mb-2">Kata
                             Sandi</label>
                         <input type="password" name="password" required placeholder="Masukkan kata sandi"
-                            class="w-full px-4 py-3 rounded-lg bg-white border dark:border-zinc-600 dark:bg-zinc-900 text-black dark:text-white @error('password') border-red-500 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-hijautua transition-all duration-200 ease-in-out">
+                            class="w-full px-4 py-3 rounded-lg bg-white border dark:border-zinc-600 dark:bg-zinc-900 text-black dark:text-white @error('password') border-red-500 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
                         @error('password')
                         <p class="text-red-500 dark:text-red-400 text-sm mt-2">{{ $message }}</p>
                         @enderror
@@ -102,14 +102,14 @@
 
                     {{-- sudah punya akun --}}
                     <div class="text-sm text-center lg:text-base text-gray-700 dark:text-gray-300">
-                        <a class="hover:text-hijautua transition-colors" href="{{ route('auth.signup') }}">Belum punya
+                        <a class="hover:text-dematua transition-colors" href="{{ route('auth.signup') }}">Belum punya
                             akun?</a>
                     </div>
 
                     <!-- Login Button -->
                     <div>
                         <button type="submit"
-                            class="w-full bg-hijautua text-white py-3 px-4 rounded-lg font-semibold hover:bg-hijautua/90 cursor-pointer">
+                            class="w-full bg-dematua text-white py-3 px-4 rounded-lg font-semibold hover:bg-dematua/90 cursor-pointer">
                             Masuk
                         </button>
                     </div>

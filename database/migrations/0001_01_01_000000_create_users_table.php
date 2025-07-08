@@ -18,12 +18,8 @@ return new class extends Migration
             $table->string('username')->unique();
             $table->boolean('is_admin')->default(false);
             $table->string('password');
-            $table->integer('green_points')->default(0);
             $table->timestamps();
-            // FOREIGN KEY -> tier.id (INTEGER)
-            $table->uuid('tier_id');
-            $table->foreign('tier_id')->references('id')->on('tiers')->onDelete('cascade');
-            // $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('email_verified_at')->nullable();
             // $table->rememberToken();
         });
 

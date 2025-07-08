@@ -21,7 +21,7 @@
         <main class="w-full">
             <div class="mx-auto py-6 sm:px-6 lg:px-8">
                 <!-- Isi Halaman -->
-                <a href="{{ route('post.manage') }}" class="mb-4 p-2 text-sm text-hijautua hover:text-hijaumuda">
+                <a href="{{ route('post.manage') }}" class="mb-4 p-2 text-sm text-dematua hover:text-demamuda">
                     <- Kembali</a>
                         <h2 class="text-2xl font-semibold text-zinc-900 dark:text-white">Create Post</h2>
                         <br>

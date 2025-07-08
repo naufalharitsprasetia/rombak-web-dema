@@ -13,7 +13,7 @@
         /* Conic gradient for rotating border */
         .hero-image::before {
             content: '';
-            background: conic-gradient(transparent 270deg, #06C790, transparent);
+            background: conic-gradient(transparent 270deg, #16aebc, transparent);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -45,25 +45,25 @@
             <div class="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div
                     class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 dark:text-gray-300 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-gray-100/10 dark:hover:ring-gray-100/20">
-                    Cek gaya hidupmu, hijaukan langkahmu! <a href="{{ route('quizzes.index') }}"
-                        class="font-semibold text-hijautua dark:text-hijaumuda hover:opacity-85"><span
-                            class="absolute inset-0" aria-hidden="true"></span>Cek Sekarang <span
+                    Punya Kritik, Saran atau Masukkan ? <a href="{{ route('quizzes.index') }}"
+                        class="font-semibold text-dematua dark:text-demamuda hover:opacity-85"><span
+                            class="absolute inset-0" aria-hidden="true"></span> Sampaikan Aspirasimu <span
                             aria-hidden="true">&rarr;</span></a>
                 </div>
             </div>
             <div class="text-center">
                 <h1
                     class="text-3xl font-semibold tracking-tight text-balance text-gray-900 dark:text-gray-100 sm:text-5xl md:text-6xl lg:text-7xl">
-                    <span class="text-hijautua dark:text-hijaumuda">Hijaukan</span>
-                    Langkahmu, <span class="text-hijautua dark:text-hijaumuda">Hijaukan</span> Dunia.
+                    <span class="text-dematua dark:text-demamuda">Dewan</span>
+                    Mahasiswa <span class="text-dematua dark:text-demamuda">Unida</span> Gontor.
                 </h1>
-                <p class="mt-8 text-lg font-medium text-pretty text-gray-500 dark:text-gray-300 sm:text-xl/8">Mulai dari
-                    langkah kecil,
-                    untuk bumi yang lebih hijau.</p>
+                <p class="mt-8 text-lg font-medium text-pretty text-gray-500 dark:text-gray-300 sm:text-xl/8">Melangkah
+                    dan berinovasi, ciptakan generasi muda yang unggul!
+                </p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
                     <a href="{{route('auth.signup')}}"
-                        class="rounded-md bg-hijautua px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-hijaumuda focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hijautua">Mulai
-                        Langkahmu</a>
+                        class="rounded-md bg-dematua px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-demamuda focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dematua">Dukung
+                        Kami</a>
                     <a href="#explore" class="text-sm/6 font-semibold text-gray-900 dark:text-gray-200">Jelajahi <span
                             aria-hidden="true">→</span></a>
                 </div>
@@ -73,18 +73,17 @@
         <div class="hero-image-wrapper w-full flex justify-center md:-mt-18 mb-20 ">
             <div
                 class="hero-image fancy aspect-video rounded-md overflow-hidden max-w-5xl mx-auto relative p-[1.2px] bg-zinc-900">
-                <img class="w-full h-full object-cover rounded-2xl hidden dark:block relative z-10"
-                    src="{{ asset('img/langkahhijau/dashboard-dark.png') }}" draggable="false" alt="LangkahHijau"
-                    loading="lazy">
-                <img class="w-full h-full object-cover rounded-2xl block dark:hidden relative z-10"
+                <img class="w-full h-full object-cover rounded-2xl block relative z-10"
+                    src="{{ asset('img/dashboard-dema.png') }}" draggable="false" alt="LangkahHijau" loading="lazy">
+                {{-- <img class="w-full h-full object-cover rounded-2xl block dark:hidden relative z-10"
                     src="{{ asset('img/langkahhijau/dashboard.png') }}" draggable="false" alt="LangkahHijau"
-                    loading="lazy">
+                    loading="lazy"> --}}
             </div>
         </div>
         {{-- glow tengah bawah --}}
         <div class="absolute inset-x-0 top-[calc(100%-40rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-78rem)]"
             aria-hidden="true">
-            <div class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#46ff21] to-[#a0ffbc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"
+            <div class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#16aebc] to-[#128893] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"
                 style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
             </div>
         </div>
@@ -96,17 +95,13 @@
         <div class="py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-3xl lg:text-center" data-aos="fade-up" data-aos-duration="1500">
-                    <h2 class="text-base/7 font-semibold text-hijautua dark:text-hijaumuda">Fokus Utama</h2>
+                    <h2 class="text-base/7 font-semibold text-dematua dark:text-demamuda">Visi & Misi</h2>
                     <p
                         class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-gray-100 sm:text-5xl lg:text-balance">
-                        4 Pilar Utama yang Menjadi Fondasi Aplikasi LangkahHijau</p>
-                    <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">Apa yang menjadi fokus utama kami dalam
-                        menghadirkan
-                        LangkahHijau?
-                        <br>
-                        Kami membangun aplikasi ini sebagai ruang digital untuk hidup lebih bijak, berkelanjutan, dan
-                        bernilai. Berikut adalah empat fokus utama yang kami gaungkan:
-                    </p>
+                        Visi dan Misi Dewan Mahasiswa Unida Gontor</p>
+                    <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Sit obcaecati cumque molestias delectus Sit obcaecati cumque molestias
+                        delectus fugiat. </p>
                 </div>
                 <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl" data-aos="zoom-in-up"
                     data-aos-duration="1000">
@@ -114,54 +109,58 @@
                         <div class="relative pl-16">
                             <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
                                 <div
-                                    class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-hijautua">
+                                    class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-dematua">
                                     <i class="fa-solid fa-book" style="color:#fff"></i>
                                 </div>
-                                Edukasi
+                                Visi
                             </dt>
                             <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-400 ">
-                                Menyediakan informasi praktis
-                                dan inspiratif
-                                seputar gaya hidup sehat dan ramah lingkungan agar pengguna lebih sadar dan paham dalam
-                                mengambil keputusan sehari-hari.</dd>
+                                Menjadikan Dewan Mahasiswa Universitas Darussalam Gontor sebagai wadah inklusif yang
+                                berperan inspiratif, inklusif, dan inovatif dalam membangun karakter, kompetensi, dan
+                                kontribusi mahasiswa, guna menciptakan generasi pemimpin yang berintegritas, berwawasan
+                                luas, dan berkomitmen pada nilai-nilai Islami.</dd>
                         </div>
                         <div class="relative pl-16">
                             <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
                                 <div
-                                    class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-hijautua">
+                                    class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-dematua">
                                     <i class="fa-solid fa-bolt" style="color:white"></i>
                                 </div>
-                                Aksi
+                                Misi 1
                             </dt>
                             <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-400 ">
                                 Mengajak pengguna untuk
                                 memulai perubahan dari
                                 hal kecil—seperti mengurangi sampah plastik, hemat energi, hingga memilih transportasi
-                                ramah lingkungan.
+                                ramah lingkungan.Membangun lingkungan yang kondusif bagi seluruh mahasiswa untuk
+                                mengembangkan potensi secara optimal, baik dalam aspek intelektual, spiritual, maupun
+                                sosial, sehingga dapat menjadi pemimpin yang inspiratif dan membawa perubahan positif
+                                bagi lingkungan.
                             </dd>
                         </div>
                         <div class="relative pl-16">
                             <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
                                 <div
-                                    class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-hijautua">
+                                    class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-dematua">
                                     <i class="fa-solid fa-hand-holding-heart" style="color:white"></i>
                                 </div>
-                                Apresiasi
+                                Misi 2
                             </dt>
                             <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-400 ">
-                                Membangun motivasi melalui
-                                sistem Green Points,
-                                badge, dan tantangan—karena setiap langkah hijau layak dihargai.
-
+                                Membangun mahasiswa Universitas Darussalam Gontor sebagai individu yang unggul dan
+                                berdaya saing melalui pengembangan jejaring antar kampus, baik di tingkat nasional
+                                maupun internasional, sebagai dukungan terhadap misi internasionalisasi kampus pada
+                                tingkat (world-class university) dan memperluas eksistensi mahasiswa di berbagai kancah
+                                global.
                             </dd>
                         </div>
                         <div class="relative pl-16">
                             <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
                                 <div
-                                    class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-hijautua">
+                                    class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-dematua">
                                     <i class="fa-solid fa-user-group" style="color:white"></i>
                                 </div>
-                                Kesadaran
+                                Misi 3
                             </dt>
                             <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-400">
                                 Membangun kesadaran kritis
@@ -181,7 +180,7 @@
                 dir="rtl">وَلَا تُفْسِدُوْا
                 فِى الْاَرْضِ بَعْدَ اِصْلَاحِهَا وَادْعُوْهُ خَوْفًا وَّطَمَعًاۗ اِنَّ رَحْمَتَ اللّٰهِ قَرِيْبٌ مِّنَ
                 الْمُحْسِنِيْنَ</p>
-            <p class="terjemahannya text-hijautua dark:text-hijaumuda text-sm mt-6">“Janganlah kamu berbuat kerusakan di
+            <p class="terjemahannya text-dematua dark:text-demamuda text-sm mt-6">“Janganlah kamu berbuat kerusakan di
                 bumi
                 setelah diatur dengan baik. Berdoalah
                 kepada-Nya dengan rasa takut dan penuh harap. Sesungguhnya rahmat Allah sangat dekat dengan orang-orang
@@ -211,7 +210,7 @@
         <div class="pt-24 pb-20 sm:py-32">
             <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                 <p data-aos="fade-up" data-aos-duration="2000"
-                    class="mx-auto mt-2 max-w-2xl text-center text-4xl font-semibold text-balance text-hijautua dark:text-hijaumuda sm:text-5xl">
+                    class="mx-auto mt-2 max-w-2xl text-center text-4xl font-semibold text-balance text-dematua dark:text-demamuda sm:text-5xl">
                     <span class="text-zinc-900 dark:text-gray-100">Bagaimana</span><br>
                     LangkahHijau Berdampak ?
                 </p>
@@ -330,7 +329,7 @@
         <x-efek.glowatas />
         <div class="max-w-4xl mx-auto relative pb-32">
             <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="2000">
-                <h2 class="text-base text-hijautua dark:text-hijaumuda font-semibold tracking-wide uppercase">FAQ</h2>
+                <h2 class="text-base text-dematua dark:text-demamuda font-semibold tracking-wide uppercase">FAQ</h2>
                 <p class="mt-2 text-3xl sm:text-4xl leading-8 font-bold tracking-tight text-gray-900 dark:text-white">
                     Pertanyaan yang Sering Diajukan
                 </p>
@@ -350,7 +349,7 @@
             </div>
             <div class="flex-1 text-right">
                 <a href="{{ route('auth.signup') }}"
-                    class="inline-flex items-center px-8 py-4 text-lg font-semibold rounded-lg bg-hijautua text-white hover:bg-hijaumuda cursor-pointer">
+                    class="inline-flex items-center px-8 py-4 text-lg font-semibold rounded-lg bg-dematua text-white hover:bg-demamuda cursor-pointer">
                     Daftar Sekarang
                     <svg class="ml-2 -mr-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">

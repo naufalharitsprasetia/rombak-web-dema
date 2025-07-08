@@ -77,7 +77,7 @@
                                 <td class="px-6 py-4 text-right">
                                     <div class="flex">
                                         <a href="{{ route('event.show', $event->id) }}"
-                                            class="inline-block p-2 m-2 font-medium text-hijautua dark:text-hijaumuda hover:underline">Detail</a>
+                                            class="inline-block p-2 m-2 font-medium text-dematua dark:text-demamuda hover:underline">Detail</a>
                                         <a href="{{ route('event.edit', $event->id) }}"
                                             class="inline-block p-2 m-2 font-medium text-yellow-600 dark:text-yellow-500 hover:underline">Edit</a>
                                         <form action="{{ route('event.destroy', $event->id) }}" method="POST"

@@ -18,7 +18,7 @@
                 <span class="sr-only">LangkahHijau</span>
                 <img class="h-8 w-auto" src="/img/logoweb.png" alt="">
                 <h2 class="text-xl ml-1 font-semibold text-gray-900 dark:text-gray-100">Langkah<span
-                        class="text-hijautua dark:text-hijaumuda">Hijau</span></h2>
+                        class="text-dematua dark:text-demamuda">Hijau</span></h2>
             </a>
         </div>
         <ul class="space-y-2 font-medium">

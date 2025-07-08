@@ -57,8 +57,8 @@
                         <span class="font-medium">{{ $challenge->duration_days }} Hari</span>
                     </span>
                     <span class="flex items-center">
-                        <span class="font-medium text-hijautua dark:text-hijaumuda"><i
-                                class="fa-solid fa-star me-1"></i> {{ $challenge->green_points }}
+                        <span class="font-medium text-dematua dark:text-demamuda"><i class="fa-solid fa-star me-1"></i>
+                            {{ $challenge->green_points }}
                             Poin Bonus
                             Penyelesaian</span>
                     </span>

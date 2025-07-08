@@ -4,9 +4,9 @@
             <div class="p-2 sm:p-4 md:pt-0 flex-grow flex flex-col">
                 <div id="content" class="text-center mb-8">
                     {{-- <div
-                        class="w-16 h-16 bg-hijautua rounded-full overflow-hidden text-white mx-auto mb-4 flex items-center justify-center">
-                        <svg class="w-10 h-10 text-hijautua dark:text-hijaumuda fill-white" fill="fff"
-                            viewBox="0 0 24 24" aria-hidden="true">
+                        class="w-16 h-16 bg-dematua rounded-full overflow-hidden text-white mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-dematua dark:text-demamuda fill-white" fill="fff" viewBox="0 0 24 24"
+                            aria-hidden="true">
                             <path
                                 d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z">
                             </path>
@@ -39,7 +39,7 @@
                 <div class="flex-grow">
                     <div
                         class="quiz-option bg-white dark:bg-zinc-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 p-6 opacity-80">
-                        <h1 class="text-3xl font-bold mb-6 text-center text-hijautua dark:text-hijaumuda">Daftar Quiz
+                        <h1 class="text-3xl font-bold mb-6 text-center text-dematua dark:text-demamuda">Daftar Quiz
                             Tersedia :</h1>
 
                         @if ($quizzes->isEmpty())
@@ -71,14 +71,14 @@
                                 </button>
                                 @else
                                 <a href="{{ route('quizzes.start', $quiz->id) }}"
-                                    class="rounded-md bg-hijautua px-3.5 py-2.5 text-sm font-semibold opacity-100 text-white shadow-xs hover:bg-hijaumuda focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hijautua">
+                                    class="rounded-md bg-dematua px-3.5 py-2.5 text-sm font-semibold opacity-100 text-white shadow-xs hover:bg-demamuda focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dematua">
                                     Mulai Quiz
                                 </a>
                                 @endif
                                 @endauth
                                 @guest
                                 <a href="{{ route('quizzes.start', $quiz->id) }}"
-                                    class="rounded-md bg-hijautua px-3.5 py-2.5 text-sm font-semibold opacity-100 text-white shadow-xs hover:bg-hijaumuda focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hijautua">
+                                    class="rounded-md bg-dematua px-3.5 py-2.5 text-sm font-semibold opacity-100 text-white shadow-xs hover:bg-demamuda focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dematua">
                                     Mulai Quiz
                                 </a>
                                 @endguest

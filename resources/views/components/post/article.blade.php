@@ -7,7 +7,7 @@
             class="mb-3 text-3xl text-center font-bold text-pretty text-gray-900 dark:text-gray-100 sm:text-5xl lg:text-balance">
             Edu-Zone
         </p>
-        <p class="text-hijautua dark:text-hijaumuda text-sm md:text-lg font-normal">Temukan inspirasi
+        <p class="text-dematua dark:text-demamuda text-sm md:text-lg font-normal">Temukan inspirasi
             gaya hidup sehat dan ramah lingkungan di sini – mulai langkah hijau Anda sekarang!</p>
     </div>
     {{-- <h2 class="text-center text-lg/8 font-semibold text-zinc-900 dark:text-gray-200 my-12">Edu-Zone</h2> --}}
@@ -34,7 +34,7 @@
                 <!-- Category and Date -->
                 <div class="flex flex-col xs:flex-row xs:items-center gap-2 xs:gap-3 mb-4">
                     <span
-                        class="bg-hijaumuda dark:bg-hijautua text-white px-3 py-1 rounded-full text-sm font-medium w-fit">{{
+                        class="bg-demamuda dark:bg-dematua text-white px-3 py-1 rounded-full text-sm font-medium w-fit">{{
                         $postUtama->category }}</span>
                     <span class="text-gray-500 dark:text-gray-400 text-sm">{{ $postUtama->created_at}}</span>
                 </div>
@@ -52,7 +52,7 @@
 
                 <!-- Read More Link -->
                 <a href="/edu-zone/{{ $postUtama->id }}"
-                    class="inline-flex items-center text-hijaumuda dark:text-hijaumuda font-medium hover:text-hijautua dark:hover:text-green-300 transition-colors text-sm sm:text-base">
+                    class="inline-flex items-center text-demamuda dark:text-demamuda font-medium hover:text-dematua dark:hover:text-green-300 transition-colors text-sm sm:text-base">
                     Read More
                     <i class="fas fa-arrow-right ml-2 text-sm"></i>
                 </a>
@@ -83,7 +83,7 @@
         <!-- View More Button -->
         <div class="text-center">
             <a href="/edu-zone"
-                class="inline-flex items-center bg-hijaumuda dark:bg-hijautua text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-medium hover:bg-hijautua dark:hover:bg-green-700 transition-colors text-sm sm:text-base">
+                class="inline-flex items-center bg-demamuda dark:bg-dematua text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-medium hover:bg-dematua dark:hover:bg-green-700 transition-colors text-sm sm:text-base">
                 Lihat Artikel Lainnya
                 <i class="fas fa-arrow-right ml-2"></i>
             </a>

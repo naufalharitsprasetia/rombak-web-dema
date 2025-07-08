@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LangkahHijau | {{ $title }}</title>
+    <title>DEMA UNIDA GONTOR | {{ $title }}</title>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {{-- link --}}
@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="/css/frontend.css">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
     {{-- script --}}
     <script src="https://kit.fontawesome.com/5d8dfb0173.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"

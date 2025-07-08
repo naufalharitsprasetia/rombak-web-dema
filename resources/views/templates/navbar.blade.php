@@ -26,7 +26,7 @@
                 <span class="sr-only">LangkahHijau</span>
                 <img class="h-8 w-auto" src="/img/logoweb.png" alt="">
                 <h2 class="text-xl ml-1 font-semibold text-gray-900 dark:text-gray-100">Langkah<span
-                        class="text-hijautua dark:text-hijaumuda">Hijau</span></h2>
+                        class="text-dematua dark:text-demamuda">Hijau</span></h2>
             </a>
         </div>
         <div class="flex lg:hidden">
@@ -42,7 +42,7 @@
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
             <a href="{{ route('home.index') }}"
-                class="text-sm/6 font-medium {{ $active == 'beranda' ? 'text-hijautua dark:text-hijaumuda' : 'text-gray-700 dark:text-gray-200 hover:text-hijautua' }}">Beranda
+                class="text-sm/6 font-medium {{ $active == 'beranda' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">Beranda
                 🏠</a>
             {{-- dropdwon main --}}
             <div class="relative" @click="isDropMain = !isDropMain">
@@ -74,7 +74,7 @@
             </div>
             {{-- Hijau AI --}}
             <a href="{{ route('hijau-ai.index') }}"
-                class="text-sm/6 font-medium {{ $active == 'hijau-ai' ? 'text-hijautua dark:text-hijaumuda' : 'text-gray-700 dark:text-gray-200 hover:text-hijautua' }}">Hijau
+                class="text-sm/6 font-medium {{ $active == 'hijau-ai' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">Hijau
                 AI ✨</a>
             {{-- dropdown Tentang --}}
             <div class="relative" @click="isDropAbout = !isDropAbout">
@@ -111,7 +111,7 @@
         <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center">
             @guest
             <a href="/login"
-                class="text-sm/6 font-medium mr-3 text-gray-100 bg-hijautua rounded-sm px-3 py-1 hover:bg-hijaumuda hover:text-grey-200">
+                class="text-sm/6 font-medium mr-3 text-gray-100 bg-dematua rounded-sm px-3 py-1 hover:bg-demamuda hover:text-grey-200">
                 <i class="fa-solid fa-sign-in"></i> Login</a>
             @else
             <!-- Profile dropdown -->
@@ -135,7 +135,7 @@
                     class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white dark:bg-zinc-900 dark:border-2 dark:border-zinc-700 py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
                     role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                     <!-- Active: "bg-gray-100 outline-none", Not Active: "" -->
-                    <p class="block text-center px-4 py-2 text-sm text-hijautua dark:text-hijaumuda" role="menuitem"
+                    <p class="block text-center px-4 py-2 text-sm text-dematua dark:text-demamuda" role="menuitem"
                         tabindex="-1" id="user-menu-item-0"><i class="fa-solid fa-star me-2"></i> {{
                         auth()->user()->green_points }} Green
                         Points</p>
@@ -233,7 +233,7 @@
                         <a href="{{ route('user.dashboard') }}"
                             class="block text-center px-4 py-2 font-medium text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg"
                             role="menuitem" tabindex="-1" id="user-menu-item-1">Dashboard</a>
-                        <p class="block text-center px-4 py-2 font-medium text-sm text-hijautua dark:text-hijaumuda"
+                        <p class="block text-center px-4 py-2 font-medium text-sm text-dematua dark:text-demamuda"
                             role="menuitem" tabindex="-1" id="user-menu-item-0"><i class="fa-solid fa-star me-2"></i> {{
                             auth()->user()->green_points }} Green
                             Points</p>

@@ -36,7 +36,7 @@ $diffInHours = ceil($now->diffInRealHours($nextSchedule));
                     <div class="text-center mb-6">
                         <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Tier {{
                             auth()->user()->tier->name }} <a href="{{ route('user.tierInfo') }}"
-                                class="cursor-pointer text-base text-hijautua hover:text-hijaumuda"
+                                class="cursor-pointer text-base text-dematua hover:text-demamuda"
                                 title="Informasi Tentang Tier"><i class="fa-solid fa-circle-info"></i></a>
                         </h1>
                         <p class="text-gray-600 dark:text-gray-400 text-sm mb-1">{{ count($topUsers) }} teratas akan
@@ -173,22 +173,22 @@ $diffInHours = ceil($now->diffInRealHours($nextSchedule));
         class="sticky bottom-0 bg-white dark:bg-gray-800 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 p-4">
         <div class="flex flex-col justify-center items-center space-x-8">
             <p class="text-center mx-auto space-y-1 text-zinc-900 dark:text-white mb-2">
-                Jadilah yang teratas ! Raih tambahan <span class="text-hijautua dark:text-hijaumuda">Green Points</span>
+                Jadilah yang teratas ! Raih tambahan <span class="text-dematua dark:text-demamuda">Green Points</span>
                 dengan :
             </p>
             <div class="space-x-2 gap-2 flex items-center justify-center">
                 <a href="{{ route('quizzes.index') }}"
-                    class="flex flex-col justify-center items-center space-y-1 text-gray-400 dark:hover:text-hijaumuda hover:text-hijautua transition-colors">
+                    class="flex flex-col justify-center items-center space-y-1 text-gray-400 dark:hover:text-demamuda hover:text-dematua transition-colors">
                     <i class="fa-solid fa-earth-americas"></i>
                     <span class="text-xs">Eco-Quiz</span>
                 </a>
                 <a href="{{ route('challenges.index') }}"
-                    class="flex flex-col justify-center items-center space-y-1 text-gray-400 dark:hover:text-hijaumuda hover:text-hijautua transition-colors">
+                    class="flex flex-col justify-center items-center space-y-1 text-gray-400 dark:hover:text-demamuda hover:text-dematua transition-colors">
                     <i class="fa-solid fa-trophy"></i>
                     <span class="text-xs">Tantangan Hijau</span>
                 </a>
                 <a href="{{ route('event.index') }}"
-                    class="flex flex-col justify-center items-center space-y-1 text-gray-400 dark:hover:text-hijaumuda hover:text-hijautua transition-colors">
+                    class="flex flex-col justify-center items-center space-y-1 text-gray-400 dark:hover:text-demamuda hover:text-dematua transition-colors">
                     <i class="fa-solid fa-calendar-minus"></i>
                     <span class="text-xs">Green Event</span>
                 </a>
