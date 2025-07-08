@@ -3,52 +3,47 @@ $faqs = [
 [
 'id-toggle' => 'toggle-1',
 'question' =>
-'Apa itu LangkahHijau?',
+'Apa itu Dewan Mahasiswa (Dema) UNIDA Gontor?',
 'answer' =>
-'LangkahHijau adalah aplikasi edukatif yang mengajak masyarakat untuk menjalani gaya hidup sehat dan ramah lingkungan
-melalui kuis harian, tantangan, dan konten inspiratif.',
+'Dema UNIDA adalah organisasi kemahasiswaan tertinggi di tingkat universitas yang berfungsi sebagai wadah koordinasi,
+pengembangan, serta representasi mahasiswa. Dema menjadi penghubung antara mahasiswa, lembaga, dan masyarakat luas dalam
+berbagai bidang.',
 ],
 [
 'id-toggle' => 'toggle-2',
 'question' =>
-'Apa saja manfaat menggunakan LangkahHijau?',
+'Apa bedanya Dema dengan Senat Mahasiswa atau Himpunan Mahasiswa Jurusan?',
 'answer' =>
-'Pengguna dapat meningkatkan kesadaran lingkungan, belajar praktik berkelanjutan, mengikuti tantangan harian, serta
-mengumpulkan Green Points yang membuka badge dan gelar kehormatan.',
+'Dema bergerak di level universitas dan fokus pada pengembangan kepemimpinan, advokasi, serta sinergi antarorganisasi
+mahasiswa. Sementara Senat dan Himpunan berfokus pada program kerja di lingkup fakultas atau jurusan tertentu.',
 ],
 [
 'id-toggle' => 'toggle-3',
-'question' => 'Bagaimana LangkahHijau memastikan penggunanya tetap termotivasi?',
+'question' => 'Bagaimana peran Dema dalam mendukung karier dan masa depan mahasiswa?',
 'answer' =>
-'Dengan sistem poin, badge, dan tantangan harian yang dirancang menarik, LangkahHijau memadukan edukasi dengan
-gamifikasi untuk mendorong keterlibatan berkelanjutan.',
+'Melalui jaringan, pelatihan, serta kerja sama eksternal, Dema membantu mahasiswa memperluas wawasan, membangun
+portofolio kontribusi, dan menyiapkan diri menjadi pemimpin umat di masa depan.',
 ],
 [
 'id-toggle' => 'toggle-4',
-'question' => 'Bagaimana cara mendapatkan Green Points?',
+'question' => 'Apa saja program unggulan Dema UNIDA?',
 'answer' =>
-'Kamu bisa mendapatkan Green Points dengan menjawab kuis harian, menyelesaikan tantangan, dan aktif mengikuti kegiatan
-yang mendukung gaya hidup hijau di aplikasi.
-
-.',
+'Program unggulan mencakup pelatihan kepemimpinan Islami, kajian ilmiah dan strategis, kegiatan sosial dan pengabdian
+masyarakat, kolaborasi nasional-internasional, serta event-event mahasiswa berbasis pesantren.',
 ],
 [
 'id-toggle' => 'toggle-5',
-'question' => 'Apa dampak nyata dari menggunakan aplikasi ini?',
+'question' => 'Bagaimana cara menyampaikan aspirasi atau kritik terhadap kebijakan kampus?',
 'answer' =>
-'LangkahHijau mendorong perubahan perilaku nyata—dari mengurangi sampah plastik hingga menghemat energi—dan
-berkontribusi pada pengurangan jejak karbon individu.
-
-',
+'Mahasiswa dapat menyampaikan aspirasi melalui kotak aspirasi digital, forum dialog yang difasilitasi Dema, atau
+langsung kepada pengurus Dema untuk diteruskan secara resmi ke pihak kampus.',
 ],
 [
 'id-toggle' => 'toggle-6',
-'question' => 'Siapa saja yang cocok menggunakan LangkahHijau?',
+'question' => 'Apakah Dema hanya fokus pada kegiatan organisasi dan politik kampus?',
 'answer' =>
-'Semua orang! Baik pelajar, pekerja, maupun masyarakat umum yang ingin memulai atau memperkuat gaya hidup berkelanjutan
-bisa memanfaatkan aplikasi ini sebagai panduan praktis.
-
-',
+'Tidak. Dema juga membina aspek spiritual, sosial, intelektual, dan kewirausahaan mahasiswa dengan pendekatan yang
+seimbang antara nilai-nilai pesantren dan tantangan dunia modern.',
 ],
 ];
 @endphp

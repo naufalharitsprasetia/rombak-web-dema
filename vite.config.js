@@ -9,7 +9,7 @@ export default defineConfig({
                 "resources/css/app.css",
                 "resources/js/app.js",
                 "resources/js/404.js",
-                "resources/js/hijauai.js",
+                "resources/js/countUp.js",
                 "resources/js/login.js",
                 "resources/js/signup.js",
                 "resources/js/sweetalert.js",

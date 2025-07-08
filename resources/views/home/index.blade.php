@@ -98,7 +98,7 @@
                     <h2 class="text-base/7 font-semibold text-dematua dark:text-demamuda">Visi & Misi</h2>
                     <p
                         class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-gray-100 sm:text-5xl lg:text-balance">
-                        Visi & Misi Student Council of UNIDA Gontor</p>
+                        Visi & Misi Dewan Mahasiswa UNIDA Gontor</p>
                     <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">Dewan Mahasiswa berfungsi sebagai wadah
                         yang dinamis untuk pengembangan, kepemimpinan, dan kolaborasi mahasiswa, yang berakar pada
                         nilai-nilai Islam. </p>
@@ -123,7 +123,7 @@
                             <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
                                 <div
                                     class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-dematua">
-                                    <i class="fa-solid fa-bolt" style="color:white"></i>
+                                    <i class="fa-solid fa-book" style="color:#fff"></i>
                                 </div>
                                 Misi 1
                             </dt>
@@ -138,7 +138,7 @@
                             <dt class="text-base/7 font-semibold text-gray-900 dark:text-gray-100">
                                 <div
                                     class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-dematua">
-                                    <i class="fa-solid fa-hand-holding-heart" style="color:white"></i>
+                                    <i class="fa-solid fa-book" style="color:#fff"></i>
                                 </div>
                                 Misi 2
                             </dt>
@@ -182,126 +182,50 @@
     </div>
     {{-- sec blog --}}
     <x-post.article :active="$active" class="mt-20" :postUtama="$postUtama" :posts="$posts" />
+    {{-- Count Section --}}
+    <div class="count-section text-zinc-900 dark:text-gray-100 mt-16">
+        <div
+            class="count flex flex-wrap md:flex-nowrap gap-12 max-w-5xl px-12 py-8 mx-auto justify-center md:justify-between items-center">
+            <div class="count-card text-center">
+                <h2 id="jumlahPengurus" class="font-bold text-5xl"></h2>
+                <span class="font-bold text-xl">Pengurus</span>
+            </div>
+            <div class="count-card text-center">
+                <h2 id="jumlahDepartemen" class="font-bold text-5xl"></h2>
+                <span class="font-bold text-xl">Departemen</span>
+            </div>
+            <div class="count-card text-center">
+                <h2 id="jumlahUKM" class="font-bold text-5xl"></h2>
+                <span class="font-bold text-xl">UKM</span>
+            </div>
+            <div class="count-card text-center">
+                <h2 id="jumlahMahasiswa" class="font-bold text-5xl"></h2>
+                <span class="font-bold text-xl">Mahasiswa</span>
+            </div>
+        </div>
+    </div>
     {{-- sec.3 --}}
     <div class="sec3 relative isolate">
         <x-efek.glowatas />
         {{-- BENTO GRID --}}
-        <div class="pt-24 pb-20 sm:py-32">
+        <div class="pb-20 sm:py-32">
             <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                 <p data-aos="fade-up" data-aos-duration="2000"
-                    class="mx-auto mt-2 max-w-2xl text-center text-4xl font-semibold text-balance text-dematua dark:text-demamuda sm:text-5xl">
-                    <span class="text-zinc-900 dark:text-gray-100">Bersama Dewan Mahasiswa</span><br>
-                    Melangkah maju bersama!
+                    class="mx-auto mt-2 mb-8 max-w-2xl text-center text-4xl font-semibold text-balance text-dematua dark:text-demamuda sm:text-5xl">
+                    <span class="text-zinc-900 dark:text-gray-100 ">Bersama Dewan Mahasiswa</span><br>
+                    <span class="text-3xl"> Melangkah maju membangun peradaban!</span>
                 </p>
-                <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2" data-aos="fade-up"
-                    data-aos-duration="2000">
-                    <div class="relative lg:row-span-2">
-                        <div
-                            class="absolute inset-px rounded-lg bg-white dark:bg-zinc-900 border border-gray-300 dark:border-zinc-700 lg:rounded-l-4xl">
-                        </div>
-                        <div
-                            class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
-                            <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                                <p
-                                    class="mt-2 text-lg font-medium tracking-tight text-gray-950 dark:text-gray-50 max-lg:text-center">
-                                    Sadar Lingkungan</p>
-                                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 dark:text-gray-400 max-lg:text-center">
-                                    LangkahHijau
-                                    menyajikan konten edukatif yang relevan dan mudah diakses untuk mengajak masyarakat
-                                    lebih sadar akan pentingnya menjaga bumi melalui gaya hidup berkelanjutan.</p>
-                            </div>
-                            <div class="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
-                                <div
-                                    class="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] bg-gray-900 shadow-2xl">
-                                    <img class="size-full object-cover object-top block dark:hidden"
-                                        src="{{ asset('img/mockup-hp.png') }}" alt="">
-                                    <img class="size-full object-cover object-top hidden dark:block"
-                                        src="{{ asset('img/mockup-hp-dark.png') }}" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 lg:rounded-l-4xl">
-                        </div>
-                    </div>
-                    <div class="relative max-lg:row-start-1">
-                        <div
-                            class="absolute inset-px rounded-lg bg-white dark:bg-zinc-900 border border-gray-300 dark:border-zinc-700 max-lg:rounded-t-4xl">
-                        </div>
-                        <div
-                            class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
-                            <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                                <p
-                                    class="mt-2 text-lg font-medium tracking-tight text-gray-950 dark:text-gray-50 max-lg:text-center">
-                                    Aksi Nyata</p>
-                                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 dark:text-gray-400 max-lg:text-center">
-                                    Dengan sistem
-                                    tantangan harian dan kuis interaktif, pengguna didorong untuk mengambil tindakan
-                                    kecil namun konsisten, yang dapat membentuk kebiasaan ramah lingkungan dalam
-                                    kehidupan sehari-hari.</p>
-                            </div>
-                            <div class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                                <img class="lg:h-[min(152px,40cqw)] object-cover mx-auto w-[70%] h-auto"
-                                    src="{{ asset('img/aksi-nyata.png') }}" alt="">
-                            </div>
-                        </div>
-                        <div
-                            class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-t-4xl">
-                        </div>
-                    </div>
-                    <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
-                        <div
-                            class="absolute inset-px rounded-lg bg-white dark:bg-zinc-900 border border-gray-300 dark:border-zinc-700">
-                        </div>
-                        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                            <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                                <p
-                                    class="mt-2 text-lg font-medium tracking-tight text-gray-950 dark:text-gray-50 max-lg:text-center">
-                                    Edukasi Bermakna</p>
-                                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 dark:text-gray-400 max-lg:text-center">
-                                    Alih-alih hanya
-                                    memberi informasi, LangkahHijau merancang edukasi yang engaging dan kontekstual,
-                                    agar setiap individu merasa terlibat dan terdorong untuk bertindak, bukan sekadar
-                                    tahu.</p>
-                            </div>
-                            <div class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                                <img class="lg:h-[min(152px,40cqw)] object-cover mx-auto w-[70%] h-auto"
-                                    src="{{ asset('img/edukasi-image.png') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5">
-                        </div>
-                    </div>
-                    <div class="relative lg:row-span-2">
-                        <div
-                            class="absolute inset-px rounded-lg bg-white dark:bg-zinc-900 border border-gray-300 dark:border-zinc-700 max-lg:rounded-b-4xl lg:rounded-r-4xl">
-                        </div>
-                        <div
-                            class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
-                            <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                                <p
-                                    class="mt-2 text-lg font-medium tracking-tight text-gray-950 dark:text-gray-50 max-lg:text-center">
-                                    Gerakan Bersama</p>
-                                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 dark:text-gray-400 max-lg:text-center">
-                                    LangkahHijau membuka
-                                    ruang bagi kolaborasi dan aksi kolektif, memperkuat semangat gotong royong menuju
-                                    masa depan yang lebih hijau dan sehat, dimulai dari aksi individu.</p>
-                            </div>
-                            <div
-                                class="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm content-center">
-                                <img class="p-4 block dark:hidden" src="{{ asset('img/mockup-laptop.png') }}" alt="">
-                                <img class="p-4 hidden dark:block" src="{{ asset('img/mockup-laptop-dark.png') }}"
-                                    alt="">
-                            </div>
-                        </div>
-                        <div
-                            class="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-4xl lg:rounded-r-4xl">
-                        </div>
-                    </div>
+                {{-- Video Profil Section --}}
+                <div class="flex justify-center items-center mx-auto pt-8">
+                    <iframe width="840" height="460" src="https://www.youtube.com/embed/LkM0EQjiVyM?si=Evdj5ncBUN6EhFIG"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-        <x-efek.glowbawah />
+    </div>
+    <x-efek.glowbawah />
     </div>
     {{-- sec faq --}}
     <section class="faq-container relative z-50 isolate px-4 sm:px-6 lg:px-16 overflow-visible">
@@ -323,13 +247,13 @@
     <section class="cta-container relative isolate mb-36 px-4 sm:px-6 lg:px-16">
         <div class="max-w-4xl mx-auto flex items-center justify-between" data-aos="fade-up" data-aos-duration="2000">
             <div class="flex-1 dark:text-white">
-                <h2 class="text-md md:text-4xl font-bold mb-4">Siap untuk Menghijaukan Dunia?</h2>
-                <p class="mb-6">Mulai dari langkah kecil, untuk bumi yang lebih hijau.</p>
+                <h2 class="text-md md:text-4xl font-bold mb-4">Punya Gagasan untuk Kampus yang Lebih Baik?</h2>
+                <p class="mb-6">Dewan Mahasiswa siap jadi wadah aspirasimu.</p>
             </div>
             <div class="flex-1 text-right">
                 <a href="{{ route('auth.signup') }}"
                     class="inline-flex items-center px-8 py-4 text-lg font-semibold rounded-lg bg-dematua text-white hover:bg-demamuda cursor-pointer">
-                    Daftar Sekarang
+                    Salurkan Aspirasimu!
                     <svg class="ml-2 -mr-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -342,4 +266,5 @@
         <x-efek.glowbawah />
     </section>
     @vite('resources/js/home.js')
+    @vite('resources/js/countUp.js')
 </x-layout>

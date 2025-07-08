@@ -95,8 +95,6 @@
                         <span class="sr-only">Open user menu</span>
                         <span class="text-sm/6 font-medium mr-1 text-gray-700 dark:text-gray-200 rounded-sm block">{{
                             auth()->user()->name }}</span>
-                        <img class="size-8 rounded-full" src="{{ asset('img/ask-ai.png') }}" alt="">
-                        {{-- 256 x 256px --}}
                     </button>
                 </div>
                 <div x-show="isOpen" x-transition:enter="transition ease-out duration-100 transform"
