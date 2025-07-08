@@ -53,13 +53,9 @@
                                             <select id="category" name="category" required
                                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                                 <option selected disabled>Select category</option>
-                                                <option value="🌱 Zero Waste">🌱 Zero Waste</option>
-                                                <option value="🛍️ Konsumsi Berkelanjutan">🛍️ Konsumsi Berkelanjutan
-                                                </option>
-                                                <option value="🚶 Transportasi Hijau">🚶 Transportasi Hijau</option>
-                                                <option value="🍽️ Makanan Ramah Lingkungan">🍽️ Makanan Ramah
-                                                    Lingkungan</option>
-                                                <option value="🔌 Energi dan Elektronik">🔌 Energi dan Elektronik
+                                                <option value="DEMA A">DEMA A</option>
+                                                <option value="DEMA C">DEMA C</option>
+                                                <option value="UNIDA GONTOR">UNIDA GONTOR
                                                 </option>
                                             </select>
                                         </div>

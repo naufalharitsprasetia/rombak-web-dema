@@ -55,23 +55,12 @@
                                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
                                             <select id="category" name="category" required
                                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                                <option value="🌱 Zero Waste" {{ $post->category == '🌱 Zero Waste' ?
-                                                    'selected' : '' }}>🌱 Zero Waste</option>
-                                                <option value="🛍️ Konsumsi Berkelanjutan" {{ $post->category == '🛍️
-                                                    Konsumsi Berkelanjutan' ?
-                                                    'selected' : '' }}>🛍️ Konsumsi Berkelanjutan
-                                                </option>
-                                                <option value="🚶 Transportasi Hijau" {{ $post->category == '🚶
-                                                    Transportasi Hijau' ?
-                                                    'selected' : '' }}>🚶 Transportasi Hijau</option>
-                                                <option value="🍽️ Makanan Ramah Lingkungan" {{ $post->category == '🍽️
-                                                    Makanan Ramah Lingkungan' ?
-                                                    'selected' : '' }}>🍽️ Makanan Ramah
-                                                    Lingkungan</option>
-                                                <option value="🔌 Energi dan Elektronik" {{ $post->category == '🔌
-                                                    Energi dan Elektronik' ?
-                                                    'selected' : '' }}>🔌 Energi dan Elektronik
-                                                </option>
+                                                <option value="DEMA A" {{ $post->category == 'DEMA A' ?
+                                                    'selected' : '' }}>DEMA A</option>
+                                                <option value="DEMA C" {{ $post->category == 'DEMA C' ?
+                                                    'selected' : '' }}>DEMA C</option>
+                                                <option value="UNIDA GONTOR" {{ $post->category == 'UNIDA GONTOR' ?
+                                                    'selected' : '' }}>UNIDA GONTOR</option>
                                             </select>
                                         </div>
                                         {{-- <div class="sm:col-span-2">
