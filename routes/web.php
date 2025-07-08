@@ -5,12 +5,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\HijauAIController;
-use App\Http\Controllers\ChallengeController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\QuizController;
-use App\Http\Controllers\EventController;
-
+use App\Http\Controllers\AnggotaDepartementController;
+use App\Http\Controllers\DepartementController;
+use App\Http\Controllers\DivisionController;
+use App\Http\Controllers\UKMController;
 
 // // php artisan storage:link untuk hosting
 // Route::get('/create-storage-link', function () {
@@ -52,20 +51,42 @@ Route::middleware('auth')->group(function () {
     // users
     Route::get('/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
     Route::get('/profile/{user:username}', [UserController::class, 'profile'])->name('user.profile');
-    // event
-    Route::get('/event-ajukan', [EventController::class, 'ajukan'])->name('event.ajukan');
-    Route::post('/event-ajukan', [EventController::class, 'simpanAjuan'])->name('event.simpanAjuan');
 });
 
 // Edu-zone
 Route::get('/edu-zone', [PostController::class, 'index'])->name('post.index');
 Route::get('/edu-zone/{post}', [PostController::class, 'show'])->name('post.show');
-// event
-Route::get('/event', [EventController::class, 'index'])->name('event.index');
-Route::get('/event/{event}', [EventController::class, 'show'])->name('event.show');
 
 // IS ADMIN Middleware
 Route::middleware([IsAdmin::class])->group(function () {
+    // Divisi
+    Route::get('/divisi', [DivisionController::class, 'index'])->name('divisi.index');
+    Route::get('/divisi-create', [DivisionController::class, 'create'])->name('divisi.create');
+    Route::post('/divisi-create', [DivisionController::class, 'store'])->name('divisi.store');
+    Route::get('/divisi-edit/{division}', [DivisionController::class, 'edit'])->name('divisi.edit');
+    Route::put('/divisi-edit/{division}', [DivisionController::class, 'update'])->name('divisi.update');
+    Route::delete('/divisi-delete/{division}', [DivisionController::class, 'destroy'])->name('divisi.destroy');
+    // Departement
+    Route::get('/departement-list', [DepartementController::class, 'list'])->name('departement.list');
+    Route::get('/departement-create', [DepartementController::class, 'create'])->name('departement.create');
+    Route::post('/departement-create', [DepartementController::class, 'store'])->name('departement.store');
+    Route::get('/departement-edit/{departement}', [DepartementController::class, 'edit'])->name('departement.edit');
+    Route::put('/departement-edit/{departement}', [DepartementController::class, 'update'])->name('departement.update');
+    Route::delete('/departement-delete/{departement}', [DepartementController::class, 'destroy'])->name('departement.destroy');
+    // Anggota Departement
+    Route::get('/anggota_departement', [AnggotaDepartementController::class, 'index'])->name('anggota_departement.index');
+    Route::get('/anggota_departement-create', [AnggotaDepartementController::class, 'create'])->name('anggota_departement.create');
+    Route::post('/anggota_departement-create', [AnggotaDepartementController::class, 'store'])->name('anggota_departement.store');
+    Route::get('/anggota_departement-edit/{anggotaDepartement}', [AnggotaDepartementController::class, 'edit'])->name('anggota_departement.edit');
+    Route::put('/anggota_departement-edit/{anggotaDepartement}', [AnggotaDepartementController::class, 'update'])->name('anggota_departement.update');
+    Route::delete('/anggota_departement-delete/{anggotaDepartement}', [AnggotaDepartementController::class, 'destroy'])->name('anggota_departement.destroy');
+    // UKM
+    Route::get('/ukm-list', [UKMController::class, 'list'])->name('ukm.list');
+    Route::get('/ukm-create', [UKMController::class, 'create'])->name('ukm.create');
+    Route::post('/ukm-create', [UKMController::class, 'store'])->name('ukm.store');
+    Route::get('/ukm-edit/{uKM}', [UKMController::class, 'edit'])->name('ukm.edit');
+    Route::put('/ukm-edit/{uKM}', [UKMController::class, 'update'])->name('ukm.update');
+    Route::delete('/ukm-delete/{uKM}', [UKMController::class, 'destroy'])->name('ukm.destroy');
     // Edu Zone
     Route::get('/edu-zone-manage', [PostController::class, 'manage'])->name('post.manage');
     Route::get('/edu-zone-create', [PostController::class, 'create'])->name('post.create');
@@ -73,14 +94,11 @@ Route::middleware([IsAdmin::class])->group(function () {
     Route::get('/edu-zone-edit/{post}', [PostController::class, 'edit'])->name('post.edit');
     Route::put('/edu-zone-edit/{post}', [PostController::class, 'update'])->name('post.update');
     Route::delete('/edu-zone-delete/{post}', [PostController::class, 'destroy'])->name('post.destroy');
-    // Events
-    Route::get('/event-listAjuan', [EventController::class, 'listAjuan'])->name('event.listAjuan');
-    Route::get('/event-accAjuan/{id}/', [EventController::class, 'accAjuan'])->name('event.accAjuan');
-    Route::delete('/event-destroyAjuan/{event}', [EventController::class, 'destroyAjuan'])->name('event.destroyAjuan');
-    Route::get('/event-manage', [EventController::class, 'manage'])->name('event.manage');
-    Route::get('/event-create', [EventController::class, 'create'])->name('event.create');
-    Route::post('/event-create', [EventController::class, 'store'])->name('event.store');
-    Route::get('/event-edit/{event}', [EventController::class, 'edit'])->name('event.edit');
-    Route::put('/event-edit/{event}', [EventController::class, 'update'])->name('event.update');
-    Route::delete('/event-delete/{event}', [EventController::class, 'destroy'])->name('event.destroy');
 });
+// Departemen
+Route::get('/departement', [DepartementController::class, 'index'])->name('departement.index');
+Route::get('/departement/{departement}', [DepartementController::class, 'show'])->name('departement.show');
+
+// UKM
+Route::get('/ukm', [UKMController::class, 'index'])->name('ukm.index');
+Route::get('/ukm/{uKM}', [UKMController::class, 'show'])->name('ukm.show');
