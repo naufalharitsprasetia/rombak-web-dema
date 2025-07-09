@@ -17,7 +17,7 @@
             this.isDropAbout = false;
         }
     }
-}" class="sticky inset-x-0 top-0 z-[999]" id="myNavbar">
+}" class="relative lg:sticky inset-x-0 top-0 z-[999]" id="myNavbar">
     {{-- sebenernya ada add remove bg-white/80 di .js nya --}}
     <div class="bg-white/80 backdrop-blur dark:bg-zinc-900/80 hidden"></div>
     <nav class="flex items-center justify-between p-6 lg:px-8 mx-auto max-w-7xl" aria-label="Global">
@@ -45,7 +45,7 @@
                 class="text-sm/6 font-medium {{ $active == 'beranda' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">Beranda</a>
             <a href=""
                 class="text-sm/6 font-medium {{ $active == 'berita' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">Berita</a>
-            <a href=""
+            <a href="{{ route('ukm.index') }}"
                 class="text-sm/6 font-medium {{ $active == 'ukm' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">UKM</a>
             {{-- dropdown Tentang --}}
             <div class="relative" @click="isDropAbout = !isDropAbout">
@@ -65,16 +65,16 @@
                     role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                     <!-- Active: "bg-gray-100 outline-none", Not Active: "" -->
                     <a href="{{ route('home.tentang') }}"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 hover:bg-gray-700"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-700"
                         role="menuitem" tabindex="-1" id="user-menu-item-0">Tentang DEMA</a>
-                    <a href=""
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 hover:bg-gray-700 hover:outline-none"
+                    <a href="{{ route('departement.index') }}"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-700 hover:outline-none"
                         role="menuitem" tabindex="-1" id="user-menu-item-1">Departemen</a>
                     <a href="{{ route('home.kontak') }}"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 hover:bg-gray-700 hover:outline-none"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-700 hover:outline-none"
                         role="menuitem" tabindex="-1" id="user-menu-item-2">Kontak Kami</a>
                     <a href=""
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 hover:bg-gray-700 hover:outline-none"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-700 hover:outline-none"
                         role="menuitem" tabindex="-1" id="user-menu-item-3">Salurkan Aspirasi</a>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                         <a href="{{ route('post.index') }}"
                             class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">
                             Berita</a>
-                        <a href=""
+                        <a href="{{ route('ukm.index') }}"
                             class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Green
                             UKM</a>
                         <a href="{{ route('home.tentang') }}"
@@ -167,7 +167,7 @@
                         <a href=""
                             class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Salurkan
                             Aspirasi</a>
-                        <a href=""
+                        <a href="{{ route('departement.index') }}"
                             class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Departemen
                         </a>
                     </div>

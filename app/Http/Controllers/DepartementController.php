@@ -16,9 +16,10 @@ class DepartementController extends Controller
      */
     public function index()
     {
+        $title = 'Departemen';
         $active = 'departement';
         $divisions = Division::orderBy('urutan', 'asc')->get();
-        return view('departement.index',  compact('active', 'divisions'));
+        return view('departement.index',  compact('active', 'title', 'divisions'));
     }
     public function list()
     {

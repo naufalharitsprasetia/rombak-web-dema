@@ -54,7 +54,7 @@
                 <ul class="space-y-2">
                     <li><a href="{{ route('home.tentang') }}" class="hover:text-gray-900 dark:hover:text-white">Tentang
                             Aplikasi</a></li>
-                    <li><a href="{{ route('home.team') }}"
+                    <li><a href="{{ route('departement.index') }}"
                             class="hover:text-gray-900 dark:hover:text-white">Departemen</a></li>
                     <li><a href="{{ route('home.kontak') }}" class="hover:text-gray-900 dark:hover:text-white">Kontak
                             Kami</a></li>
@@ -77,7 +77,8 @@
                 <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Fitur</h3>
                 <ul class="space-y-2">
                     <li><a href="" class="hover:text-gray-900 dark:hover:text-white">Berita</a></li>
-                    <li><a href="" class="hover:text-gray-900 dark:hover:text-white">UKM</a></li>
+                    <li><a href="{{ route('ukm.index') }}" class="hover:text-gray-900 dark:hover:text-white">UKM</a>
+                    </li>
                     <li><a href="" class="hover:text-gray-900 dark:hover:text-white">Salurkan Aspirasi</a></li>
                 </ul>
             </div>

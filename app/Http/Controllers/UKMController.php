@@ -15,9 +15,10 @@ class UKMController extends Controller
      */
     public function index()
     {
+        $title = 'UKM';
         $active = 'ukm';
         $ukms = UKM::all()->groupBy('kategori');
-        return view('ukm.index', compact('active', 'ukms'));
+        return view('ukm.index', compact('active', 'ukms','title'));
     }
 
     /**
