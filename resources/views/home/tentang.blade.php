@@ -3,7 +3,7 @@
         <div class="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24 px-4">
             <h1
                 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-gray-900 dark:text-gray-100 leading-tight">
-                Tentang Langkah<span class="text-dematua dark:text-demamuda">Hijau</span>
+                Tentang Dewan<span class="text-dematua dark:text-demamuda">Mahasiswa</span>
             </h1>
         </div>
 
@@ -16,39 +16,27 @@
                     <div class="animate-fade-in">
                         <span
                             class="inline-block bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200 px-3 py-1 rounded-full text-sm font-medium mb-4 shadow-[0_0_10px_rgba(34,197,94,0.5)]"">
-                            Latar Belakang
+                            Apa itu DEMA ?
                         </span>
                         <h2 class=" text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                            Tantangan Global dan
+                            Dewan Mahasiswa
                             <br>
-                            <span class="text-cyan-600">Peran Generasi Muda</span>
+                            <span class="text-cyan-600">UNIDA Gontor</span>
                             </h2>
                             <p class="text-gray-600 dark:text-gray-300 text-lg mb-8 leading-relaxed">
-                                Isu lingkungan hidup dan kesehatan masyarakat saat ini menjadi tantangan global yang
-                                semakin
-                                mendesak.
-                                Di Indonesia, berbagai permasalahan seperti polusi plastik, emisi karbon yang meningkat,
-                                serta gaya hidup tidak sehat terus menjadi ancaman
-                                bagi keberlangsungan hidup manusia dan kelestarian alam. Generasi muda sebagai agen
-                                perubahan justru seringkali tidak memiliki media edukasi
-                                yang menarik dan relevan dengan kebiasaan digital mereka. Di sinilah peran teknologi
-                                digital
-                                dapat menjadi jembatan penting untuk membentuk kesadaran baru.
-                            </p>
+                                Dewan Mahasiswa (DEMA) adalah sebuah organisasi dari, oleh, dan untuk mahasiswa. dewan
+                                mahasiswa juga merupakan organisasi tertinggi di universitas darussalam gontor yang
+                                membantu rektor menaungi seluruh aspek kehidupan mahasiswa.
 
-                            <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8 text-left">
-                                <div>
-                                    <p class="text-4xl font-bold text-cyan-600">80%</p>
-                                    <p class="text-gray-600 dark:text-gray-400">Remaja Indonesia aktif menggunakan media
-                                        digital setiap hari</p>
-                                </div>
-                                <div>
-                                    <p class="text-4xl font-bold text-cyan-600">65%</p>
-                                    <p class="text-gray-600 dark:text-gray-400">Mengaku kurang memahami dampak
-                                        lingkungan
-                                        dari gaya hidup mereka</p>
-                                </div>
-                            </div>
+
+                                Dewan Mahasiswa bertanggung jawab atas keseluruhan dinamika yang ada, dan perannya dalam
+                                khidmahnya kepada nusa, bangsa dan agama dengan cara belajar, berkarya, dan berjuang
+                                berdasarkan olah dzikir, olah pikir, olah rasa dan olah raga. Tujuan dari dewan
+                                mahasiswa adalah ikut serta dalam pembinaan di Universitas Darussalam Gontor dalam
+                                rangka membentuk mahasiswa mu'min, muslim yang berbudi tinggi, berbadan sehat,
+                                berpengetahuan luas, dan berpikiran bebeas serta taat menjalankan dan menegakkan
+                                syari'at islam, berkhidmah kepada bangsa dan negara
+                            </p>
 
                     </div>
 
@@ -70,10 +58,10 @@
                 <div class="text-center mb-16 animate-fade-in">
                     <span
                         class="inline-block bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200 px-3 py-1 rounded-full text-sm font-medium mb-4 shadow-[0_0_10px_rgba(34,197,94,0.5)]"">
-                        THE PROBLEM
+                        VISI & MISI
                     </span>
                     <h2 class=" text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
-                        Masalah yang Diangkat
+                        Visi Misi DEMA UNIDA GONTOR
                         </h2>
                 </div>
 
@@ -149,11 +137,11 @@
                     <div class="animate-fade-in">
                         <span
                             class="inline-block bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200 px-3 py-1 rounded-full text-sm font-medium mb-4 shadow-[0_0_10px_rgba(34,197,94,0.5)]">
-                            THE OBJECTIVE
+                            Struktur
                         </span>
 
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-black dark:text-white">Tujuan
-                            dan Fungsi</h2>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-black dark:text-white">Struktur
+                            Organisasi</h2>
                         <p class="text-black dark:text-gray-300 text-lg mb-8 leading-relaxed">
                             LangkahHijau dikembangkan sebagai solusi edukatif dan interaktif untuk mengubah aktivitas
                             harian menjadi aksi positif bagi kesehatan dan lingkungan melalui pendekatan gamifikasi.
@@ -226,14 +214,15 @@
         <!-- fitur unggulan -->
         <section class="py-16 lg:py-24 relative isolate">
             <x-efek.glowatas />
+            <x-efek.glowbawah />
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 animate-fade-in">
                     <span
                         class="inline-block bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200 px-3 py-1 rounded-full text-sm font-medium mb-4 shadow-[0_0_10px_rgba(34,197,94,0.5)]">
-                        THE FEATURES
+                        SERVICES
                     </span>
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
-                        Fitur Unggulan
+                        Layanan Kami
                     </h2>
                 </div>
 
@@ -245,7 +234,7 @@
                             <div class="text-cyan-500 text-4xl mb-4">
                                 <i class="fas fa-leaf"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Tantangan Hijau</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Berita Terkini</h3>
                             <p class="text-gray-600 dark:text-gray-300">
                                 Misi aksi nyata seperti hemat listrik, zero waste, dan aktivitas fisik yang bisa dicatat
                                 dan diukur rutin.
@@ -260,7 +249,7 @@
                             <div class="text-cyan-500 text-4xl mb-4">
                                 <i class="fas fa-question-circle"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Eco-Quiz</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Salurkan Aspirasi</h3>
                             <p class="text-gray-600 dark:text-gray-300">
                                 Kuis harian ringan dan informatif untuk menguji pengetahuan seputar lingkungan dan
                                 kesehatan.
@@ -268,14 +257,14 @@
                         </div>
                     </a>
 
-                    <!-- cyan Points & Badge -->
+                    <!-- UKM -->
                     <a href="">
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">
                                 <i class="fas fa-award"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">cyan Points & Badge
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">UKM
                             </h3>
                             <p class="text-gray-600 dark:text-gray-300">
                                 Raih poin dan badge eksklusif sebagai apresiasi atas setiap aksi hijau yang kamu
@@ -284,28 +273,28 @@
                         </div>
                     </a>
 
-                    <!-- Edu-Zone -->
+                    <!--  -->
                     <a href="{{ route('post.index') }}">
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">
                                 <i class="fas fa-book-open"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Edu-Zone</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Surat Delegasi</h3>
                             <p class="text-gray-600 dark:text-gray-300">
                                 Baca artikel edukatif dan tips mudah tentang gaya hidup sehat dan ramah lingkungan.
                             </p>
                         </div>
                     </a>
 
-                    <!-- cyan Events -->
-                    <a href="{{ route('event.index') }}">
+                    <!--  -->
+                    <a href="">
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">
                                 <i class="fas fa-calendar-alt"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">cyan Events</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Kunjungan</h3>
                             <p class="text-gray-600 dark:text-gray-300">
                                 Temukan dan ikuti acara lingkungan. Tambahkan ke Google Calendar dan ajukan event
                                 milikmu sendiri.
@@ -313,14 +302,14 @@
                         </div>
                     </a>
 
-                    <!-- Leaderboard & Tier -->
+                    <!--  -->
                     <a href="">
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">
                                 <i class="fas fa-trophy"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Leaderboard & Tier</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Kerjasama</h3>
                             <p class="text-gray-600 dark:text-gray-300">
                                 Lihat peringkatmu dan tingkatkan tier mingguan berdasarkan akumulasi cyan Points yang
                                 dikumpulkan.

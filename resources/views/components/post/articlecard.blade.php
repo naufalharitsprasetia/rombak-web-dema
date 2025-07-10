@@ -18,7 +18,8 @@
             <span
                 class="bg-demamuda dark:bg-dematua text-white px-3 py-1 rounded-full text-xs sm:text-sm font-medium w-fit">
                 {{ $post->category }}</span>
-            <span class="text-gray-500 dark:text-gray-400 text-xs sm:text-sm">{{ $post->created_at }}</span>
+            <span class="text-gray-500 dark:text-gray-400 text-xs sm:text-sm">{{
+                $post->created_at->diffForHumans()}}</span>
         </div>
 
         <!-- Title -->
@@ -33,7 +34,7 @@
         </p>
 
         <!-- Read More Link -->
-        <a href="/edu-zone/{{ $post->id }}"
+        <a href="/blog/{{ $post->id }}"
             class="inline-flex items-center text-dematua dark:text-demamuda font-medium text-xs sm:text-sm hover:text-dematua dark:hover:text-demamuda transition-colors">
             Read More
             <i class="fas fa-arrow-right ml-2 text-xs"></i>

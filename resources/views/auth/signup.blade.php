@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LangkahHijau | {{ $title }}</title>
+    <title>DEMA UNIDA GONTOR | {{ $title }}</title>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {{-- link --}}
@@ -18,13 +18,14 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     {{-- Meta tag --}}
-    <meta name="keywords" content="gaya hidup, langkah hijau, keberlanjutan, emisi karbon, recycle">
-    <meta name="author" content="Langkah Hijau Team">
+    <meta name="keywords" content="organisasi, dewan mahasiswa, unida gontor, kampus, unggul">
+    <meta name="author" content="Dewan Mahasiswa Unida Gontor">
     <meta name="robots" content="index, follow">
     <meta name="description"
-        content="LangkahHijau adalah platform online untuk petani yang menghubungkan mereka dengan teknologi pertanian terkini dan informasi pasar.">
-    <meta property="og:title" content="LangkahHijau - Cek gaya hidupmu, hijaukan langkahmu!">
-    <meta property="og:description" content="Mulai dari langkah kecil, untuk bumi yang lebih hijau.">
+        content="DEMA Unida Gontor adalah sebuah organisasi mahasiswa di universitas darussalam gontor" />
+    <meta property="og:title" content="DEMA UNIDA GONTOR">
+    <meta property="og:description"
+        content="DEMA Unida Gontor adalah sebuah organisasi mahasiswa di universitas darussalam gontor">
     <meta property="og:image" content="{{ asset('img/logoweb.png') }}">
     <meta property="og:url" content="{{ url()->current() }}">
 </head>
@@ -43,10 +44,10 @@
                             <i class="fas fa-chevron-left"></i>
                         </a>
                         <h1 class="text-xl lg:text-3xl font-semibold pr-3 text-black dark:text-white">Daftar ke
-                            Langkah<span class="text-dematua dark:text-demamuda">Hijau</span>
+                            Dewan<span class="text-dematua dark:text-demamuda">Mahasiswa</span>
                         </h1>
                     </div>
-                    <p class="text-gray-500">Masuk ke LangkahHijau dan dapatkan fitur-fitur menarik di sini.</p>
+                    <p class="text-gray-500">Masuk ke Website kami dan dapatkan fitur-fitur menarik di sini.</p>
                 </div>
 
                 <form action="/sign-up" method="POST" class="space-y-6">
@@ -61,7 +62,7 @@
                                 Lengkap</label>
                             <input type="text" name="name" value="{{ old('name') }}" required
                                 placeholder="Masukkan nama lengkap"
-                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('name') bgwhite dark:bg-red-300 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
+                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('name') bg-red-600 text-white @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
                             @error('name')
                             <p class="texdematua dark:text-red-400 text-sm mt-2">Nama lengkap tidak valid.</p>
                             @enderror
@@ -73,7 +74,7 @@
                                 class="block text-sm lg:text-base font-medium text-gray-700 dark:text-gray-300 mb-2">Username</label>
                             <input type="text" name="username" value="{{ old('username') }}" required
                                 placeholder="Masukkan nama pengguna"
-                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('username') bgwhite dark:bg-red-300 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
+                                class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('username') text-white bg-red-600 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
                             @error('username')
                             <p class="texdematua dark:text-red-400 text-sm mt-2">error : {{ $message }}</p>
                             @enderror
@@ -86,7 +87,7 @@
                             class="block text-sm lg:text-base font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
                         <input type="email" name="email" value="{{ old('email') }}" required
                             placeholder="Masukkan email"
-                            class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('email') bgwhite dark:bg-red-300 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
+                            class="w-full px-4 py-3 rounded-lg bg-white dark:bg-zinc-900 border dark:border-zinc-600 dark:text-white @error('email') text-white bg-red-600 @enderror focus:border-black focus:outline-none focus:ring-2 focus:ring-dematua transition-all duration-200 ease-in-out">
                         @error('email')
                         <p class="texdematua dark:text-red-400 text-sm mt-2">error : {{ $message }}</p>
                         @enderror

@@ -89,27 +89,26 @@
                 </div>
             </div>
         </section>
-        @foreach ($ukms as $category => $items)
-        <div class="divisi-card bg-demamuda text-white shadow-lg p-12 mt-16">
-            <h2 class="text-center font-semibold text-2xl mb-8">Divisi {{ $category }}</h2>
-            <div class="flex flex-wrap ukm-groups gap-8 justify-evenly items-center">
-                @foreach ($items as $ukm)
-                <div class="ukm-card bg-secondary text-demamuda rounded-lg overflow-hidden max-w-xs">
-                    <img src="{{ asset('storage/' . $ukm->logo) }}" class="w-full" alt="">
-                    <h3 class="m-4">{{ $ukm->nama }}</h3>
-                    <a href="/ukm/{{ $ukm->id }}"
-                        class="bg-demamuda text-white rounded-md flex text-center mx-4 mb-2 mt-5 px-3 py-2">Klik
-                        Untuk
-                        Selengkapnya</a>
-                </div>
-                @endforeach
+        <div class="mt-8 py-16 mx-auto max-w-7xl text-center">
+            <div class="toogle-ukm flex justify-center items-center mx-auto ">
+                <a href="{{ route('ukm.index') }}" class="py-3 px-4 border border-demamuda bg-demamuda text-white">
+                    PUTRA
+                </a>
+                <a href="{{ route('ukm-putri.index') }}"
+                    class="py-3 px-4 border border-demamuda hover:bg-demamuda hover:text-white">
+                    PUTRI
+                </a>
             </div>
         </div>
-        <br>
-        <br>
-        @endforeach
+        <div class="px-10 max-w-screen-md mb-8 lg:mb-16">
+            <h2 class="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                Divisi Olah Rasa</h2>
+            <p class="text-gray-500 sm:text-lg dark:text-gray-400">UKM adalah organisasi mahasiswa santri
+                yang dinaungi Dewan Mahasiswa dalam meningkatkan kesamaan minat, kegemaraan. Lorem ipsum dolor sit amet.
+            </p>
+        </div>
         <div class="flex flex-wrap ukm-groups gap-8 justify-evenly items-center mb-32">
-            @for($i = 0; $i < 3; $i++) <a href="/blog/bangkit" class="relative group cursor-pointer">
+            @for($i = 0; $i < 3; $i++) <a href="" class="relative group cursor-pointer">
                 <div
                     class="absolute -inset-1 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
                 </div>

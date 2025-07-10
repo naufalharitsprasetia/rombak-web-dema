@@ -9,10 +9,9 @@
         </p>
         <p class="text-dematua dark:text-demamuda text-sm md:text-lg font-normal md:max-w-2xl mx-auto">Temukan berita
             terbaru
-            tentang
-            inisiatif dan acara inspiratif yang diselenggarakan oleh Dewan Mahasiswa Universitas Darussalam Gontor.</p>
+            terkait
+            kegiatan-kegiatan <br> Dewan Mahasiswa Universitas Darussalam Gontor.</p>
     </div>
-    {{-- <h2 class="text-center text-lg/8 font-semibold text-zinc-900 dark:text-gray-200 my-12">Edu-Zone</h2> --}}
     <!-- Featured Article Section -->
     <div data-aos="fade-up" data-aos-duration="2000"
         class="bg-white dark:bg-zinc-900 border border-gray-300 dark:border-zinc-700 rounded-2xl shadow-sm p-4 sm:p-6 lg:p-8 mb-8 sm:mb-12 transition-colors duration-300">
@@ -38,7 +37,8 @@
                     <span
                         class="bg-demamuda dark:bg-dematua text-white px-3 py-1 rounded-full text-sm font-medium w-fit">{{
                         $postUtama->category }}</span>
-                    <span class="text-gray-500 dark:text-gray-400 text-sm">{{ $postUtama->created_at}}</span>
+                    <span class="text-gray-500 dark:text-gray-400 text-sm">{{ $postUtama->created_at->diffForHumans()
+                        }}</span>
                 </div>
 
                 <!-- Title -->
@@ -53,7 +53,7 @@
                 </p>
 
                 <!-- Read More Link -->
-                <a href="/edu-zone/{{ $postUtama->id }}"
+                <a href="/blog/{{ $postUtama->id }}"
                     class="inline-flex items-center text-demamuda dark:text-demamuda font-medium hover:text-dematua dark:hover:text-green-300 transition-colors text-sm sm:text-base">
                     Read More
                     <i class="fas fa-arrow-right ml-2 text-sm"></i>
@@ -84,7 +84,7 @@
         @if($active == "beranda")
         <!-- View More Button -->
         <div class="text-center">
-            <a href="/edu-zone"
+            <a href="/blog"
                 class="inline-flex items-center bg-demamuda dark:bg-dematua text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-medium hover:bg-dematua dark:hover:bg-green-700 transition-colors text-sm sm:text-base">
                 Lihat Artikel Lainnya
                 <i class="fas fa-arrow-right ml-2"></i>

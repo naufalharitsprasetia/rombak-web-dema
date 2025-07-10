@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             DivisionSeeder::class,
             DepartementSeeder::class,
             UKMSeeder::class,
+            UKMPutriSeeder::class,
         ]);
     }
 }

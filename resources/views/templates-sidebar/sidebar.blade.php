@@ -15,10 +15,10 @@
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
         <div class="flex lg:flex-1 ms-3 mt-3 mb-4">
             <a href="#" class="-m-1.5 p-1.5 flex justify-center items-center">
-                <span class="sr-only">LangkahHijau</span>
+                <span class="sr-only">DewanMahasiswa</span>
                 <img class="h-8 w-auto" src="/img/logoweb.png" alt="">
-                <h2 class="text-xl ml-1 font-semibold text-gray-900 dark:text-gray-100">Langkah<span
-                        class="text-dematua dark:text-demamuda">Hijau</span></h2>
+                <h2 class="text-xl ml-1 font-semibold text-gray-900 dark:text-gray-100">Dewan<span
+                        class="text-dematua dark:text-demamuda">Mahasiswa</span></h2>
             </a>
         </div>
         <ul class="space-y-2 font-medium">
@@ -36,7 +36,7 @@
             @can('is_admin')
             <li>
                 <button type="button"
-                    class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    class="cursor-pointer flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                     aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
                     <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"><i
                             class="fa-solid fa-user-tie mr-3"></i> Admin Panel</span>
@@ -53,30 +53,14 @@
                             Posts</a>
                     </li>
                     <li>
-                        <a href="{{ route('event.manage') }}"
+                        <a href="{{ route('ukm.list') }}"
                             class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Manage
-                            Events</a>
+                            UKM</a>
                     </li>
                 </ul>
             </li>
             @endcan
 
-            <li>
-                <a href=""
-                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"><span
-                        class="flex-1 ms-3 whitespace-nowrap"><i class="fa-solid fa-trophy mr-3"></i>
-                        Leaderboard</span>
-                </a>
-            </li>
-            <li>
-                <a href="#"
-                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                    <span class="flex-1 ms-3 whitespace-nowrap"><i class="fa-solid fa-apple-whole mr-3"></i> Jejak
-                        Karbon</span>
-                    <span
-                        class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-green-800 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-300">Soon</span>
-                </a>
-            </li>
             <hr>
             <li>
                 <p class="flex text-center items-center p-2 text-gray-900 rounded-lg dark:text-white group">

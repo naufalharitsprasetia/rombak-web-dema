@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LangkahHijau | {{ $title }}</title>
+    <title>DEMA UNIDA GONTOR | {{ $title }}</title>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {{-- link --}}
@@ -19,13 +19,14 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     {{-- Meta tag --}}
-    <meta name="keywords" content="gaya hidup, langkah hijau, keberlanjutan, emisi karbon, recycle">
-    <meta name="author" content="Langkah Hijau Team">
+    <meta name="keywords" content="organisasi, dewan mahasiswa, unida gontor, kampus, unggul">
+    <meta name="author" content="Dewan Mahasiswa Unida Gontor">
     <meta name="robots" content="index, follow">
     <meta name="description"
-        content="LangkahHijau adalah platform online untuk petani yang menghubungkan mereka dengan teknologi pertanian terkini dan informasi pasar.">
-    <meta property="og:title" content="LangkahHijau - Cek gaya hidupmu, hijaukan langkahmu!">
-    <meta property="og:description" content="Mulai dari langkah kecil, untuk bumi yang lebih hijau.">
+        content="DEMA Unida Gontor adalah sebuah organisasi mahasiswa di universitas darussalam gontor" />
+    <meta property="og:title" content="DEMA UNIDA GONTOR">
+    <meta property="og:description"
+        content="DEMA Unida Gontor adalah sebuah organisasi mahasiswa di universitas darussalam gontor">
     <meta property="og:image" content="{{ asset('img/logoweb.png') }}">
     <meta property="og:url" content="{{ url()->current() }}">
 </head>

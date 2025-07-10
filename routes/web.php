@@ -2,14 +2,16 @@
 
 use App\Http\Middleware\IsAdmin;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UKMController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\AnggotaDepartementController;
-use App\Http\Controllers\DepartementController;
+use App\Http\Controllers\AspirasiController;
 use App\Http\Controllers\DivisionController;
-use App\Http\Controllers\UKMController;
+use App\Http\Controllers\UKMPutriController;
+use App\Http\Controllers\DepartementController;
+use App\Http\Controllers\AnggotaDepartementController;
 
 // // php artisan storage:link untuk hosting
 // Route::get('/create-storage-link', function () {
@@ -34,7 +36,7 @@ Route::get('/tentang', [HomeController::class, 'tentang'])->name('home.tentang')
 // Route::get('/team', [HomeController::class, 'team'])->name('home.team');
 Route::get('/kontak', [HomeController::class, 'kontak'])->name('home.kontak');
 
-// Auth for guest
+// guest
 Route::middleware('guest')->group(function () {
     // auth
     Route::get('/req-auth', [AuthController::class, 'reqAuth'])->name('auth.reqAuth');
@@ -42,6 +44,14 @@ Route::middleware('guest')->group(function () {
     Route::post('/login', [AuthController::class, 'authenticate'])->name('auth.authenticate');
     Route::get('/sign-up', [AuthController::class, 'signup'])->name('auth.signup');
     Route::post('/sign-up', [AuthController::class, 'addUser'])->name('auth.addUser');
+});
+
+// auth
+Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi.index');
+Route::middleware('auth')->group(function () {
+    Route::get('/aspiras-list', [AspirasiController::class, 'list'])->name('aspirasi.list');
+    Route::post('/aspirasi', [AspirasiController::class, 'store'])->name('aspirasi.store');
+    Route::delete('/aspirasi/{aspirasi}', [AspirasiController::class, 'destroy'])->name('aspirasi.destroy');
 });
 
 // Auth for user logged in
@@ -53,9 +63,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile/{user:username}', [UserController::class, 'profile'])->name('user.profile');
 });
 
-// Edu-zone
-Route::get('/edu-zone', [PostController::class, 'index'])->name('post.index');
-Route::get('/edu-zone/{post}', [PostController::class, 'show'])->name('post.show');
+// blog
+Route::get('/blog', [PostController::class, 'index'])->name('post.index');
+Route::get('/blog/{post}', [PostController::class, 'show'])->name('post.show');
 
 // IS ADMIN Middleware
 Route::middleware([IsAdmin::class])->group(function () {
@@ -87,13 +97,20 @@ Route::middleware([IsAdmin::class])->group(function () {
     Route::get('/ukm-edit/{uKM}', [UKMController::class, 'edit'])->name('ukm.edit');
     Route::put('/ukm-edit/{uKM}', [UKMController::class, 'update'])->name('ukm.update');
     Route::delete('/ukm-delete/{uKM}', [UKMController::class, 'destroy'])->name('ukm.destroy');
-    // Edu Zone
-    Route::get('/edu-zone-manage', [PostController::class, 'manage'])->name('post.manage');
-    Route::get('/edu-zone-create', [PostController::class, 'create'])->name('post.create');
-    Route::post('/edu-zone-create', [PostController::class, 'store'])->name('post.store');
-    Route::get('/edu-zone-edit/{post}', [PostController::class, 'edit'])->name('post.edit');
-    Route::put('/edu-zone-edit/{post}', [PostController::class, 'update'])->name('post.update');
-    Route::delete('/edu-zone-delete/{post}', [PostController::class, 'destroy'])->name('post.destroy');
+    // UKM
+    Route::get('/putri/ukm-list', [UKMPutriController::class, 'list'])->name('ukm-putri.list');
+    Route::get('/putri/ukm-create', [UKMPutriController::class, 'create'])->name('ukm-putri.create');
+    Route::post('/putri/ukm-create', [UKMPutriController::class, 'store'])->name('ukm-putri.store');
+    Route::get('/putri/ukm-edit/{uKM}', [UKMPutriController::class, 'edit'])->name('ukm-putri.edit');
+    Route::put('/putri/ukm-edit/{uKM}', [UKMPutriController::class, 'update'])->name('ukm-putri.update');
+    Route::delete('/putri/ukm-delete/{uKM}', [UKMPutriController::class, 'destroy'])->name('ukm-putri.destroy');
+    // Blog
+    Route::get('/blog-manage', [PostController::class, 'manage'])->name('post.manage');
+    Route::get('/blog-create', [PostController::class, 'create'])->name('post.create');
+    Route::post('/blog-create', [PostController::class, 'store'])->name('post.store');
+    Route::get('/blog-edit/{post}', [PostController::class, 'edit'])->name('post.edit');
+    Route::put('/blog-edit/{post}', [PostController::class, 'update'])->name('post.update');
+    Route::delete('/blog-delete/{post}', [PostController::class, 'destroy'])->name('post.destroy');
 });
 // Departemen
 Route::get('/departement', [DepartementController::class, 'index'])->name('departement.index');
@@ -101,4 +118,5 @@ Route::get('/departement/{departement}', [DepartementController::class, 'show'])
 
 // UKM
 Route::get('/ukm', [UKMController::class, 'index'])->name('ukm.index');
+Route::get('/ukm/putri', [UKMPutriController::class, 'index'])->name('ukm-putri.index');
 Route::get('/ukm/{uKM}', [UKMController::class, 'show'])->name('ukm.show');

@@ -43,7 +43,7 @@
         <div class="hidden lg:flex lg:gap-x-12">
             <a href="{{ route('home.index') }}"
                 class="text-sm/6 font-medium {{ $active == 'beranda' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">Beranda</a>
-            <a href=""
+            <a href="{{ route('post.index') }}"
                 class="text-sm/6 font-medium {{ $active == 'berita' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">Berita</a>
             <a href="{{ route('ukm.index') }}"
                 class="text-sm/6 font-medium {{ $active == 'ukm' ? 'text-dematua dark:text-demamuda' : 'text-gray-700 dark:text-gray-200 hover:text-dematua' }}">UKM</a>
@@ -73,7 +73,7 @@
                     <a href="{{ route('home.kontak') }}"
                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-700 hover:outline-none"
                         role="menuitem" tabindex="-1" id="user-menu-item-2">Kontak Kami</a>
-                    <a href=""
+                    <a href="{{ route('aspirasi.index') }}"
                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-700 hover:outline-none"
                         role="menuitem" tabindex="-1" id="user-menu-item-3">Salurkan Aspirasi</a>
                 </div>
@@ -164,7 +164,7 @@
                         <a href="{{ route('home.kontak') }}"
                             class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Kontak
                             Kami</a>
-                        <a href=""
+                        <a href="{{ route('aspirasi.index') }}"
                             class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Salurkan
                             Aspirasi</a>
                         <a href="{{ route('departement.index') }}"

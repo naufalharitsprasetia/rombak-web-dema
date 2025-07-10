@@ -76,10 +76,12 @@
             <div>
                 <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Fitur</h3>
                 <ul class="space-y-2">
-                    <li><a href="" class="hover:text-gray-900 dark:hover:text-white">Berita</a></li>
+                    <li><a href="{{ route('post.index') }}" class="hover:text-gray-900 dark:hover:text-white">Berita</a>
+                    </li>
                     <li><a href="{{ route('ukm.index') }}" class="hover:text-gray-900 dark:hover:text-white">UKM</a>
                     </li>
-                    <li><a href="" class="hover:text-gray-900 dark:hover:text-white">Salurkan Aspirasi</a></li>
+                    <li><a href="{{ route('aspirasi.index') }}" class="hover:text-gray-900 dark:hover:text-white">Kotak
+                            Aspirasi</a></li>
                 </ul>
             </div>
         </div>

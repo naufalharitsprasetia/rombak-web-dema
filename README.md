@@ -26,7 +26,7 @@
 - 🏅 **Green Points & Badge System**  
   Sistem poin dan badge eksklusif sebagai bentuk apresiasi untuk setiap aksi hijau pengguna.
 
-- 📚 **Edu-Zone (Artikel Edukasi & Tips Hijau)**  
+- 📚 **Blog (Artikel Edukasi & Tips Hijau)**  
   Konten informatif seputar gaya hidup sehat, ramah lingkungan, dan aksi hijau yang mudah diterapkan.
 
 - 📆 **Green Events**  
