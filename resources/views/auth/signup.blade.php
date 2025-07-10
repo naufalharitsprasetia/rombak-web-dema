@@ -43,8 +43,7 @@
                             href="{{ route('home.index') }}">
                             <i class="fas fa-chevron-left"></i>
                         </a>
-                        <h1 class="text-xl lg:text-3xl font-semibold pr-3 text-black dark:text-white">Daftar ke
-                            Dewan<span class="text-dematua dark:text-demamuda">Mahasiswa</span>
+                        <h1 class="text-xl lg:text-3xl font-semibold pr-3 text-black dark:text-white">Daftar
                         </h1>
                     </div>
                     <p class="text-gray-500">Masuk ke Website kami dan dapatkan fitur-fitur menarik di sini.</p>
@@ -133,7 +132,8 @@
                     <!-- Already have an account -->
                     <div class="text-center mt-6">
                         <span class="text-black dark:text-gray-300">Sudah punya akun?</span>
-                        <a href="/login" class="ml-2 text-black dark:text-white font-bold hover:text-dematua">
+                        <a href="{{ route('login') }}"
+                            class="ml-2 text-black dark:text-white font-bold hover:text-dematua">
                             Masuk
                         </a>
                     </div>

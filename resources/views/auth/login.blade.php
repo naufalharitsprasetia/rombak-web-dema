@@ -44,8 +44,7 @@
                             href="{{ route('home.index') }}">
                             <i class="fas fa-chevron-left"></i>
                         </a>
-                        <h1 class="text-xl lg:text-3xl font-semibold pr-3 text-black dark:text-white">Masuk ke Website
-                            Dewan<span class="text-dematua dark:text-demamuda">Mahasiswa</span>
+                        <h1 class="text-xl lg:text-3xl font-semibold pr-3 text-black dark:text-white">Masuk
                         </h1>
                     </div>
                     <p class="text-gray-500">Masuk ke Website kami dan dapatkan fitur-fitur menarik di sini.</p>
@@ -101,10 +100,12 @@
                             class="text-sm lg:text-base text-gray-700 dark:text-gray-300">Tampilkan kata sandi</label>
                     </div>
 
-                    {{-- sudah punya akun --}}
-                    <div class="text-sm text-center lg:text-base text-gray-700 dark:text-gray-300">
-                        <a class="hover:text-dematua transition-colors" href="{{ route('auth.signup') }}">Belum punya
-                            akun?</a>
+                    <div class="text-center mt-6">
+                        <span class="text-black dark:text-gray-300">Belum punya akun?</span>
+                        <a href="{{ route('auth.signup') }}"
+                            class="ml-2 text-black dark:text-white font-bold hover:text-dematua">
+                            Daftar
+                        </a>
                     </div>
 
                     <!-- Login Button -->
