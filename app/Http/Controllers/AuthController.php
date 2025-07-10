@@ -100,7 +100,6 @@ class AuthController extends Controller
 
     public function addUser(Request $request)
     {
-        $tier1 = Tier::where('urutan', 1)->first();
         $request->validate([
             'name' => 'required|string|max:255',
             'username' => 'required|string|max:255|unique:users,username',
@@ -120,7 +119,6 @@ class AuthController extends Controller
         $user->username = $request->input('username');
         $user->email = $request->input('email');
         $user->password = Hash::make($request->input('password'));
-        $user->tier_id = $tier1->id;
         $user->save();
 
         return redirect('/login')->with('success', 'Registrasi berhasil, silakan login.');
