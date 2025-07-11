@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Tier;
+use App\Models\UKM;
+use App\Models\Post;
 use App\Models\User;
-use App\Models\QuizAttempt;
-use Illuminate\Http\Request;
+use App\Models\Division;
+use App\Models\Departement;
+use App\Models\AnggotaDepartement;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
@@ -14,9 +16,15 @@ class UserController extends Controller
     {
         $title = 'Dashboard';
         $active = 'dashboard';
+        $dema = Auth::user();
+        $divisions = Division::all();
+        $ukms = UKM::where('user_id', $dema->id)->get();
+        $posts = Post::where('user_id', $dema->id)->get();
+        $departements = Departement::where('user_id', $dema->id)->get();
+        $anggota_departements = AnggotaDepartement::where('user_id', $dema->id)->get();
 
         // Teruskan data quizAttempts ke view
-        return view('users.dashboard', compact('active', 'title'));
+        return view('users.dashboard', compact('active', 'title', 'divisions', 'ukms', 'posts', 'departements', 'anggota_departements'));
     }
 
     public function profile(User $user)

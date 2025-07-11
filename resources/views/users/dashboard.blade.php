@@ -47,7 +47,7 @@
                                             Berita
                                         </dt>
                                         <dd id="points" class="text-lg font-semibold text-gray-900 dark:text-white">
-                                            3
+                                            {{ count($posts) }}
                                             Berita
                                         </dd>
                                     </dl>
@@ -77,7 +77,7 @@
                                         <dt class="text-sm font-medium text-demamuda dark:text-gray-400 truncate">
                                             UKM</dt>
                                         <dd id="moisture" class="text-lg font-semibold text-gray-900 dark:text-white">
-                                            2
+                                            {{ count($ukms) }}
                                             UKM</dd>
                                     </dl>
                                 </div>
@@ -105,7 +105,8 @@
                                     <dl>
                                         <dt class="text-sm font-medium text-demamuda dark:text-gray-400 truncate">
                                             Divisi</dt>
-                                        <dd class="text-lg font-semibold text-gray-900 dark:text-white">3 Divisi</dd>
+                                        <dd class="text-lg font-semibold text-gray-900 dark:text-white">
+                                            {{ count($divisions)}} Divisi</dd>
                                     </dl>
                                 </div>
                             </div>
@@ -133,7 +134,7 @@
                                             Departement</dt>
                                         {{-- Menampilkan jumlah quiz yang sudah dikerjakan --}}
                                         <dd class="text-lg font-semibold text-gray-900 dark:text-white">
-                                            3 Departement
+                                            {{ count($departements) }} Departement
                                         </dd>
                                     </dl>
                                 </div>
@@ -164,7 +165,7 @@
                                             Anggota Departement</dt>
                                         {{-- Menampilkan jumlah quiz yang sudah dikerjakan --}}
                                         <dd class="text-lg font-semibold text-gray-900 dark:text-white">
-                                            3 Anggota
+                                            {{ count($anggota_departements) }} Anggota
                                         </dd>
                                     </dl>
                                 </div>

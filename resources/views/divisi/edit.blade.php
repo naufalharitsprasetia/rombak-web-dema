@@ -1,18 +1,16 @@
-@extends('layout.main')
-
-@section('content')
+<x-sidebar.layout :title="$title" :active="$active">
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
         <h1 class="text-3xl font-bold mb-6 text-center">Create Divisi</h1>
 
         <div class="mx-4 md:mx-6 lg:mx-16 bg-slate-200 p-4 md:p-8  rounded-lg shadow-lg">
             @if ($errors->any())
-                <div class="mx-auto max-w-7xl">
-                    <div class="alert alert-error col-lg-12 mt-4" role="alert">
-                        @foreach ($errors->all() as $error)
-                            <div>{{ $error }}</div>
-                        @endforeach
-                    </div>
+            <div class="mx-auto max-w-7xl">
+                <div class="alert alert-error col-lg-12 mt-4" role="alert">
+                    @foreach ($errors->all() as $error)
+                    <div>{{ $error }}</div>
+                    @endforeach
                 </div>
+            </div>
             @endif
             <form action="/divisi-create" method="POST">
                 @csrf
@@ -51,4 +49,4 @@
             </form>
         </div>
     </div>
-@endsection
+</x-sidebar.layout>

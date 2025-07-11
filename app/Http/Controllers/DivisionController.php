@@ -9,28 +9,21 @@ use Illuminate\Support\Str;
 
 class DivisionController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         $divisions = Division::orderBy('urutan', 'asc')->get();
+        $title = 'Divisi';
         $active = 'divisi';
-        return view('divisi.index', compact('active', 'divisions'));
+        return view('divisi.index', compact('active', 'title', 'divisions'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
+        $title = 'Create Divisi';
         $active = 'divisi';
-        return view('divisi.create', compact('active'));
+        return view('divisi.create', compact('title', 'active'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
 
@@ -52,29 +45,15 @@ class DivisionController extends Controller
 
         DB::table('divisions')->insert($data);
 
-        return redirect()->route('dashboard')->with('success', 'new division created successfully!');
+        return redirect()->route('divisi.index')->with('success', 'new division created successfully!');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    // public function show(Division $division)
-    // {
-    //     //
-    // }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(Division $division)
     {
         $active = 'divisi';
         return view('divisi.edit', compact('active', 'division'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, Division $division)
     {
         $request->validate([
@@ -103,12 +82,9 @@ class DivisionController extends Controller
         DB::table('divisions')->where('id', $division->id)->update($data);
 
         // Redirect kembali dengan pesan sukses
-        return redirect()->route('dashboard')->with('success', 'division updated successfully!');
+        return redirect()->route('divisi.index')->with('success', 'division updated successfully!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(Division $division)
     {
         if (!$division) {
@@ -118,6 +94,6 @@ class DivisionController extends Controller
         DB::table('divisions')->where('id', $division->id)->delete();
 
         // Redirect kembali dengan pesan sukses
-        return redirect()->route('dashboard')->with('success', 'division deleted successfully!');
+        return redirect()->route('divisi.index')->with('success', 'division deleted successfully!');
     }
 }
