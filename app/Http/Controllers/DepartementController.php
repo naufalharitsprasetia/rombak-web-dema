@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Departement;
+use App\Models\User;
 use App\Models\Division;
+use App\Models\Departement;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class DepartementController extends Controller
@@ -18,14 +20,29 @@ class DepartementController extends Controller
     {
         $title = 'Departemen';
         $active = 'departement';
-        $divisions = Division::orderBy('urutan', 'asc')->get();
-        return view('departement.index',  compact('active', 'title', 'divisions'));
+        $departement_active = 'putra';
+        $dema_siman = User::where('username', 'demasiman')->first();
+        $divisions = Division::where('user_id', $dema_siman->id)->orderBy('urutan', 'asc')->get();
+        // dd($divisions);
+        return view('departement.index',  compact('active', 'title', 'divisions', 'departement_active'));
     }
+    public function indexPutri()
+    {
+        $title = 'Departemen';
+        $active = 'departement';
+        $departement_active = 'putri';
+        $dema_putri = User::where('username', 'demaputri')->first();
+        $divisions = Division::where('user_id', $dema_putri->id)->orderBy('urutan', 'asc')->get();
+        return view('departement.index',  compact('active', 'title', 'divisions', 'departement_active'));
+    }
+
     public function manage()
     {
+        $title = 'Manage Departement';
         $active = 'departement';
-        $departements = Departement::all();
-        return view('departement.manage',  compact('active', 'departements'));
+        $dema = Auth::user();
+        $departements = Departement::where('user_id', $dema->id)->get();
+        return view('departement.manage',  compact('active', 'title', 'departements'));
     }
 
     /**
@@ -33,9 +50,11 @@ class DepartementController extends Controller
      */
     public function create()
     {
-        $divisions = Division::all();
+        $dema = Auth::user();
+        $divisions = Division::where('user_id', $dema->id)->get();
+        $title = 'Departement - Create';
         $active = 'departement';
-        return view('departement.create', compact('active', 'divisions'));
+        return view('departement.create', compact('active', 'title', 'divisions'));
     }
 
     /**
@@ -43,17 +62,19 @@ class DepartementController extends Controller
      */
     public function store(Request $request)
     {
+        $dema = Auth::user();
         $request->validate([
             'nama' => 'required|string|max:255',
             'division_id' => 'required',
             'urutan' => 'required|integer',
             'deskripsi' => 'nullable|string|max:255',
             'singkatan' => 'nullable|string|max:255',
-            'image' => 'required|image|max:5000',
+            'image' => 'required|image|max:6000',
         ]);
 
         $data = [
             'id' => Str::uuid(),
+            'user_id' => $dema->id,
             'nama' => $request->nama,
             'division_id' => $request->division_id,
             'urutan' => $request->urutan,
@@ -75,8 +96,9 @@ class DepartementController extends Controller
      */
     public function show(Departement $departement)
     {
+        $title = 'Departement Show';
         $active = 'departement';
-        return view('departement.show',  compact('active', 'departement'));
+        return view('departement.show',  compact('active', 'title', 'departement'));
     }
 
     /**
@@ -84,9 +106,14 @@ class DepartementController extends Controller
      */
     public function edit(Departement $departement)
     {
-        $divisions = Division::all();
+        $dema = Auth::user();
+        if ($departement->user_id !== $dema->id) {
+            abort(403);
+        }
+        $divisions = Division::where('user_id', $dema->id)->get();
+        $title = 'Departement Edit';
         $active = 'departement';
-        return view('departement.edit', compact('active', 'divisions', 'departement'));
+        return view('departement.edit', compact('active', 'title', 'divisions', 'departement'));
     }
 
     /**
@@ -94,13 +121,17 @@ class DepartementController extends Controller
      */
     public function update(Request $request, Departement $departement)
     {
+        $dema = Auth::user();
+        if ($departement->user_id !== $dema->id) {
+            abort(403);
+        }
         $request->validate([
             'nama' => 'required|string|max:255',
             'division_id' => 'required',
             'urutan' => 'required|integer',
             'deskripsi' => 'nullable|string|max:255',
             'singkatan' => 'nullable|string|max:255',
-            'image' => 'image|max:5000',
+            'image' => 'nullable|image|max:6000',
         ]);
 
         // Ambil data yang ada di tabel blogs berdasarkan id
@@ -138,6 +169,10 @@ class DepartementController extends Controller
      */
     public function destroy(Departement $departement)
     {
+        $dema = Auth::user();
+        if ($departement->user_id !== $dema->id) {
+            abort(403);
+        }
         if (!$departement) {
             return redirect()->back()->withErrors('departement not found!');
         }

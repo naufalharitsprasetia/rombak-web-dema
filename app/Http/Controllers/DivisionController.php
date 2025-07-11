@@ -3,15 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Division;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;
 
 class DivisionController extends Controller
 {
     public function index()
     {
-        $divisions = Division::orderBy('urutan', 'asc')->get();
+        $dema = Auth::user();
+        $divisions = Division::where('user_id', $dema->id)->orderBy('urutan', 'asc')->get();
         $title = 'Divisi';
         $active = 'divisi';
         return view('divisi.index', compact('active', 'title', 'divisions'));
@@ -26,7 +28,7 @@ class DivisionController extends Controller
 
     public function store(Request $request)
     {
-
+        $dema = Auth::user();
         $request->validate([
             'nama' => 'required|string|max:255',
             'urutan' => 'required|integer',
@@ -36,6 +38,7 @@ class DivisionController extends Controller
 
         $data = [
             'id' => Str::uuid(),
+            'user_id' => $dema->id,
             'nama' => $request->nama,
             'urutan' => $request->urutan,
             'deskripsi' => $request->deskripsi,
@@ -50,6 +53,10 @@ class DivisionController extends Controller
 
     public function edit(Division $division)
     {
+        $dema = Auth::user();
+        if ($division->user_id !== $dema->id) {
+            abort(403);
+        }
         $title = 'Edit Divisi';
         $active = 'divisi';
         return view('divisi.edit', compact('active', 'title', 'division'));
@@ -57,6 +64,10 @@ class DivisionController extends Controller
 
     public function update(Request $request, Division $division)
     {
+        $dema = Auth::user();
+        if ($division->user_id !== $dema->id) {
+            abort(403);
+        }
         $request->validate([
             'nama' => 'required|string|max:255',
             'urutan' => 'required|integer',
@@ -88,6 +99,11 @@ class DivisionController extends Controller
 
     public function destroy(Division $division)
     {
+        $dema = Auth::user();
+        if ($division->user_id !== $dema->id) {
+            abort(403);
+        }
+
         if (!$division) {
             return redirect()->back()->withErrors('division not found!');
         }

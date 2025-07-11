@@ -69,7 +69,7 @@
                                     {{ $division->singkatan }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {{ $division->deskrispi }}
+                                    {{ $division->deskripsi }}
                                 </td>
                                 <td class="px-6 py-4 text-right">
                                     <div class="flex">

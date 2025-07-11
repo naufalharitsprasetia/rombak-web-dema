@@ -102,6 +102,7 @@ Route::middleware([IsAdmin::class])->group(function () {
 });
 // Departemen
 Route::get('/departement', [DepartementController::class, 'index'])->name('departement.index');
+Route::get('/departement/putri', [DepartementController::class, 'indexPutri'])->name('departement.index-putri');
 Route::get('/departement/{departement}', [DepartementController::class, 'show'])->name('departement.show');
 
 // UKM

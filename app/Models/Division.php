@@ -21,7 +21,7 @@ class Division extends Model
     protected $keyType = 'string'; // Atur tipe data primary key sebagai string
     public $incrementing = false; // Nonaktifkan incrementing ID
     public $timestamps = true; // Menonaktifkan fitur timestamps
-
+    protected $with = ['departements', 'user'];
     public function departements()
     {
         return $this->hasMany(Departement::class, 'division_id', 'id')->orderBy('urutan', 'asc');

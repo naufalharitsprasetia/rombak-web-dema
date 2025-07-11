@@ -17,7 +17,7 @@ class UserController extends Controller
         $title = 'Dashboard';
         $active = 'dashboard';
         $dema = Auth::user();
-        $divisions = Division::all();
+        $divisions = Division::where('user_id', $dema->id)->get();
         $ukms = UKM::where('user_id', $dema->id)->get();
         $posts = Post::where('user_id', $dema->id)->get();
         $departements = Departement::where('user_id', $dema->id)->get();

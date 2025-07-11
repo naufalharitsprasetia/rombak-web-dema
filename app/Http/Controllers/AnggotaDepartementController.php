@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AnggotaDepartement;
 use App\Models\Departement;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use Illuminate\Http\Request;
+use App\Models\AnggotaDepartement;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class AnggotaDepartementController extends Controller
@@ -16,9 +17,11 @@ class AnggotaDepartementController extends Controller
      **/
     public function manage()
     {
+        $title = 'Anggota Departement';
         $active = 'anggota_departement';
-        $anggota_departements = AnggotaDepartement::orderBy('urutan', 'asc')->get();
-        return view('anggota_departement.manage',  compact('active', 'anggota_departements'));
+        $dema = Auth::user();
+        $anggota_departements = AnggotaDepartement::where('user_id', $dema->id)->orderBy('urutan', 'asc')->get();
+        return view('anggota_departement.manage',  compact('active', 'title', 'anggota_departements'));
     }
 
     /**
@@ -26,9 +29,11 @@ class AnggotaDepartementController extends Controller
      */
     public function create()
     {
-        $departements = Departement::all();
+        $title = 'Create Anggota Departement';
+        $dema = Auth::user();
+        $departements = Departement::where('user_id', $dema->id)->get();
         $active = 'anggota_departement';
-        return view('anggota_departement.create', compact('active', 'departements'));
+        return view('anggota_departement.create', compact('active', 'title', 'departements'));
     }
 
     /**
@@ -36,19 +41,21 @@ class AnggotaDepartementController extends Controller
      */
     public function store(Request $request)
     {
+        $dema = Auth::user();
         $request->validate([
             'nim' => 'required|string|max:50',
             'nama' => 'required|string|max:255',
             'departement_id' => 'required',
             'urutan' => 'required|integer',
-            'prodi' => 'string|max:255',
+            'prodi' => 'required|string|max:255',
             'asal' => 'nullable|string|max:255',
-            'image' => 'required|image|max:5000',
+            'image' => 'nullable|image|max:5000',
 
         ]);
 
         $data = [
             'id' => Str::uuid(),
+            'user_id' => $dema->id,
             'nim' => $request->nim,
             'nama' => $request->nama,
             'departement_id' => $request->departement_id,
@@ -63,26 +70,22 @@ class AnggotaDepartementController extends Controller
 
         DB::table('anggota_departements')->insert($data);
 
-        return redirect()->route('dashboard')->with('success', 'new anggota-departement created successfully!');
+        return redirect()->route('anggota_departement.manage')->with('success', 'new anggota-departement created successfully!');
     }
-
-    /**
-     * Display the specified resource.
-     */
-    // public function show(AnggotaDepartement $anggotaDepartement)
-    // {
-    //     $active = 'departement';
-    //     return view('departement.show',  compact('active', 'departement'));
-    // }
 
     /**
      * Show the form for editing the specified resource.
      */
     public function edit(AnggotaDepartement $anggotaDepartement)
     {
-        $departements = Departement::all();
+        $dema = Auth::user();
+        if ($anggotaDepartement->user_id !== $dema->id) {
+            abort(403);
+        }
+        $title = 'Edit Anggota Departement';
         $active = 'anggota_departement';
-        return view('anggota_departement.edit', compact('active', 'departements', 'anggotaDepartement'));
+        $departements = Departement::all();
+        return view('anggota_departement.edit', compact('active', 'title', 'departements', 'anggotaDepartement'));
     }
 
     /**
@@ -90,14 +93,18 @@ class AnggotaDepartementController extends Controller
      */
     public function update(Request $request, AnggotaDepartement $anggotaDepartement)
     {
+        $dema = Auth::user();
+        if ($anggotaDepartement->user_id !== $dema->id) {
+            abort(403);
+        }
         $request->validate([
             'nim' => 'required|string|max:50',
             'nama' => 'required|string|max:255',
             'departement_id' => 'required',
             'urutan' => 'required|integer',
-            'prodi' => 'string|max:255',
+            'prodi' => 'required|string|max:255',
             'asal' => 'nullable|string|max:255',
-            'image' => 'image|max:5000',
+            'image' => 'nullable|image|max:5000',
         ]);
 
         // Siapkan data yang akan diperbarui
@@ -122,7 +129,7 @@ class AnggotaDepartementController extends Controller
         DB::table('anggota_departements')->where('id', $anggotaDepartement->id)->update($data);
 
         // Redirect kembali dengan pesan sukses
-        return redirect()->route('dashboard')->with('success', 'anggota departement updated successfully!');
+        return redirect()->route('anggota_departement.manage')->with('success', 'anggota departement updated successfully!');
     }
 
     /**
@@ -130,6 +137,11 @@ class AnggotaDepartementController extends Controller
      */
     public function destroy(AnggotaDepartement $anggotaDepartement)
     {
+        $dema = Auth::user();
+        if ($anggotaDepartement->user_id !== $dema->id) {
+            abort(403);
+        }
+
         if (!$anggotaDepartement) {
             return redirect()->back()->withErrors('anggota departement not found!');
         }
@@ -137,6 +149,6 @@ class AnggotaDepartementController extends Controller
         DB::table('anggota_departements')->where('id', $anggotaDepartement->id)->delete();
 
         // Redirect kembali dengan pesan sukses
-        return redirect()->route('dashboard')->with('success', 'anggota departement deleted successfully!');
+        return redirect()->route('anggota_departement.manage')->with('success', 'anggota departement deleted successfully!');
     }
 }

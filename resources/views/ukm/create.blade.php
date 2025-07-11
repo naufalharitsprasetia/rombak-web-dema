@@ -27,7 +27,7 @@
                         <br>
                         {{-- Form Create --}}
                         <section class="bg-white dark:bg-gray-900">
-                            <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
+                            <div class="py-6 px-4 mx-auto max-w-2xl">
                                 <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a UKM</h2>
                                 {{-- form --}}
                                 <form method="post" enctype="multipart/form-data" id="formPost">
