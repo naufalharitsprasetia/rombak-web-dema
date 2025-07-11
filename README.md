@@ -23,16 +23,6 @@ Website ini dibangun menggunakan stack modern:
 - **MySQL** — Basis data mahasiswa dan kegiatan
 - **Vite** — Build tool cepat untuk pengembangan frontend
 
-## 📁 Struktur Direktori
-├── app/
-├── resources/
-│ └── views/ # Halaman Blade
-├── public/ # Aset publik (gambar, js, css)
-├── routes/web.php # Routing utama
-├── database/ # Seeder dan migration
-├── .env # Konfigurasi environment
-└── ...
-
 ## 👥 Kontribusi
 Kami terbuka untuk kontribusi, baik berupa saran, bug report, maupun pull request. Silakan fork repositori ini dan kirim PR jika ada perbaikan atau fitur tambahan.
 
