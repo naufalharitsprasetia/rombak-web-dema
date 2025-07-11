@@ -50,8 +50,9 @@ class DivisionController extends Controller
 
     public function edit(Division $division)
     {
+        $title = 'Edit Divisi';
         $active = 'divisi';
-        return view('divisi.edit', compact('active', 'division'));
+        return view('divisi.edit', compact('active', 'title', 'division'));
     }
 
     public function update(Request $request, Division $division)

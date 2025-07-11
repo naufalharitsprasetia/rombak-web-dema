@@ -30,4 +30,8 @@ class AnggotaDepartement extends Model
     {
         return $this->belongsTo(Departement::class, 'departement_id', 'id');
     }
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
 }

@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('divisions', function (Blueprint $table) {
             $table->uuid('id')->primary();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('nama');
             $table->text('deskripsi')->nullable();
             $table->text('singkatan')->nullable();

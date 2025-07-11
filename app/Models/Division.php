@@ -10,6 +10,7 @@ class Division extends Model
     use HasFactory;
     protected $fillable = [
         'id',
+        'user_id',
         'nama',
         'deskripsi',
         'urutan',
@@ -24,5 +25,9 @@ class Division extends Model
     public function departements()
     {
         return $this->hasMany(Departement::class, 'division_id', 'id')->orderBy('urutan', 'asc');
+    }
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
     }
 }
