@@ -23,7 +23,7 @@
     <nav class="flex items-center justify-between p-6 lg:px-8 mx-auto max-w-7xl" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5 flex justify-center items-center">
-                <span class="sr-only">LangkahHijau</span>
+                <span class="sr-only">DewanMahasiswa</span>
                 <img class="h-8 w-auto" src="/img/logoweb.png" alt="">
                 <h2 class="text-xl ml-1 font-semibold text-gray-900 dark:text-gray-100">Dewan <span
                         class="text-dematua dark:text-demamuda"> Mahasiswa</span></h2>
@@ -104,9 +104,11 @@
                     class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white dark:bg-zinc-900 dark:border-2 dark:border-zinc-700 py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
                     role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                     <!-- Active: "bg-gray-100 outline-none", Not Active: "" -->
+                    @can('is_admin')
                     <a href="{{ route('user.dashboard') }}"
                         class="block text-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-zinc-700"
                         role="menuitem" tabindex="-1" id="user-menu-item-1">Dashboard</a>
+                    @endcan
                     <form action="{{ route('auth.logout') }}" method="POST" class="block" id="logoutForm">
                         @csrf
                         <button type="button" id="logoutBtn"
@@ -148,28 +150,28 @@
             </div>
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
-                    <div class="space-y-2 py-4">
+                    <div class="space-y-1 py-2">
                         <a href="{{ route('home.index') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Beranda</a>
+                            class="-mx-3 block rounded-lg px-3 py-1 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Beranda</a>
                         <a href="{{ route('post.index') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">
+                            class="-mx-3 block rounded-lg px-3 py-1 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">
                             Berita</a>
-                        <a href="{{ route('ukm.index') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Green
-                            UKM</a>
                         <a href="{{ route('home.tentang') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Tentang
+                            class="-mx-3 block rounded-lg px-3 py-1 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Tentang
                             DEMA
                         </a>
                         <a href="{{ route('home.kontak') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Kontak
+                            class="-mx-3 block rounded-lg px-3 py-1 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Kontak
                             Kami</a>
-                        <a href="{{ route('aspirasi.index') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Salurkan
-                            Aspirasi</a>
                         <a href="{{ route('departement.index') }}"
-                            class="-mx-3 block rounded-lg px-3 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Departemen
+                            class="-mx-3 block rounded-lg px-3 py-1 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Departemen
                         </a>
+                        <a href="{{ route('ukm.index') }}"
+                            class="-mx-3 block rounded-lg px-3 py-1 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">
+                            UKM</a>
+                        <a href="{{ route('aspirasi.index') }}"
+                            class="-mx-3 block rounded-lg px-3 py-1 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">Kotak
+                            Aspirasi</a>
                     </div>
                     <div class="pt-2 pb-6">
                         <!-- Theme Toggle Button -->
@@ -185,23 +187,21 @@
                         <form action="{{ route('auth.logout') }}" method="POST" class="block" id="logoutForm2">
                             @csrf
                             <button type="button" id="logoutBtn2"
-                                class="block w-full cursor-pointer font-medium px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg"
+                                class="block w-full cursor-pointer font-medium px-4 py-1 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg"
                                 role="menuitem" tabindex="-1">Sign out</button>
                         </form>
+                        @can('is_admin')
                         <a href="{{ route('user.dashboard') }}"
-                            class="block text-center px-4 py-2 font-medium text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg"
+                            class="block text-center px-4 py-1 font-medium text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg"
                             role="menuitem" tabindex="-1" id="user-menu-item-1">Dashboard</a>
-                        <p class="block text-center px-4 py-2 font-medium text-sm text-dematua dark:text-demamuda"
-                            role="menuitem" tabindex="-1" id="user-menu-item-0"><i class="fa-solid fa-star me-2"></i> {{
-                            auth()->user()->green_points }} Green
-                            Points</p>
+                        @endcan
                         <p
-                            class="mx-auto text-center block rounded-lg px-4 py-2 text-sm/7 font-medium text-gray-700 dark:text-gray-200">
+                            class="mx-auto text-center block rounded-lg px-4 py-1 text-sm/7 font-medium text-gray-700 dark:text-gray-200">
                             <i class="fa-solid fa-user"></i> {{ auth()->user()->name }}
                         </p>
                         @else
                         <a href="{{ route('auth.login') }}"
-                            class="mx-auto text-center block px-3 py-2.5 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg">
+                            class="mx-auto text-center block px-3 py-1 text-sm/7 font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg">
                             <i class="fa-solid fa-sign-in mr-3"></i> Login</a>
                         @endauth
                     </div>

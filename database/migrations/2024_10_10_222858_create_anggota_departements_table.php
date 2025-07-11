@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('anggota_departements', function (Blueprint $table) {
             $table->uuid('id')->primary();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignUuid('departement_id')->constrained()->onDelete('cascade');
             $table->string('nim');
             $table->string('nama');

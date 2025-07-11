@@ -31,6 +31,14 @@
             <div class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 sm:mb-6 text-lg sm:text-xl">
                 {!! $post->body !!}
             </div>
+            <br>
+            <p class="text-gray-900 dark:text-white">Publisher : {{ $post->user->name }}</p>
+            <br>
+            @if(isset($post->link_dokumentasi))
+            <p class="text-gray-900 dark:text-white">Link Dokumentasi : <a target="_blank"
+                    class="text-demamuda hover:text-dematua" href="{{ $post->link_dokumentasi }}">Klik
+                    disini</a></p>
+            @endif
         </div>
     </div>
 </x-layout>

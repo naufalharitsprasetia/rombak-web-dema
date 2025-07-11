@@ -44,11 +44,11 @@
                                 <div class="ml-5 w-0 flex-1">
                                     <dl>
                                         <dt class="text-sm font-medium text-demamuda dark:text-gray-400 truncate">
-                                            Points
+                                            Berita
                                         </dt>
                                         <dd id="points" class="text-lg font-semibold text-gray-900 dark:text-white">
                                             3
-                                            Green Points
+                                            Berita
                                         </dd>
                                     </dl>
                                 </div>
@@ -56,7 +56,8 @@
                         </div>
                         <div class="bg-gray-200 dark:bg-zinc-700 px-5 py-3">
                             <div class="text-sm">
-                                <a href="" class="font-medium text-dematua hover:text-demamuda">Lihat
+                                <a href="{{ route('post.manage') }}"
+                                    class="font-medium text-dematua hover:text-demamuda">Lihat
                                     detail</a>
                             </div>
                         </div>
@@ -74,17 +75,18 @@
                                 <div class="ml-5 w-0 flex-1">
                                     <dl>
                                         <dt class="text-sm font-medium text-demamuda dark:text-gray-400 truncate">
-                                            Badges</dt>
+                                            UKM</dt>
                                         <dd id="moisture" class="text-lg font-semibold text-gray-900 dark:text-white">
                                             2
-                                            Badges</dd>
+                                            UKM</dd>
                                     </dl>
                                 </div>
                             </div>
                         </div>
                         <div class="bg-gray-200 dark:bg-zinc-700 px-5 py-3">
                             <div class="text-sm">
-                                <a href="#userBadge" class="font-medium text-dematua hover:text-demamuda">Lihat
+                                <a href="{{ route('ukm.manage') }}"
+                                    class="font-medium text-dematua hover:text-demamuda">Lihat
                                     detail</a>
                             </div>
                         </div>
@@ -102,15 +104,16 @@
                                 <div class="ml-5 w-0 flex-1">
                                     <dl>
                                         <dt class="text-sm font-medium text-demamuda dark:text-gray-400 truncate">
-                                            Tier</dt>
-                                        <dd class="text-lg font-semibold text-gray-900 dark:text-white">assad</dd>
+                                            Divisi</dt>
+                                        <dd class="text-lg font-semibold text-gray-900 dark:text-white">3 Divisi</dd>
                                     </dl>
                                 </div>
                             </div>
                         </div>
                         <div class="bg-gray-200 dark:bg-zinc-700 px-5 py-3">
                             <div class="text-sm">
-                                <a href="" class="font-medium text-dematua hover:text-demamuda">Lihat detail</a>
+                                <a href="{{ route('divisi.index') }}"
+                                    class="font-medium text-dematua hover:text-demamuda">Lihat detail</a>
                             </div>
                         </div>
                     </div>
@@ -127,10 +130,10 @@
                                 <div class="ml-5 w-0 flex-1">
                                     <dl>
                                         <dt class="text-sm font-medium text-demamuda dark:text-gray-400 truncate">
-                                            Quiz Attempted</dt>
+                                            Departement</dt>
                                         {{-- Menampilkan jumlah quiz yang sudah dikerjakan --}}
                                         <dd class="text-lg font-semibold text-gray-900 dark:text-white">
-                                            3 Kali
+                                            3 Departement
                                         </dd>
                                     </dl>
                                 </div>
@@ -139,7 +142,69 @@
                         <div class="bg-gray-200 dark:bg-zinc-700 px-5 py-3">
                             <div class="text-sm">
                                 {{-- Link ke bagian riwayat quiz di halaman yang sama --}}
-                                <a href="#quizHistory" class="font-medium text-dematua hover:text-demamuda">Lihat
+                                <a href="{{ route('departement.list') }}"
+                                    class="font-medium text-dematua hover:text-demamuda">Lihat
+                                    detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden shadow-sm rounded-lg border dark:border-zinc-600">
+                        <div class="p-5">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-demamuda rounded-md p-3">
+                                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                    </svg>
+                                </div>
+                                <div class="ml-5 w-0 flex-1">
+                                    <dl>
+                                        <dt class="text-sm font-medium text-demamuda dark:text-gray-400 truncate">
+                                            Anggota Departement</dt>
+                                        {{-- Menampilkan jumlah quiz yang sudah dikerjakan --}}
+                                        <dd class="text-lg font-semibold text-gray-900 dark:text-white">
+                                            3 Anggota
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-200 dark:bg-zinc-700 px-5 py-3">
+                            <div class="text-sm">
+                                {{-- Link ke bagian riwayat quiz di halaman yang sama --}}
+                                <a href="{{ route('anggota_departement.index') }}"
+                                    class="font-medium text-dematua hover:text-demamuda">Lihat
+                                    detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden shadow-sm rounded-lg border dark:border-zinc-600">
+                        <div class="p-5">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-demamuda rounded-md p-3">
+                                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                    </svg>
+                                </div>
+                                <div class="ml-5 w-0 flex-1">
+                                    <dl>
+                                        <dt class="text-sm font-medium text-demamuda dark:text-gray-400 truncate">
+                                            Periode</dt>
+                                        {{-- Menampilkan jumlah quiz yang sudah dikerjakan --}}
+                                        <dd class="text-lg font-semibold text-gray-900 dark:text-white">
+                                            2024-2025
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-200 dark:bg-zinc-700 px-5 py-3">
+                            <div class="text-sm">
+                                {{-- Link ke bagian riwayat quiz di halaman yang sama --}}
+                                <a href="" class="font-medium text-dematua hover:text-demamuda">Lihat
                                     detail</a>
                             </div>
                         </div>

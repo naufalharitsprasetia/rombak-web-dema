@@ -13,11 +13,10 @@
                 </div>
                 <div class="pb-16 mx-auto max-w-7xl text-center">
                     <div class="toogle-ukm flex justify-center items-center mx-auto ">
-                        <a href="{{ route('ukm.index') }}"
-                            class="py-3 px-4 border border-demamuda bg-demamuda text-white">
+                        <a href="" class="py-3 px-4 border border-demamuda bg-demamuda text-white">
                             PUTRA
                         </a>
-                        <a href="{{ route('ukm-putri.index') }}"
+                        <a href=""
                             class="py-3 px-4 border border-demamuda dark:text-white hover:bg-demamuda hover:text-white">
                             PUTRI
                         </a>

@@ -33,7 +33,6 @@ use App\Http\Controllers\AnggotaDepartementController;
 // Home
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/tentang', [HomeController::class, 'tentang'])->name('home.tentang');
-// Route::get('/team', [HomeController::class, 'team'])->name('home.team');
 Route::get('/kontak', [HomeController::class, 'kontak'])->name('home.kontak');
 
 // guest
@@ -52,15 +51,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/aspiras-list', [AspirasiController::class, 'list'])->name('aspirasi.list');
     Route::post('/aspirasi', [AspirasiController::class, 'store'])->name('aspirasi.store');
     Route::delete('/aspirasi/{aspirasi}', [AspirasiController::class, 'destroy'])->name('aspirasi.destroy');
-});
-
-// Auth for user logged in
-Route::middleware('auth')->group(function () {
     // logout
     Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
-    // users
-    Route::get('/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
-    Route::get('/profile/{user:username}', [UserController::class, 'profile'])->name('user.profile');
 });
 
 // blog
@@ -69,6 +61,9 @@ Route::get('/blog/{post}', [PostController::class, 'show'])->name('post.show');
 
 // IS ADMIN Middleware
 Route::middleware([IsAdmin::class])->group(function () {
+    // users
+    Route::get('/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
+    Route::get('/profile/{user:username}', [UserController::class, 'profile'])->name('user.profile');
     // Divisi
     Route::get('/divisi', [DivisionController::class, 'index'])->name('divisi.index');
     Route::get('/divisi-create', [DivisionController::class, 'create'])->name('divisi.create');
@@ -91,19 +86,12 @@ Route::middleware([IsAdmin::class])->group(function () {
     Route::put('/anggota_departement-edit/{anggotaDepartement}', [AnggotaDepartementController::class, 'update'])->name('anggota_departement.update');
     Route::delete('/anggota_departement-delete/{anggotaDepartement}', [AnggotaDepartementController::class, 'destroy'])->name('anggota_departement.destroy');
     // UKM
-    Route::get('/ukm-list', [UKMController::class, 'list'])->name('ukm.list');
+    Route::get('/ukm-manage', [UKMController::class, 'manage'])->name('ukm.manage');
     Route::get('/ukm-create', [UKMController::class, 'create'])->name('ukm.create');
     Route::post('/ukm-create', [UKMController::class, 'store'])->name('ukm.store');
     Route::get('/ukm-edit/{uKM}', [UKMController::class, 'edit'])->name('ukm.edit');
     Route::put('/ukm-edit/{uKM}', [UKMController::class, 'update'])->name('ukm.update');
     Route::delete('/ukm-delete/{uKM}', [UKMController::class, 'destroy'])->name('ukm.destroy');
-    // UKM
-    Route::get('/putri/ukm-list', [UKMPutriController::class, 'list'])->name('ukm-putri.list');
-    Route::get('/putri/ukm-create', [UKMPutriController::class, 'create'])->name('ukm-putri.create');
-    Route::post('/putri/ukm-create', [UKMPutriController::class, 'store'])->name('ukm-putri.store');
-    Route::get('/putri/ukm-edit/{uKM}', [UKMPutriController::class, 'edit'])->name('ukm-putri.edit');
-    Route::put('/putri/ukm-edit/{uKM}', [UKMPutriController::class, 'update'])->name('ukm-putri.update');
-    Route::delete('/putri/ukm-delete/{uKM}', [UKMPutriController::class, 'destroy'])->name('ukm-putri.destroy');
     // Blog
     Route::get('/blog-manage', [PostController::class, 'manage'])->name('post.manage');
     Route::get('/blog-create', [PostController::class, 'create'])->name('post.create');
@@ -118,5 +106,5 @@ Route::get('/departement/{departement}', [DepartementController::class, 'show'])
 
 // UKM
 Route::get('/ukm', [UKMController::class, 'index'])->name('ukm.index');
-Route::get('/ukm/putri', [UKMPutriController::class, 'index'])->name('ukm-putri.index');
+Route::get('/ukm/putri', [UKMController::class, 'indexPutri'])->name('ukm.index-putri');
 Route::get('/ukm/{uKM}', [UKMController::class, 'show'])->name('ukm.show');

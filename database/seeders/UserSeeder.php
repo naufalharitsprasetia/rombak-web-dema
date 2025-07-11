@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
         ]);
         User::create([
             'name' => 'DEMA UNIDA Kelas C',
-            'username' => 'demakelasc',
+            'username' => 'demaputri',
             'email' => 'demaputri@gmail.com',
             'is_admin' => true,
             'password' => Hash::make('demaputri@123'),
@@ -39,7 +39,14 @@ class UserSeeder extends Seeder
             'is_admin' => true,
             'password' => Hash::make('bismillah'),
             'created_at' => now(),
-
+        ]);
+        User::create([
+            'name' => 'SuperAdmin',
+            'username' => 'superadmin',
+            'email' => 'superadmin@gmail.com',
+            'is_admin' => true,
+            'password' => Hash::make('@dem4H4d1s4t_y4#$'),
+            'created_at' => now(),
         ]);
     }
 }

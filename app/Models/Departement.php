@@ -10,6 +10,7 @@ class Departement extends Model
     use HasFactory;
     protected $fillable = [
         'id',
+        'user_id',
         'division_id',
         'nama',
         'urutan',

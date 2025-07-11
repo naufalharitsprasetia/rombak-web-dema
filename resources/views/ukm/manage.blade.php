@@ -20,11 +20,11 @@
         <main class="w-full">
             <div class="mx-auto py-6 sm:px-6 lg:px-8">
                 <!-- Isi Halaman -->
-                <h2 class="text-2xl font-semibold text-zinc-900 dark:text-white">Manage Posts</h2>
-                <p class="text-sm text-zinc-900 dark:text-white">Total Posts : {{ count($posts) }}</p>
-                <a href="{{ route('post.create') }}"
+                <h2 class="text-2xl font-semibold text-zinc-900 dark:text-white">Manage UKM</h2>
+                <p class="text-sm text-zinc-900 dark:text-white">Total UKM : {{ count($ukms) }}</p>
+                <a href="{{ route('ukm.create') }}"
                     class="cursor-pointer inline-block text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg my-4 text-xs px-4 py-2 text-center me-2">Create
-                    New Post</a>
+                    New UKM</a>
                 <br>
 
                 {{-- flow bite table --}}
@@ -36,16 +36,16 @@
                                     No
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Title
+                                    Nama UKM
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Category
+                                    Kategori
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Body
+                                    Deskripsi
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Created At
+                                    Jumlah Anggota
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     Action
@@ -53,31 +53,31 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($posts as $post)
+                            @foreach ($ukms as $ukm)
                             <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                                 <th scope="row"
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {{ $loop->iteration }}
                                 </th>
                                 <td class="px-6 py-4">
-                                    {{ $post->title }}
+                                    {{ $ukm->nama }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {{ $post->category }}
+                                    {{ $ukm->kategori }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {{ Str::limit($post->body,100) }}
+                                    {!! Str::limit($ukm->deskripsi,200) !!}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {{ $post->created_at }}
+                                    {{ $ukm->jumlah_anggota }}
                                 </td>
                                 <td class="px-6 py-4 text-right">
                                     <div class="flex">
-                                        <a href="{{ route('post.show', $post->id) }}"
+                                        <a href="{{ route('ukm.show', $ukm->id) }}"
                                             class="inline-block p-2 m-2 font-medium text-dematua dark:text-demamuda hover:underline">Detail</a>
-                                        <a href="{{ route('post.edit', $post->id) }}"
+                                        <a href="{{ route('ukm.edit', $ukm->id) }}"
                                             class="inline-block p-2 m-2 font-medium text-yellow-600 dark:text-yellow-500 hover:underline">Edit</a>
-                                        <form action="{{ route('post.destroy', $post->id) }}" method="POST"
+                                        <form action="{{ route('ukm.destroy', $ukm->id) }}" method="POST"
                                             class="inline-block deleteForm" id="formDelete-{{ $loop->iteration }}">
                                             @csrf
                                             @method('delete')

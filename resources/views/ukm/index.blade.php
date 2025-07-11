@@ -91,31 +91,31 @@
         </section>
         <div class="mt-8 py-16 mx-auto max-w-7xl text-center">
             <div class="toogle-ukm flex justify-center items-center mx-auto ">
-                <a href="{{ route('ukm.index') }}" class="py-3 px-4 border border-demamuda bg-demamuda text-white">
+                <a href="{{ route('ukm.index') }}" class="py-3 px-4 border border-demamuda
+                 {{  $ukm_active == 'putra' ? 'bg-demamuda text-white' : 'hover:bg-demamuda hover:text-white' }}">
                     PUTRA
                 </a>
-                <a href="{{ route('ukm-putri.index') }}"
-                    class="py-3 px-4 border border-demamuda hover:bg-demamuda hover:text-white">
+                <a href="{{ route('ukm.index-putri') }}" class="py-3 px-4 border border-demamuda
+                {{  $ukm_active == 'putri' ? 'bg-demamuda text-white' : 'hover:bg-demamuda hover:text-white' }}">
                     PUTRI
                 </a>
             </div>
         </div>
+        @foreach ($ukms as $category => $items)
         <div class="px-10 max-w-screen-md mb-8 lg:mb-16">
             <h2 class="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                Divisi Olah Rasa</h2>
-            <p class="text-gray-500 sm:text-lg dark:text-gray-400">UKM adalah organisasi mahasiswa santri
-                yang dinaungi Dewan Mahasiswa dalam meningkatkan kesamaan minat, kegemaraan. Lorem ipsum dolor sit amet.
-            </p>
+                Divisi {{ $category }}</h2>
         </div>
         <div class="flex flex-wrap ukm-groups gap-8 justify-evenly items-center mb-32">
-            @for($i = 0; $i < 3; $i++) <a href="" class="relative group cursor-pointer">
+            @foreach ($items as $ukm)
+            <a href="{{ route('ukm.show', $ukm->id) }}" class="relative group cursor-pointer">
                 <div
                     class="absolute -inset-1 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
                 </div>
                 <div
                     class="relative flex flex-col leading-none bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5 ukm-card text-gray-900 dark:text-white overflow-hidden max-w-xs">
-                    <img src="/img/ukms/ksei.jpeg" class="w-full" alt="">
-                    <h3 class="mx-4 mt-2 font-semibold text-lg">KSEI Fisdom</h3>
+                    <img src="{{ asset('storage/' . $ukm->logo) }}" class="w-full" alt="">
+                    <h3 class="mx-4 mt-2 font-semibold text-lg md:text-xl">{{$ukm->nama}}</h3>
                     <p class="m-4 text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">KSEI adalah
                         singkatan dari Kelompok Studi Ekonomi Islam yang merupakan istilah terhadap komunitas kajian
                         ekonomi Syari'ah yang tergabung dalam FoSSEI (Forum Silaturahmi Ekonomi Islam). KSEI adalah
@@ -124,8 +124,9 @@
                         sedunia yang berbicara tentang Ekonomi dari berbagai macam sudut pandang dan sudut pikir,
                         mulai dari masalah klasik sampai kontemporer dengan Insight dari seluruh Nusantara</p>
                 </div>
-                </a>
-                @endfor
+            </a>
+            @endforeach
         </div>
+        @endforeach
     </div>
 </x-layout>

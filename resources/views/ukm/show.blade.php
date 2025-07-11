@@ -1,40 +1,19 @@
-@extends('layout.main')
-
-@section('content')
-{{-- ukm --}}
-<div class="ukm-section min-h-screen overflow-hidden text-primary relative isolate z-10">
+<x-layout :title="$title" :active="$active">
+    {{-- ukm --}}
     <x-efek.glowatas />
     <x-efek.glowbawah />
-    <div class="ukm max-w-7xl mx-auto py-16 px-10">
-        <h1 class="text-5xl font-bold text-center mb-4">{{ $ukm->nama }}</h1>
-
-        <br>
-        <div class="mx-auto flex justify-center">
-            <img src="{{ asset('storage/' . $ukm->logo) }}" alt="" class="w-80">
+    <div class="ukm-section min-h-screen overflow-hidden text-primary relative isolate z-10">
+        <a href="{{ route('ukm.index') }}" class="text-demamuda"><i class="fa-solid fa-arrow-left"></i> Kembali</a>
+        <br><br>
+        <div class="px-10 max-w-screen-md mb-6 mx-auto">
+            <h2 class="mx-auto mb-2 text-center text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                {{ $ukm->nama }}</h2>
         </div>
-        <br>
-        @if ($ukm->deskripsi != "")
-        <p class="text-center max-w-2xl mx-auto">Deskripsi : {{ $ukm->deskripsi}}</p>
-        <br>
-        @endif
-
-        {{-- PROKER --}}
-        {{-- <br><br>
-        <h3 class="text-xl font-semibold text-center">Program Kerja :</h3>
-        <br>
-        <div class="prokers-departement flex flex-wrap justify-center gap-4">
-            <div class="proker-card border-2 border-secondary text-primary rounded-md overflow-hidden">
-                <div class="p-2 text-center">
-                    <h4 class="font-semibold text-lg">Naufal Harits</h4>
-                    <p class="font-normal">Ketua</p>
-                    <p class="font-normal text-xs">Teknik Informatika</p>
-                    <p class="font-normal text-xs">Subang</p>
-                </div>
-            </div>
-
-        </div> --}}
-        {{-- PROKER --}}
-
+        <div
+            class="mx-auto relative flex flex-col bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5 overflow-hidden max-w-xs">
+            <img src="{{ asset('storage/' . $ukm->logo) }}" class="w-full" alt="{{$ukm->nama}}">
+        </div>
+        <div class="mt-6 mx-auto text-center text-gray-600 dark:text-gray-300 text-lg">
+            Deskripsi : {!! $ukm->deskripsi !!}</div>
     </div>
-</div>
-@endsection
+</x-layout>

@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\UKM;
+use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class UKMController extends Controller
@@ -17,8 +19,19 @@ class UKMController extends Controller
     {
         $title = 'UKM';
         $active = 'ukm';
-        $ukms = UKM::all()->groupBy('kategori');
-        return view('ukm.index', compact('active', 'ukms','title'));
+        $ukm_active = 'putra';
+        $dema_siman = User::where('username', 'demasiman')->first();
+        $ukms = UKM::where('user_id', $dema_siman->id)->get()->groupBy('kategori');
+        return view('ukm.index', compact('active', 'ukms', 'title', 'ukm_active'));
+    }
+    public function indexPutri()
+    {
+        $title = 'UKM';
+        $active = 'ukm';
+        $ukm_active = 'putri';
+        $dema_putri = User::where('username', 'demaputri')->first();
+        $ukms = UKM::where('user_id', $dema_putri->id)->get()->groupBy('kategori');
+        return view('ukm.index', compact('active', 'ukms', 'title', 'ukm_active'));
     }
 
     /**
@@ -26,14 +39,17 @@ class UKMController extends Controller
      */
     public function create()
     {
+        $title = 'UKM';
         $active = 'ukm';
-        return view('ukm.create', compact('active'));
+        return view('ukm.create', compact('active', 'title'));
     }
-    public function list()
+    public function manage()
     {
+        $title = 'UKM';
         $active = 'ukm';
-        $ukms = UKM::all();
-        return view('ukm.list', compact('active', 'ukms'));
+        $dema = Auth::user();
+        $ukms = UKM::where('user_id', $dema->id)->get();
+        return view('ukm.manage', compact('active', 'ukms', 'title'));
     }
 
     /**
@@ -44,14 +60,15 @@ class UKMController extends Controller
         $request->validate([
             'nama' => 'required|string|max:255',
             'kategori' => 'required|string|max:255',
-            'deskripsi' => 'nullable|string|max:5000',
+            'deskripsi' => 'string|max:5000',
             'jumlah_anggota' => 'nullable|string|max:255',
             'link_sosmed' => 'nullable|string|max:255',
             'logo' => 'required|image|max:5000',
         ]);
-
+        $dema = Auth::user();
         $data = [
             'id' => Str::uuid(),
+            'user_id' => $dema->id,
             'nama' => $request->nama,
             'kategori' => $request->kategori,
             'deskripsi' => $request->deskripsi,
@@ -66,7 +83,7 @@ class UKMController extends Controller
 
         DB::table('u_k_m_s')->insert($data);
 
-        return redirect()->route('dashboard')->with('success', 'new ukm created successfully!');
+        return redirect()->route('ukm.manage')->with('success', 'new ukm created successfully!');
     }
 
     /**
@@ -74,9 +91,10 @@ class UKMController extends Controller
      */
     public function show(UKM $uKM)
     {
+        $title = 'UKM';
         $active = 'ukm';
         $ukm = $uKM;
-        return view('ukm.show', compact('active', 'ukm'));
+        return view('ukm.show', compact('active', 'ukm', 'title'));
     }
 
     /**
@@ -84,8 +102,14 @@ class UKMController extends Controller
      */
     public function edit(UKM $uKM)
     {
+        $title = 'UKM';
+        // cek user
+        $dema = Auth::user();
+        if ($uKM->user_id !== $dema->id) {
+            abort(403);
+        }
         $active = 'ukm';
-        return view('ukm.edit', compact('active', 'uKM'));
+        return view('ukm.edit', compact('active', 'uKM', 'title'));
     }
 
     /**
@@ -93,6 +117,10 @@ class UKMController extends Controller
      */
     public function update(Request $request, UKM $uKM)
     {
+        $dema = Auth::user();
+        if ($uKM->user_id !== $dema->id) {
+            abort(403);
+        }
         $request->validate([
             'nama' => 'required|string|max:255',
             'kategori' => 'required|string|max:255',
@@ -135,7 +163,7 @@ class UKMController extends Controller
             ->update($data);
 
         // Redirect kembali dengan pesan sukses
-        return redirect()->route('dashboard')->with('success', 'ukm updated successfully!');
+        return redirect()->route('ukm.manage')->with('success', 'ukm updated successfully!');
     }
 
     /**
@@ -143,6 +171,10 @@ class UKMController extends Controller
      */
     public function destroy(UKM $uKM)
     {
+        $dema = Auth::user();
+        if ($uKM->user_id !== $dema->id) {
+            abort(403);
+        }
         if (!$uKM) {
             return redirect()->back()->withErrors('ukm not found!');
         }
@@ -152,6 +184,6 @@ class UKMController extends Controller
             ->delete();
 
         // Redirect kembali dengan pesan sukses
-        return redirect()->route('dashboard')->with('success', 'ukm deleted successfully!');
+        return redirect()->route('ukm.manage')->with('success', 'ukm deleted successfully!');
     }
 }

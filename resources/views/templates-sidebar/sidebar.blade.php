@@ -53,9 +53,24 @@
                             Posts</a>
                     </li>
                     <li>
-                        <a href="{{ route('ukm.list') }}"
+                        <a href="{{ route('ukm.manage') }}"
                             class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Manage
                             UKM</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('divisi.index') }}"
+                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Manage
+                            Divisi</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('departement.list') }}"
+                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Manage
+                            Departemen</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('anggota_departement.index') }}"
+                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Manage
+                            Anggota Departemen</a>
                     </li>
                 </ul>
             </li>

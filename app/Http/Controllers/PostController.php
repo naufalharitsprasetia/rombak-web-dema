@@ -26,7 +26,8 @@ class PostController extends Controller
     {
         $title = 'Manage Post';
         $active = 'manage-Blog';
-        $posts = Post::latest()->get();
+        $dema = Auth::user();
+        $posts = Post::where('user_id', $dema->id)->latest()->get();
         return view('post.manage', compact('active', 'title', 'posts'));
     }
 
@@ -45,17 +46,21 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        $dema = Auth::user();
         $request->validate([
             'title' => 'required|string|max:100',
             'body' => 'required|string',
             'category' => 'required|string|max:100',
+            'link_dokumentasi' => 'nullable|string',
             'image' => 'required|image|max:10000',
         ]);
 
         $data = [
             'id' => Str::uuid(),
+            'user_id' => $dema->id,
             'title' => $request->title,
             'body' => $request->body,
+            'link_dokumentasi' => $request->link_dokumentasi,
             'category' => $request->category,
             'created_at' => now(),
         ];
@@ -84,6 +89,10 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
+        $dema = Auth::user();
+        if ($post->user_id !== $dema->id) {
+            abort(403);
+        }
         $title = 'Edit New Post';
         $active = 'edit-Blog';
         return view('post.edit', compact('active', 'title', 'post'));
@@ -94,10 +103,15 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
+        $dema = Auth::user();
+        if ($post->user_id !== $dema->id) {
+            abort(403);
+        }
         // dd($request);
         $request->validate([
             'title' => 'required|string|max:100',
             'body' => 'required|string',
+            'link_dokumentasi' => 'nullable|string',
             'category' => 'required|string|max:100',
             'image' => 'nullable|image|max:10000',
         ]);
@@ -106,6 +120,7 @@ class PostController extends Controller
         $data = [
             'title' => $request->title,
             'body' => $request->body,
+            'link_dokumentasi' => $request->link_dokumentasi,
             'category' => $request->category,
             'updated_at' => now(),
         ];
@@ -132,6 +147,10 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
+        $dema = Auth::user();
+        if ($post->user_id !== $dema->id) {
+            abort(403);
+        }
         if (!$post) {
             return redirect()->back()->withErrors('post not found!');
         }

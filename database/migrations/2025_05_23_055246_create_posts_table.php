@@ -16,9 +16,10 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('title');
             $table->string('category');
-            $table->string('image')->nullable();
+            $table->string('image');
             $table->text('body');
             $table->boolean('is_demo')->default(false);
+            $table->string('link_dokumentasi')->nullable();
             // $table->foreign('author_id')->constrained();
             $table->timestamps();
         });

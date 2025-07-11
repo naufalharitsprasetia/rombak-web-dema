@@ -10,6 +10,7 @@ class AnggotaDepartement extends Model
     use HasFactory;
     protected $fillable = [
         'id',
+        'user_id',
         'departement_id',
         'nim',
         'nama',
