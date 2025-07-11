@@ -1,6 +1,6 @@
 <x-layout :title="$title" :active="$active">
     <div class="hero z-10 transition-colors duration-300">
-        <div class="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24 px-4">
+        <div class="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24 px-4 z-[111] relative">
             <h1
                 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-gray-900 dark:text-gray-100 leading-tight">
                 Tentang Dewan<span class="text-dematua dark:text-demamuda">Mahasiswa</span>
@@ -125,7 +125,7 @@
         </section>
 
         <!-- tujuan dan fungsi -->
-        <section class="py-16 lg:py-24 duration-300 relative isolate">
+        <section class="py-16 lg:py-24 duration-300 relative isolate z-[111]">
             <x-efek.glowatas />
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">

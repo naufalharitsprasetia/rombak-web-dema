@@ -14,12 +14,11 @@ class AnggotaDepartementController extends Controller
     /**
      *
      **/
-
-    public function index()
+    public function manage()
     {
         $active = 'anggota_departement';
         $anggota_departements = AnggotaDepartement::orderBy('urutan', 'asc')->get();
-        return view('anggota_departement.index',  compact('active', 'anggota_departements'));
+        return view('anggota_departement.manage',  compact('active', 'anggota_departements'));
     }
 
     /**

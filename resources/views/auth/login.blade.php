@@ -122,7 +122,7 @@
 
         <!-- Right Side: Image Section -->
         <div class="login-right w-full lg:w-1/2 h-full bg-cover bg-center lg:pe-4 lg:py-4">
-            <img src="{{ asset('img/auth/auth-bg.png') }}" class="w-full h-full object-cover rounded-xl" alt="Gambar">
+            <img src="{{ asset('img/perfotoan.jpg') }}" class="w-full h-full object-cover rounded-xl" alt="Gambar">
         </div>
     </section>
 

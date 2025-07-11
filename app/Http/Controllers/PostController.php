@@ -16,8 +16,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $title = 'Blog';
-        $active = 'Blog';
+        $title = 'Berita';
+        $active = 'berita';
         $postUtama = Post::latest()->first();
         $posts = Post::where('id', '!=', $postUtama->id)->latest()->get();
         return view('post.index', compact('active', 'title', 'postUtama', 'posts'));
@@ -79,8 +79,8 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        $title = 'Single Post';
-        $active = 'single-post';
+        $title = 'Blog';
+        $active = 'berita';
         return view('post.show', compact('active', 'title', 'post'));
     }
 

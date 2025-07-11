@@ -21,11 +21,11 @@ class DepartementController extends Controller
         $divisions = Division::orderBy('urutan', 'asc')->get();
         return view('departement.index',  compact('active', 'title', 'divisions'));
     }
-    public function list()
+    public function manage()
     {
         $active = 'departement';
         $departements = Departement::all();
-        return view('departement.list',  compact('active', 'departements'));
+        return view('departement.manage',  compact('active', 'departements'));
     }
 
     /**
@@ -49,7 +49,7 @@ class DepartementController extends Controller
             'urutan' => 'required|integer',
             'deskripsi' => 'nullable|string|max:255',
             'singkatan' => 'nullable|string|max:255',
-            'image' => 'image|max:5000',
+            'image' => 'required|image|max:5000',
         ]);
 
         $data = [
@@ -67,7 +67,7 @@ class DepartementController extends Controller
 
         DB::table('departements')->insert($data);
 
-        return redirect()->route('dashboard')->with('success', 'new departements created successfully!');
+        return redirect()->route('departement.manage')->with('success', 'new departements created successfully!');
     }
 
     /**
@@ -130,7 +130,7 @@ class DepartementController extends Controller
         DB::table('departements')->where('id', $departement->id)->update($data);
 
         // Redirect kembali dengan pesan sukses
-        return redirect()->route('dashboard')->with('success', 'departement updated successfully!');
+        return redirect()->route('departement.manage')->with('success', 'departement updated successfully!');
     }
 
     /**
@@ -145,6 +145,6 @@ class DepartementController extends Controller
         DB::table('departements')->where('id', $departement->id)->delete();
 
         // Redirect kembali dengan pesan sukses
-        return redirect()->route('dashboard')->with('success', 'departement deleted successfully!');
+        return redirect()->route('departement.manage')->with('success', 'departement deleted successfully!');
     }
 }

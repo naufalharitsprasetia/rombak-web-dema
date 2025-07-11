@@ -143,7 +143,7 @@
                         <div class="bg-gray-200 dark:bg-zinc-700 px-5 py-3">
                             <div class="text-sm">
                                 {{-- Link ke bagian riwayat quiz di halaman yang sama --}}
-                                <a href="{{ route('departement.list') }}"
+                                <a href="{{ route('departement.manage') }}"
                                     class="font-medium text-dematua hover:text-demamuda">Lihat
                                     detail</a>
                             </div>
@@ -174,7 +174,7 @@
                         <div class="bg-gray-200 dark:bg-zinc-700 px-5 py-3">
                             <div class="text-sm">
                                 {{-- Link ke bagian riwayat quiz di halaman yang sama --}}
-                                <a href="{{ route('anggota_departement.index') }}"
+                                <a href="{{ route('anggota_departement.manage') }}"
                                     class="font-medium text-dematua hover:text-demamuda">Lihat
                                     detail</a>
                             </div>

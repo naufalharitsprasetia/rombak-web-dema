@@ -132,7 +132,7 @@
                     <!-- Already have an account -->
                     <div class="text-center mt-6">
                         <span class="text-black dark:text-gray-300">Sudah punya akun?</span>
-                        <a href="{{ route('login') }}"
+                        <a href="{{ route('auth.login') }}"
                             class="ml-2 text-black dark:text-white font-bold hover:text-dematua">
                             Masuk
                         </a>
@@ -151,7 +151,7 @@
 
         <!-- Right Side: Image Section -->
         <div class="signup-right w-full lg:w-1/2 h-full bg-cover bg-center lg:pe-4 lg:py-4">
-            <img src="{{ asset('img/auth/auth-bg.png') }}" class="w-full h-full object-cover rounded-xl" alt="Gambar">
+            <img src="{{ asset('img/perfotoan.jpg') }}" class="w-full h-full object-cover rounded-xl" alt="Gambar">
         </div>
     </section>
 

@@ -72,14 +72,14 @@ Route::middleware([IsAdmin::class])->group(function () {
     Route::put('/divisi-edit/{division}', [DivisionController::class, 'update'])->name('divisi.update');
     Route::delete('/divisi-delete/{division}', [DivisionController::class, 'destroy'])->name('divisi.destroy');
     // Departement
-    Route::get('/departement-list', [DepartementController::class, 'list'])->name('departement.list');
+    Route::get('/departement-manage', [DepartementController::class, 'manage'])->name('departement.manage');
     Route::get('/departement-create', [DepartementController::class, 'create'])->name('departement.create');
     Route::post('/departement-create', [DepartementController::class, 'store'])->name('departement.store');
     Route::get('/departement-edit/{departement}', [DepartementController::class, 'edit'])->name('departement.edit');
     Route::put('/departement-edit/{departement}', [DepartementController::class, 'update'])->name('departement.update');
     Route::delete('/departement-delete/{departement}', [DepartementController::class, 'destroy'])->name('departement.destroy');
     // Anggota Departement
-    Route::get('/anggota_departement', [AnggotaDepartementController::class, 'index'])->name('anggota_departement.index');
+    Route::get('/anggota_departement', [AnggotaDepartementController::class, 'manage'])->name('anggota_departement.manage');
     Route::get('/anggota_departement-create', [AnggotaDepartementController::class, 'create'])->name('anggota_departement.create');
     Route::post('/anggota_departement-create', [AnggotaDepartementController::class, 'store'])->name('anggota_departement.store');
     Route::get('/anggota_departement-edit/{anggotaDepartement}', [AnggotaDepartementController::class, 'edit'])->name('anggota_departement.edit');
