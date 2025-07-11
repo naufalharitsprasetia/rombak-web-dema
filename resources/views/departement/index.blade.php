@@ -37,7 +37,7 @@
                             class="relative leading-none items-center bg-gray-50 rounded-lg shadow md:flex dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5">
                             <div class="md:w-[20rem] md:h-[14rem]">
                                 <img class="w-full h-full object-cover rounded-lg sm:rounded-none sm:rounded-l-lg"
-                                    src="/img/departemen/ketua_all.JPG" alt="">
+                                    src="{{ asset('storage/' . $departement->image) }}" alt="">
                             </div>
                             <div class="p-5 mx-auto justify-center items-center">
                                 <h3 class="text-xl font-bold tracking-widest text-gray-900 dark:text-white">

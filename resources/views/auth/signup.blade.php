@@ -31,7 +31,6 @@
 </head>
 
 <body class="antialiased">
-    <div class="cursor-example z-[99999999999] hidden sm:block"></div>
     <section class="signup flex flex-col lg:flex-row h-screen bg-white dark:bg-zinc-900">
         <!-- Left Side: Registration Form -->
         <div class="signup-left w-full lg:w-1/2 flex flex-col justify-center items-center p-6 lg:p-12 relative">

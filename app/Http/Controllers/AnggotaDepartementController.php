@@ -84,7 +84,9 @@ class AnggotaDepartementController extends Controller
         }
         $title = 'Edit Anggota Departement';
         $active = 'anggota_departement';
-        $departements = Departement::all();
+        $dema = Auth::user();
+        $departements = Departement::where('user_id', $dema->id)->get();
+
         return view('anggota_departement.edit', compact('active', 'title', 'departements', 'anggotaDepartement'));
     }
 

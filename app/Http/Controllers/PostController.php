@@ -66,7 +66,7 @@ class PostController extends Controller
         ];
 
         if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('posts', 'public');
+            $data['image'] = $request->file('image')->store('blogs', 'public');
         }
 
         DB::table('posts')->insert($data);
@@ -132,7 +132,7 @@ class PostController extends Controller
                 Storage::disk('public')->delete($post->image);
             }
             // Simpan gambar baru
-            $data['image'] = $request->file('image')->store('posts', 'public');
+            $data['image'] = $request->file('image')->store('blogs', 'public');
         }
 
         // Update data produk di database

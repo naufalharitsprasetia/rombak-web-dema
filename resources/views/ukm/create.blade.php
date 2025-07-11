@@ -36,21 +36,21 @@
                                         <div class="sm:col-span-2">
                                             <label for="nama"
                                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
-                                                UKM</label>
+                                                UKM*</label>
                                             <input type="text" name="nama" id="nama"
                                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                                 placeholder="Nama UKM.." value="{{ old('nama') }}" required>
                                         </div>
                                         <div class="sm:col-span-2">
                                             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                                                for="logo">Upload logo UKM (max.5mb)</label>
+                                                for="logo">Upload logo UKM (max.5mb)*</label>
                                             <input
                                                 class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                                 id="logo" name="logo" type="file" required>
                                         </div>
                                         <div class="sm:col-span-2">
                                             <label for="kategori"
-                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kategori</label>
+                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kategori*</label>
                                             <select id="kategori" name="kategori" required
                                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                                 <option selected disabled>Select category</option>
@@ -65,7 +65,7 @@
                                     <div class="sm:col-span-2">
                                         <label for="jumlah_anggota"
                                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Jumlah
-                                            Anggota</label>
+                                            Anggota (opsional)</label>
                                         <input type="text" name="jumlah_anggota" id="jumlah_anggota"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                             placeholder="Jumlah Anggota..." value="{{ old('jumlah_anggota') }}">
@@ -74,7 +74,7 @@
                                     <div class="sm:col-span-2">
                                         <label for="link_sosmed"
                                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Link
-                                            Sosial Media</label>
+                                            Sosial Media (opsional)</label>
                                         <input type="text" name="link_sosmed" id="link_sosmed"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                             placeholder="Link Sosial media..." value="{{ old('link_sosmed') }}">
@@ -82,8 +82,8 @@
                                     <br>
                                     <div class="sm:col-span-2">
                                         <label for="editor"
-                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskrispsi
-                                            UKM</label>
+                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi
+                                            UKM (opsional)</label>
                                         <div id="editor" style="min-height: 200px;"
                                             class="bg-white dark:bg-gray-700 p-2 text-gray-900 dark:text-white border border-gray-300 rounded">
                                         </div>

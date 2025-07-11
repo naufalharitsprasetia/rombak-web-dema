@@ -1,5 +1,4 @@
 import "./bootstrap";
-import "./gsap";
 import "./sweetalert";
 import "flowbite";
 

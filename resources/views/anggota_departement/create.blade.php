@@ -22,12 +22,13 @@
                 <!-- Isi Halaman -->
                 <a href="{{ route('departement.manage') }}" class="mb-4 p-2 text-sm text-dematua hover:text-demamuda">
                     <- Kembali</a>
-                        <h2 class="text-2xl font-semibold text-zinc-900 dark:text-white">Create Departement</h2>
+                        <h2 class="text-2xl font-semibold text-zinc-900 dark:text-white">Create Anggota Departement</h2>
                         <br>
                         {{-- Form Create --}}
                         <section class="bg-white dark:bg-gray-900">
                             <div class="py-6 px-4 mx-auto max-w-2xl">
-                                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new Departement
+                                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new Anggota
+                                    Departement
                                 </h2>
                                 {{-- form --}}
                                 <form method="post" enctype="multipart/form-data" id="formPost">
@@ -38,7 +39,8 @@
                                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">NIM*</label>
                                             <input type="text" name="nim" id="nim"
                                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                                placeholder="Nomor Induk Mahasiswa..." value="{{ old('nim') }}" required>
+                                                placeholder="Nomor Induk Mahasiswa..." value="{{ old('nim') }}"
+                                                required>
                                         </div>
                                         <div class="sm:col-span-2">
                                             <label for="nama"

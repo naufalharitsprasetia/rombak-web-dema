@@ -38,18 +38,6 @@ body {
     transition: all 0.3s ease;
 }
 
-.cursor-example {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    background-color: white;
-    mix-blend-mode: difference;
-    z-index: 9999;
-}
-
 #backToTop {
     transition: opacity 0.3s ease, visibility 0.3s ease;
     visibility: hidden;

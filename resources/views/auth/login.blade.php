@@ -12,7 +12,6 @@
     <link rel="icon" type="image/png" href="/img/logoweb.png">
     <link rel="stylesheet" href="/css/frontend.css">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
     <link rel="canonical" href="{{ url()->current() }}">
     {{-- script --}}
     <script src="https://kit.fontawesome.com/5d8dfb0173.js" crossorigin="anonymous"></script>
@@ -32,7 +31,6 @@
 </head>
 
 <body class="antialiased">
-    <div class="cursor-example z-[99999999999] hidden sm:block"></div>
     <section class="login flex flex-col-reverse lg:flex-row h-screen bg-white dark:bg-zinc-900">
         <!-- Left Side: Login Form -->
         <div class="login-left w-full lg:w-1/2 flex flex-col justify-center items-center p-6 lg:p-12 relative ">

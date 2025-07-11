@@ -35,7 +35,7 @@
                                         <div class="sm:col-span-2">
                                             <label for="nama"
                                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama
-                                                Divisi</label>
+                                                Divisi*</label>
                                             <input type="text" name="nama" id="nama"
                                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                                 placeholder="Nama Divisi.." value="{{ old('nama') }}" required>
@@ -43,7 +43,7 @@
 
                                         <div class="sm:col-span-2">
                                             <label for="urutan"
-                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Urutan
+                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Urutan*
                                             </label>
                                             <input type="number" name="urutan" id="urutan"
                                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
