@@ -42,7 +42,7 @@
 
                     <div class="relative animate-fade-in">
                         <div class="relative z-10">
-                            <img src="{{ asset('img/tentang/bumi-2.png') }}" alt="Digital Marketing Professional"
+                            <img src="{{ asset('img/logoweb.png') }}" alt="Digital Marketing Professional"
                                 class="rounded-2xl shadow-2xl w-full h-auto">
                         </div>
                         <div class="absolute -top-4 -right-4 w-full h-full rounded-2xl -z-10">
@@ -65,59 +65,48 @@
                         </h2>
                 </div>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div
                         class="card-hover bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-xl p-8 text-center border border-gray-100 dark:border-gray-700">
                         <div
                             class="w-16 h-16 bg-gradient-to-br from-cyan-500 via-cyan-500 to-cyan-300 ring-cyan-400/30 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
-                            01
+                            Visi
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Rendahnya Kesadaran</h3>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                            Kesadaran akan gaya hidup sehat dan berkelanjutan masih rendah, terutama di kalangan
-                            generasi muda yang cenderung mengabaikan dampak jangka panjang terhadap lingkungan dan
-                            kesehatan.
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Wadah Aspirasi</h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Menjadikan Dewan Mahasiswa UNIDA
+                            Gontor sebagai wadah yang inklusif dan inovatif dalam
+                            mengembangkan kepemimpinan, integritas, dan kontribusi mahasiswa yang dipandu oleh
+                            prinsip-prinsip Islam.
                         </p>
                     </div>
 
                     <div
                         class="card-hover bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-xl p-8 text-center border border-gray-100 dark:border-gray-700">
                         <div
-                            class="w-16 h-16 bg-gradient-to-br from-cyan-500 via-cyan-500 to-cyan-300 ring-cyan-400/30 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
-                            02
+                            class="w-16 h-16 bg-gradient-to-br from-cyan-500 via-cyan-500 to-cyan-300 ring-cyan-400/30 rounded-full flex items-center justify-center text-white text-lg font-bold mx-auto mb-6">
+                            Misi 1
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Edukasi Kurang Efektif</h3>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Agen Perubahan</h3>
                         <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                            Program edukasi lingkungan saat ini bersifat satu arah dan kaku, sehingga gagal menciptakan
-                            keterlibatan aktif dari masyarakat, khususnya anak muda.
+                            Mendorong perubahan kecil namun berdampak besar-seperti mengurangi penggunaan plastik,
+                            menghemat energi, dan memilih transportasi yang ramah lingkungan-sekaligus menciptakan
+                            lingkungan yang mendukung para siswa untuk berkembang secara intelektual, spiritual, dan
+                            sosial.
                         </p>
                     </div>
 
                     <div
                         class="card-hover bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-xl p-8 text-center border border-gray-100 dark:border-gray-700">
                         <div
-                            class="w-16 h-16 bg-gradient-to-br from-cyan-500 via-cyan-500 to-cyan-300 ring-cyan-400/30 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
-                            03
+                            class="w-16 h-16 bg-gradient-to-br from-cyan-500 via-cyan-500 to-cyan-300 ring-cyan-400/30 rounded-full flex items-center justify-center text-white text-lg font-bold mx-auto mb-6">
+                            Misi 2
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Kurangnya Apresiasi Aksi Kecil
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Pemberdayaan Mahasiswa
                         </h3>
                         <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                            Kebiasaan kecil yang berdampak besar, seperti membawa botol sendiri atau memilah sampah,
-                            jarang dihargai atau diapresiasi secara sosial maupun sistematis.
-                        </p>
-                    </div>
-
-                    <div
-                        class="card-hover bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-xl p-8 text-center border border-gray-100 dark:border-gray-700">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-cyan-500 via-cyan-500 to-cyan-300 ring-cyan-400/30 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
-                            04
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Potensi Aksi Kolektif</h3>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                            Jika dilakukan secara kolektif dan konsisten, aksi-aksi sederhana sehari-hari memiliki
-                            potensi besar untuk membawa perubahan positif terhadap lingkungan dan kebiasaan hidup
-                            masyarakat.
+                            Memberdayakan mahasiswa melalui jaringan nasional dan internasional, mendukung tujuan
+                            universitas untuk menjadi institusi kelas dunia dan meningkatkan keterlibatan mahasiswa
+                            secara global.
                         </p>
                     </div>
                 </div>
@@ -130,7 +119,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div class="relative animate-fade-in">
-                        <img src="{{ asset('img/tentang/reusable.png') }}" alt="Professional Woman with Laptop"
+                        <img src="{{ asset('img/strukturdema.png') }}" alt="Struktur DEMA"
                             class="rounded-2xl shadow-2xl w-full h-auto">
                     </div>
 
@@ -143,68 +132,17 @@
                         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-black dark:text-white">Struktur
                             Organisasi</h2>
                         <p class="text-black dark:text-gray-300 text-lg mb-8 leading-relaxed">
-                            LangkahHijau dikembangkan sebagai solusi edukatif dan interaktif untuk mengubah aktivitas
-                            harian menjadi aksi positif bagi kesehatan dan lingkungan melalui pendekatan gamifikasi.
-                            Aplikasi ini bertujuan untuk:
+                            Struktur organisasi Dewan Mahasiswa UNIDA Gontor disusun secara hierarkis dan kolegial untuk
+                            mengoptimalkan fungsi koordinasi dan pelaksanaan program kerja. Di dalamnya terdapat ketua,
+                            wakil ketua, sekretaris, bendahara, serta berbagai departemen yang membidangi urusan
+                            kemahasiswaan, seperti pengembangan minat dan bakat, keilmuan dan keorganisasian, komunikasi
+                            dan informasi, serta hubungan eksternal. Setiap bagian memiliki peran strategis dalam
+                            menjembatani aspirasi mahasiswa dengan pihak universitas, serta menggerakkan kegiatan yang
+                            mencerminkan nilai-nilai keislaman, kepemimpinan, dan pengabdian kepada masyarakat.
+                            Kolaborasi antar departemen menjadi kunci utama dalam menciptakan lingkungan kampus yang
+                            aktif, dinamis, dan progresif.
                         </p>
 
-                        <div class="space-y-6">
-                            <div class="flex items-start space-x-4">
-                                <div
-                                    class="flex-shrink-0 w-12 h-12 bg-white/20 dark:bg-white/10 rounded-lg flex items-center justify-center text-cyan-800 dark:text-cyan-300">
-                                    <i class="fas fa-users text-xl"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-semibold mb-2 text-cyan-800 dark:text-cyan-300">
-                                        Meningkatkan Literasi Lingkungan dan Kesehatan</h3>
-                                    <p class="text-black dark:text-gray-300">Membangun kesadaran masyarakat tentang
-                                        pentingnya hidup sehat dan ramah lingkungan melalui pendekatan edukatif yang
-                                        relevan dan mudah dipahami.</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start space-x-4">
-                                <div
-                                    class="flex-shrink-0 w-12 h-12 bg-white/20 dark:bg-white/10 rounded-lg flex items-center justify-center text-cyan-800 dark:text-cyan-300">
-                                    <i class="fas fa-bullseye text-xl"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-semibold mb-2 text-cyan-800 dark:text-cyan-300">Edukasi
-                                        Digital Interaktif</h3>
-                                    <p class="text-black dark:text-gray-300">Menyediakan platform pembelajaran berbasis
-                                        digital yang menyenangkan dan dapat diakses kapan saja, di mana saja oleh semua
-                                        kalangan.</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start space-x-4">
-                                <div
-                                    class="flex-shrink-0 w-12 h-12 bg-white/20 dark:bg-white/10 rounded-lg flex items-center justify-center text-cyan-800 dark:text-cyan-300">
-                                    <i class="fas fa-chart-line text-xl"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-semibold mb-2 text-cyan-800 dark:text-cyan-300">Dorongan
-                                        Aksi Berkelanjutan</h3>
-                                    <p class="text-black dark:text-gray-300">Mengajak pengguna terlibat dalam tantangan,
-                                        kuis, dan sistem penghargaan sebagai pemicu aksi nyata yang berdampak positif
-                                        terhadap lingkungan.</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start space-x-4">
-                                <div
-                                    class="flex-shrink-0 w-12 h-12 bg-white/20 dark:bg-white/10 rounded-lg flex items-center justify-center text-cyan-800 dark:text-cyan-300">
-                                    <i class="fas fa-comments text-xl"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-semibold mb-2 text-cyan-800 dark:text-cyan-300">Komunitas
-                                        Hijau yang Menginspirasi</h3>
-                                    <p class="text-black dark:text-gray-300">Membangun ekosistem digital yang mendukung
-                                        interaksi dan kolaborasi antar pengguna dalam gerakan gaya hidup hijau dan
-                                        sehat.</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -232,12 +170,13 @@
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">
-                                <i class="fas fa-leaf"></i>
+                                <i class="fa-solid fa-newspaper"></i>
                             </div>
                             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Berita Terkini</h3>
                             <p class="text-gray-600 dark:text-gray-300">
-                                Misi aksi nyata seperti hemat listrik, zero waste, dan aktivitas fisik yang bisa dicatat
-                                dan diukur rutin.
+                                Dapatkan informasi terkini seputar kegiatan Dewan Mahasiswa, agenda kampus, serta
+                                perkembangan organisasi mahasiswa lainnya. Rubrik ini dirancang untuk menjadi sumber
+                                utama berita dan dokumentasi kegiatan mahasiswa UNIDA Gontor.
                             </p>
                         </div>
                     </a>
@@ -247,12 +186,13 @@
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">
-                                <i class="fas fa-question-circle"></i>
+                                <i class="fa-solid fa-people-roof"></i>
                             </div>
                             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Salurkan Aspirasi</h3>
                             <p class="text-gray-600 dark:text-gray-300">
-                                Kuis harian ringan dan informatif untuk menguji pengetahuan seputar lingkungan dan
-                                kesehatan.
+                                Sampaikan ide, kritik, dan saranmu langsung kepada DEMA melalui platform aspirasi
+                                digital. Kami percaya bahwa perubahan besar dimulai dari suara mahasiswa yang didengar
+                                dan ditindaklanjuti secara terbuka dan bertanggung jawab.
                             </p>
                         </div>
                     </a>
@@ -262,13 +202,15 @@
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">
-                                <i class="fas fa-award"></i>
+                                <i class="fas fa-trophy"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">UKM
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Unit Kegiatan Mahasiswa
+                                (UKM)
                             </h3>
                             <p class="text-gray-600 dark:text-gray-300">
-                                Raih poin dan badge eksklusif sebagai apresiasi atas setiap aksi hijau yang kamu
-                                lakukan.
+                                Temukan berbagai UKM yang tersedia di kampus, dari seni, olahraga, hingga sains dan
+                                teknologi. DEMA berperan aktif dalam mendukung dan memfasilitasi kegiatan UKM sebagai
+                                wadah pengembangan potensi dan soft skill mahasiswa.
                             </p>
                         </div>
                     </a>
@@ -282,7 +224,9 @@
                             </div>
                             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Surat Delegasi</h3>
                             <p class="text-gray-600 dark:text-gray-300">
-                                Baca artikel edukatif dan tips mudah tentang gaya hidup sehat dan ramah lingkungan.
+                                Ajukan surat tugas atau permohonan dukungan kegiatan eksternal dengan mudah. DEMA
+                                menyediakan layanan administrasi surat menyurat bagi mahasiswa yang mewakili kampus di
+                                ajang nasional maupun internasional.
                             </p>
                         </div>
                     </a>
@@ -294,10 +238,12 @@
                             <div class="text-cyan-500 text-4xl mb-4">
                                 <i class="fas fa-calendar-alt"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Kunjungan</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Kunjungan Organisasi
+                            </h3>
                             <p class="text-gray-600 dark:text-gray-300">
-                                Temukan dan ikuti acara lingkungan. Tambahkan ke Google Calendar dan ajukan event
-                                milikmu sendiri.
+                                Fasilitasi kunjungan atau studi banding antarorganisasi kemahasiswaan, baik internal
+                                maupun eksternal. Kami membuka ruang kolaborasi antar kampus dan organisasi untuk
+                                memperkaya pengalaman kepemimpinan mahasiswa.
                             </p>
                         </div>
                     </a>
@@ -307,12 +253,14 @@
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-xl text-center transition-transform transform hover:scale-105 duration-300">
                             <div class="text-cyan-500 text-4xl mb-4">
-                                <i class="fas fa-trophy"></i>
+                                <i class="fa-solid fa-handshake"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Kerjasama</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Kemitraan & Kolaborasi
+                            </h3>
                             <p class="text-gray-600 dark:text-gray-300">
-                                Lihat peringkatmu dan tingkatkan tier mingguan berdasarkan akumulasi cyan Points yang
-                                dikumpulkan.
+                                Bangun kerjasama strategis dengan lembaga, komunitas, maupun instansi luar kampus
+                                melalui program-program kolaboratif. DEMA berkomitmen membuka peluang sinergi demi
+                                penguatan peran mahasiswa di tingkat lokal maupun global.
                             </p>
                         </div>
                     </a>
