@@ -84,7 +84,7 @@
                                     </div>
                                     <div class="mt-5">
                                         <button type="submit"
-                                            class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-dematua hover:bg-dematua focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dematua">
+                                            class="cursor-pointer inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-dematua hover:bg-dematua focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dematua">
                                             Kirim Pesan
                                         </button>
                                     </div>

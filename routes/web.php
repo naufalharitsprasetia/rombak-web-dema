@@ -46,11 +46,9 @@ Route::middleware('guest')->group(function () {
 });
 
 // auth
-Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi.index');
 Route::middleware('auth')->group(function () {
-    Route::get('/aspiras-list', [AspirasiController::class, 'list'])->name('aspirasi.list');
-    Route::post('/aspirasi', [AspirasiController::class, 'store'])->name('aspirasi.store');
-    Route::delete('/aspirasi/{aspirasi}', [AspirasiController::class, 'destroy'])->name('aspirasi.destroy');
+    Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi.index');
+    Route::post('/aspirasi', [AspirasiController::class, 'store'])->name('aspirasi.store')->middleware('throttle:5,1');
     // logout
     Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 });
@@ -61,6 +59,8 @@ Route::get('/blog/{post}', [PostController::class, 'show'])->name('post.show');
 
 // IS ADMIN Middleware
 Route::middleware([IsAdmin::class])->group(function () {
+    Route::get('/aspiras-list', [AspirasiController::class, 'list'])->name('aspirasi.list');
+    Route::delete('/aspirasi/{aspirasi}', [AspirasiController::class, 'destroy'])->name('aspirasi.destroy');
     // users
     Route::get('/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
     Route::get('/profile/{user:username}', [UserController::class, 'profile'])->name('user.profile');

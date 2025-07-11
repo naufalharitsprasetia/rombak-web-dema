@@ -1,6 +1,22 @@
 <x-layout :title="$title" :active="$active">
     <div class="min-h-screen">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-16 pb-12">
+            @if (session()->has('success'))
+            <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+                <div class="alert alert-success col-lg-12 mt-4" role="alert">
+                    {{ session('success') }}
+                </div>
+            </div>
+            @endif
+            @if ($errors->any())
+            <div class="mx-auto max-w-7xl">
+                <div class="alert alert-error col-lg-12 mt-4" role="alert">
+                    @foreach ($errors->all() as $error)
+                    <div>{{ $error }}</div>
+                    @endforeach
+                </div>
+            </div>
+            @endif
             <h2 class="mb-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
                 Kotak Aspirasi
             </h2>
@@ -14,10 +30,10 @@
                             <form action="{{ route('aspirasi.store') }}" method="POST" id="contact-form">
                                 @csrf
                                 <div>
-                                    <label for="name"
+                                    <label for="nama"
                                         class="block text-sm font-medium text-gray-700 dark:text-gray-300">Nama</label>
                                     <div class="mt-2">
-                                        <input type="text" name="name" id="name"
+                                        <input type="text" name="nama" id="nama"
                                             class="shadow-sm bg-transparent border dark:border-zinc-600 text-gray-900 dark:text-white py-2 px-1 focus:ring-dematua focus:border-dematua block w-full sm:text-sm border-gray-300 rounded-md"
                                             required>
                                     </div>
@@ -32,17 +48,17 @@
                                     </div>
                                 </div>
                                 <div class="mt-4">
-                                    <label for="message"
+                                    <label for="aspirasi"
                                         class="block text-sm font-medium text-gray-700 dark:text-gray-300">Aspirasi</label>
                                     <div class="mt-2">
-                                        <textarea id="message" name="message" rows="4"
+                                        <textarea id="aspirasi" name="aspirasi" rows="4"
                                             class="shadow-sm bg-transparent border dark:border-zinc-600 text-gray-900 dark:text-white py-2 px-1 focus:ring-dematua focus:border-dematua block w-full sm:text-sm border-gray-300 rounded-md"
                                             required></textarea>
                                     </div>
                                 </div>
                                 <div class="mt-5">
                                     <button type="submit"
-                                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-dematua hover:bg-dematua focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dematua">
+                                        class="cursor-pointer inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-dematua hover:bg-dematua focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dematua">
                                         Kirim
                                     </button>
                                 </div>

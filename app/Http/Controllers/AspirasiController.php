@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Aspirasi;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AspirasiController extends Controller
 {
@@ -25,15 +26,16 @@ class AspirasiController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|string|max:75',
+            'nama' => 'required|string|max:75',
             'email' => 'required|string|max:75',
-            'message' => 'nullable|string|max:500',
+            'aspirasi' => 'nullable|string|max:500',
         ]);
 
         $data = [
-            'name' => $request->name,
+            'user_id' => Auth::user()->id,
+            'nama' => $request->nama,
             'email' => $request->email,
-            'message' => $request->message,
+            'aspirasi' => $request->aspirasi,
             'created_at' => now(),
         ];
 
