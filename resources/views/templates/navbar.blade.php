@@ -22,7 +22,7 @@
     <div class="bg-white/80 backdrop-blur dark:bg-zinc-900/80 hidden"></div>
     <nav class="flex items-center justify-between p-6 lg:px-8 mx-auto max-w-7xl" aria-label="Global">
         <div class="flex lg:flex-1">
-            <a href="#" class="-m-1.5 p-1.5 flex justify-center items-center">
+            <a href="{{ route('home.index') }}" class="-m-1.5 p-1.5 flex justify-center items-center">
                 <span class="sr-only">DewanMahasiswa</span>
                 <img class="h-8 w-auto" src="/img/logoweb.png" alt="">
                 <h2 class="text-xl ml-1 font-semibold text-gray-900 dark:text-gray-100">Dewan <span

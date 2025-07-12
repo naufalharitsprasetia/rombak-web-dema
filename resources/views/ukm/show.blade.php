@@ -26,5 +26,6 @@
                 class="text-demamuda hover:text-dematua">{{
                 $ukm->link_sosmed }}</a></div>
         @endif
+        <br><br>
     </div>
 </x-layout>
