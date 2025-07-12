@@ -4,5 +4,5 @@
         </canvas>
     </div>
     <x-post.article :active="$active" :postUtama="$postUtama" :posts="$posts" />
-    @vite('resources/js/lottie.js')
+    @vite('resources/js/home.js')
 </x-layout>

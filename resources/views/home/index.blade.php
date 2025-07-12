@@ -74,7 +74,7 @@
             <div
                 class="hero-image fancy aspect-video rounded-md overflow-hidden max-w-5xl mx-auto relative p-[1.2px] bg-zinc-900">
                 <img class="w-full h-full object-cover rounded-2xl block relative z-10"
-                    src="{{ asset('img/dashboard-dema.png') }}" draggable="false" alt="LangkahHijau" loading="lazy">
+                    src="{{ asset('img/dashboard-dema.jpg') }}" draggable="false" alt="LangkahHijau" loading="lazy">
                 {{-- <img class="w-full h-full object-cover rounded-2xl block dark:hidden relative z-10"
                     src="{{ asset('img/langkahhijau/dashboard.png') }}" draggable="false" alt="LangkahHijau"
                     loading="lazy"> --}}
