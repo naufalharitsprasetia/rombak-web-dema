@@ -116,13 +116,8 @@
                     class="relative flex flex-col leading-none bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5 ukm-card text-gray-900 dark:text-white overflow-hidden max-w-xs">
                     <img src="{{ asset('storage/' . $ukm->logo) }}" class="w-full" alt="">
                     <h3 class="mx-4 mt-2 font-semibold text-lg md:text-xl">{{$ukm->nama}}</h3>
-                    <p class="m-4 text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">KSEI adalah
-                        singkatan dari Kelompok Studi Ekonomi Islam yang merupakan istilah terhadap komunitas kajian
-                        ekonomi Syari'ah yang tergabung dalam FoSSEI (Forum Silaturahmi Ekonomi Islam). KSEI adalah
-                        sebuah kesatuan terkecil dari besarnya organisasi kami dalam skala Nasional yaitu FoSSEI
-                        atau Forum Silaturrahim Studi Ekonomi Islam. FOSSEI adalah organisasi mahasiswa terbesar
-                        sedunia yang berbicara tentang Ekonomi dari berbagai macam sudut pandang dan sudut pikir,
-                        mulai dari masalah klasik sampai kontemporer dengan Insight dari seluruh Nusantara</p>
+                    <p class="m-4 text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">
+                        {{$ukm->deskrispi}}</p>
                 </div>
             </a>
             @endforeach

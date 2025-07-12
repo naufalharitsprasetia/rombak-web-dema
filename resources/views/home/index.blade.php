@@ -70,16 +70,21 @@
             </div>
         </div>
         {{-- snap screenshoot --}}
-        <div class="hero-image-wrapper w-full flex justify-center md:-mt-18 mb-20 ">
-            <div
-                class="hero-image fancy aspect-video rounded-md overflow-hidden max-w-5xl mx-auto relative p-[1.2px] bg-zinc-900">
-                <img class="w-full h-full object-cover rounded-2xl block relative z-10"
-                    src="{{ asset('img/dashboard-dema.jpg') }}" draggable="false" alt="LangkahHijau" loading="lazy">
-                {{-- <img class="w-full h-full object-cover rounded-2xl block dark:hidden relative z-10"
-                    src="{{ asset('img/langkahhijau/dashboard.png') }}" draggable="false" alt="LangkahHijau"
-                    loading="lazy"> --}}
+        <div x-data="imageSwitcher()" class="hero-image-wrapper w-full flex justify-center md:-mt-18 mb-20">
+            <div class="hero-image fancy aspect-video rounded-md overflow-hidden max-w-5xl mx-auto relative p-[1.2px] bg-zinc-900 group cursor-pointer"
+                @click="toggleImage">
+                <!-- Gambar -->
+                <img :src="currentImage" class="w-full h-full object-cover rounded-2xl block relative z-10"
+                    draggable="false" alt="LangkahHijau" loading="lazy">
+
+                <!-- Overlay -->
+                <div
+                    class="absolute inset-0 bg-black/60 flex items-center justify-center text-white text-xl font-semibold z-20 opacity-0 group-hover:opacity-100 transition duration-300">
+                    Klik To Change Image
+                </div>
             </div>
         </div>
+
         {{-- glow tengah bawah --}}
         <div class="absolute inset-x-0 top-[calc(100%-40rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-78rem)]"
             aria-hidden="true">
@@ -266,6 +271,24 @@
             </div>
         </div>
     </section>
+    <script>
+        function imageSwitcher() {
+            return {
+                images: [
+                    "{{ asset('img/dashboard-dema.jpg') }}",
+                    "{{ asset('img/dashboard-dema-2.jpg') }}" // ganti dengan gambar alternatif
+                ],
+                currentIndex: 0,
+                get currentImage() {
+                    return this.images[this.currentIndex];
+                },
+                toggleImage() {
+                    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                }
+            }
+        }
+    </script>
+
     @vite('resources/js/home.js')
     @vite('resources/js/countUp.js')
 </x-layout>
