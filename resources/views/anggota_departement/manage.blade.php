@@ -86,6 +86,9 @@
                                 </td>
                                 <td class="px-6 py-4 text-right">
                                     <div class="flex">
+                                        <a href="{{ route('departement.show', $anggota_departement->departement->id) }}"
+                                            class="inline-block p-2 m-2 font-medium text-dematua dark:text-demamuda hover:underline">Detail</a>
+
                                         <a href="{{ route('anggota_departement.edit', $anggota_departement->id) }}"
                                             class="inline-block p-2 m-2 font-medium text-yellow-600 dark:text-yellow-500 hover:underline">Edit</a>
                                         <form

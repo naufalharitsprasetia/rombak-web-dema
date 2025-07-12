@@ -31,7 +31,7 @@ class AnggotaDepartementController extends Controller
     {
         $title = 'Create Anggota Departement';
         $dema = Auth::user();
-        $departements = Departement::where('user_id', $dema->id)->get();
+        $departements = Departement::where('user_id', $dema->id)->orderBy('urutan', 'asc')->get();
         $active = 'anggota_departement';
         return view('anggota_departement.create', compact('active', 'title', 'departements'));
     }
@@ -85,7 +85,7 @@ class AnggotaDepartementController extends Controller
         $title = 'Edit Anggota Departement';
         $active = 'anggota_departement';
         $dema = Auth::user();
-        $departements = Departement::where('user_id', $dema->id)->get();
+        $departements = Departement::where('user_id', $dema->id)->orderBy('urutan', 'asc')->get();
 
         return view('anggota_departement.edit', compact('active', 'title', 'departements', 'anggotaDepartement'));
     }
