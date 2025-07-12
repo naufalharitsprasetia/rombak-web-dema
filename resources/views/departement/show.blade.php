@@ -31,7 +31,7 @@
 
             <br>
             <div class="mx-auto flex justify-center">
-                <img src="/img/departemen/ketua_all.JPG" alt="" class="w-96">
+                <img src="{{ asset('storage/' . $departement->image) }}" alt="" class="w-96">
             </div>
             <br>
 

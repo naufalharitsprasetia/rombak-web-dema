@@ -28,7 +28,7 @@ class AspirasiController extends Controller
         $request->validate([
             'nama' => 'required|string|max:75',
             'email' => 'required|string|max:75',
-            'aspirasi' => 'nullable|string|max:500',
+            'aspirasi' => 'required|string|max:500',
         ]);
 
         $data = [

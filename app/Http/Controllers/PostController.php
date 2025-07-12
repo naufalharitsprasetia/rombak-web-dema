@@ -48,11 +48,11 @@ class PostController extends Controller
     {
         $dema = Auth::user();
         $request->validate([
-            'title' => 'required|string|max:100',
+            'title' => 'required|string|max:200',
             'body' => 'required|string',
             'category' => 'required|string|max:100',
             'link_dokumentasi' => 'nullable|string',
-            'image' => 'required|image|max:10000',
+            'image' => 'required|image|max:6000',
         ]);
 
         $data = [
@@ -109,11 +109,11 @@ class PostController extends Controller
         }
         // dd($request);
         $request->validate([
-            'title' => 'required|string|max:100',
+            'title' => 'required|string|max:200',
             'body' => 'required|string',
             'link_dokumentasi' => 'nullable|string',
             'category' => 'required|string|max:100',
-            'image' => 'nullable|image|max:10000',
+            'image' => 'nullable|image|max:6000',
         ]);
 
         // Siapkan data yang akan diperbarui
