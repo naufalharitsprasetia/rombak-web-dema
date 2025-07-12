@@ -39,7 +39,7 @@
                                 <img class="w-full h-full object-cover rounded-lg sm:rounded-none sm:rounded-l-lg"
                                     src="{{ asset('storage/' . $departement->image) }}" alt="">
                             </div>
-                            <div class="p-5 mx-auto justify-center items-center">
+                            <div class="p-5 mx-auto justify-center items-center max-w-1/2">
                                 <h3 class="text-xl font-bold tracking-widest text-gray-900 dark:text-white">
                                     {{ $departement->nama }}
                                 </h3>
