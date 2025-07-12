@@ -60,10 +60,10 @@ class UKMController extends Controller
         $request->validate([
             'nama' => 'required|string|max:255',
             'kategori' => 'required|string|max:255',
-            'deskripsi' => 'string|max:5000',
+            'deskripsi' => 'nullable|string|max:5000',
             'jumlah_anggota' => 'nullable|string|max:255',
             'link_sosmed' => 'nullable|string|max:255',
-            'logo' => 'required|image|max:5000',
+            'logo' => 'required|image|max:6000',
         ]);
         $dema = Auth::user();
         $data = [
@@ -126,7 +126,7 @@ class UKMController extends Controller
             'kategori' => 'required|string|max:255',
             'deskripsi' => 'nullable|string|max:5000',
             'jumlah_anggota' => 'nullable|string|max:255',
-            'logo' => 'image|max:5000',
+            'logo' => 'image|max:6000',
             'link_sosmed' => 'nullable|string|max:255',
         ]);
 

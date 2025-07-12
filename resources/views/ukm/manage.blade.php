@@ -48,6 +48,9 @@
                                     Jumlah Anggota
                                 </th>
                                 <th scope="col" class="px-6 py-3">
+                                    Link Sosmed
+                                </th>
+                                <th scope="col" class="px-6 py-3">
                                     Action
                                 </th>
                             </tr>
@@ -70,6 +73,9 @@
                                 </td>
                                 <td class="px-6 py-4">
                                     {{ $ukm->jumlah_anggota }}
+                                </td>
+                                <td class="px-6 py-4">
+                                    {{ $ukm->link_sosmed }}
                                 </td>
                                 <td class="px-6 py-4 text-right">
                                     <div class="flex">

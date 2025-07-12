@@ -15,5 +15,16 @@
         </div>
         <div class="mt-6 mx-auto text-center text-gray-600 dark:text-gray-300 text-lg">
             Deskripsi : {!! $ukm->deskripsi !!}</div>
+        <br><br>
+        @if($ukm->jumlah_anggota !== "")
+        <div class="mt-6 mx-auto text-center text-gray-600 dark:text-gray-300 text-lg">
+            Jumlah Anggota UKM : {!! $ukm->jumlah_anggota !!}</div>
+        @endif
+        @if($ukm->link_sosmed !== "")
+        <div class="mt-6 mx-auto text-center text-gray-600 dark:text-gray-300 text-lg">
+            Link Sosial Media : <a href="{{ $ukm->link_sosmed }}" target="_blank"
+                class="text-demamuda hover:text-dematua">{{
+                $ukm->link_sosmed }}</a></div>
+        @endif
     </div>
 </x-layout>

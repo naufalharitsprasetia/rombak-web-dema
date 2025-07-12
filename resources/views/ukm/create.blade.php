@@ -1,4 +1,3 @@
-<link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
 <x-sidebar.layout :title="$title" :active="$active">
     @if (session()->has('success'))
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
@@ -60,36 +59,32 @@
                                                 <option value="Olah Dzikir">Olah Dzikir</option>
                                             </select>
                                         </div>
-                                    </div>
-                                    <br>
-                                    <div class="sm:col-span-2">
-                                        <label for="jumlah_anggota"
-                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Jumlah
-                                            Anggota (opsional)</label>
-                                        <input type="text" name="jumlah_anggota" id="jumlah_anggota"
-                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                            placeholder="Jumlah Anggota..." value="{{ old('jumlah_anggota') }}">
-                                    </div>
-                                    <br>
-                                    <div class="sm:col-span-2">
-                                        <label for="link_sosmed"
-                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Link
-                                            Sosial Media (opsional)</label>
-                                        <input type="text" name="link_sosmed" id="link_sosmed"
-                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                            placeholder="Link Sosial media..." value="{{ old('link_sosmed') }}">
-                                    </div>
-                                    <br>
-                                    <div class="sm:col-span-2">
-                                        <label for="editor"
-                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi
-                                            UKM (opsional)</label>
-                                        <div id="editor" style="min-height: 200px;"
-                                            class="bg-white dark:bg-gray-700 p-2 text-gray-900 dark:text-white border border-gray-300 rounded">
-                                        </div>
-                                        <input type="hidden" name="deskripsi" id="deskripsi">
-                                    </div>
 
+                                        <div class="sm:col-span-2">
+                                            <label for="jumlah_anggota"
+                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Jumlah
+                                                Anggota (opsional)</label>
+                                            <input type="number" name="jumlah_anggota" id="jumlah_anggota"
+                                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="Jumlah Anggota..." value="{{ old('jumlah_anggota') }}">
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <label for="link_sosmed"
+                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Link
+                                                Sosial Media (opsional)</label>
+                                            <input type="text" name="link_sosmed" id="link_sosmed"
+                                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="Link Sosial media..." value="{{ old('link_sosmed') }}">
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <label for="deskripsi"
+                                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi
+                                            </label>
+                                            <input type="text" name="deskripsi" id="deskripsi"
+                                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                                placeholder="Deskripsi..." value="{{ old('deskripsi') }}">
+                                        </div>
+                                    </div>
                                     <button type="submit"
                                         class="cursor-pointer inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
                                         Add UKM
@@ -101,28 +96,3 @@
         </main>
     </div>
 </x-sidebar.layout>
-<script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const haha = document.querySelector('.ql-toolbar.ql-snow');
-        if(haha !== null){
-            haha.style.backgroundColor = '#fff';
-        }
-    });
-
-    const quill = new Quill('#editor', {
-        theme: 'snow',
-    });
-
-    // Simpan isi Quill ke input hidden sebelum submit
-    const form = document.getElementById('formPost');
-    form.onsubmit = () => {
-        const content = quill.root.innerHTML.trim();
-        if (content === '<p><br></p>' || content === null) {
-            alert('Isi deskrispi tidak boleh kosong');
-            e.preventDefault();
-            return false;
-        }
-        document.querySelector('#deskrispi').value = content;
-    };
-</script>

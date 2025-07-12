@@ -41,7 +41,7 @@ class DepartementController extends Controller
         $title = 'Manage Departement';
         $active = 'departement';
         $dema = Auth::user();
-        $departements = Departement::where('user_id', $dema->id)->get();
+        $departements = Departement::where('user_id', $dema->id)->orderBy('urutan', 'asc')->get();
         return view('departement.manage',  compact('active', 'title', 'departements'));
     }
 
