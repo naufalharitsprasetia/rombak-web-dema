@@ -67,18 +67,30 @@
         <!-- Section Header -->
         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 sm:gap-0 mb-6 sm:mb-8">
             <div>
-                <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">Tips
+                <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">Berita
                     Lainnya</h3>
-                <p class="text-gray-600 dark:text-gray-300 text-sm sm:text-base">Kumpulan Tips Cerdas & Artikel
-                    Inspiratif untuk Menjalani Hidup Lebih Hijau!</p>
+                <p class="text-gray-600 dark:text-gray-300 text-sm sm:text-base">Dapatkan informasi terkini seputar
+                    kegiatan Dewan Mahasiswa, agenda kampus, serta perkembangan organisasi mahasiswa lainnya.</p>
             </div>
         </div>
 
         <!-- Articles Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
+            @if(isset($posts))
             @foreach ($posts as $post)
             <x-post.articlecard :post="$post" />
             @endforeach
+            @endif
+            @if(isset($postsPutra))
+            @foreach ($postsPutra as $post)
+            <x-post.articlecard :post="$post" />
+            @endforeach
+            @endif
+            @if(isset($postsPutri))
+            @foreach ($postsPutri as $post)
+            <x-post.articlecard :post="$post" />
+            @endforeach
+            @endif
         </div>
 
         @if($active == "beranda")

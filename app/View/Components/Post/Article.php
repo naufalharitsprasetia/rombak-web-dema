@@ -14,7 +14,9 @@ class Article extends Component
     public function __construct(
         public string $active,
         public object $postUtama,
-        public object $posts,
+        public ?object $posts = null,
+        public ?object $postsPutri = null,
+        public ?object $postsPutra = null,
     ) {
         //
     }

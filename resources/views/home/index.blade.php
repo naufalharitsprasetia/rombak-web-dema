@@ -181,7 +181,8 @@
         </canvas>
     </div>
     {{-- sec blog --}}
-    <x-post.article :active="$active" class="mt-20" :postUtama="$postUtama" :posts="$posts" />
+    <x-post.article :active="$active" class="mt-20" :postUtama="$postUtama" :postsPutri="$postsPutri"
+        :postsPutra="$postsPutra" />
     {{-- Count Section --}}
     <div class="count-section text-zinc-900 dark:text-gray-100 mt-16">
         <div
